@@ -1,0 +1,58 @@
+name: Agent failure
+description: An agent got a graph task wrong. These become eval cases and, sometimes, skills.
+title: "failure: "
+labels: ["agent-failure"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use a public dataset or a made-up schema. Do not paste schemas, queries or hostnames from an employer, a client or a private project.
+  - type: textarea
+    id: asked
+    attributes:
+      label: What you asked the agent to do
+    validations:
+      required: true
+  - type: textarea
+    id: got
+    attributes:
+      label: What it did
+      description: The query, model or code it produced, and what went wrong.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should have done
+    validations:
+      required: true
+  - type: input
+    id: engine
+    attributes:
+      label: Engine or library, with version
+      placeholder: "Neo4j 2025.10, LadybugDB 0.12, NetworkX 3.5, PostgreSQL 18"
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and model
+      placeholder: "Which coding agent and which model version"
+    validations:
+      required: true
+  - type: dropdown
+    id: skills
+    attributes:
+      label: Was erdostack installed?
+      options:
+        - "No"
+        - "Yes, and it did not help"
+        - "Yes, and it made things worse"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: Dataset link and the steps. A failure that reproduces on a public dataset can become an eval case.

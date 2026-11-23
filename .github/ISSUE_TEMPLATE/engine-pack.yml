@@ -1,0 +1,44 @@
+name: Engine pack
+description: Propose or claim an engine pack in references/engines/.
+title: "engine pack: "
+labels: ["engine-pack"]
+body:
+  - type: input
+    id: engine
+    attributes:
+      label: Engine
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the engine
+      options:
+        - I work for the vendor or maintain the project
+        - I use it regularly
+        - I am requesting a pack and cannot write it
+    validations:
+      required: true
+  - type: dropdown
+    id: testing
+    attributes:
+      label: Can you test against the real engine?
+      description: Emulators that substitute a different query engine do not count.
+      options:
+        - "Yes, locally with no account"
+        - "Yes, against a hosted instance I have access to"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    id: traps
+    attributes:
+      label: Where do agents go wrong with this engine?
+      description: Dialect gaps, renamed packages, features agents assume exist, version cliffs.
+    validations:
+      required: true
+  - type: input
+    id: vendor-skills
+    attributes:
+      label: Does the vendor publish its own agent skills?
+      description: Link them if so. The pack will route to them.

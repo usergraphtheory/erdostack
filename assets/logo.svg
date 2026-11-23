@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">erdostack</title>
+  <rect width="256" height="256" rx="56" fill="#0B1020"/>
+  <g fill="none" stroke="#7C8AA5" stroke-width="10" stroke-linecap="round">
+    <path d="M84 68v120"/>
+    <path d="M84 68h92"/>
+    <path d="M84 128h68"/>
+    <path d="M84 188h92"/>
+  </g>
+  <g fill="#F2F5FA">
+    <circle cx="84" cy="68" r="18"/>
+    <circle cx="84" cy="128" r="18"/>
+    <circle cx="84" cy="188" r="18"/>
+    <circle cx="176" cy="68" r="18"/>
+    <circle cx="176" cy="188" r="18"/>
+  </g>
+  <circle cx="152" cy="128" r="18" fill="#FF6B35"/>
+</svg>

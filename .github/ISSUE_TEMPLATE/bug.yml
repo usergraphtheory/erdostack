@@ -1,0 +1,35 @@
+name: Bug
+description: Something in the packaging, installers or an existing skill is broken.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: install
+    attributes:
+      label: How you installed erdostack
+      placeholder: "npx skills add, Claude Code plugin, npx erdostack install, uvx erdostack install, ..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: erdostack version, agent and operating system
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Command output
+      render: text

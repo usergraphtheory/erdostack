@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <rect width="1280" height="640" fill="#0B1020"/>
+  <g fill="none" stroke="#1A2340" stroke-width="2">
+    <path d="M900 90L1090 170L1180 60M1090 170L1150 330L980 300L900 90M1150 330L1210 500L1040 560L980 300M1040 560L860 520L980 300"/>
+  </g>
+  <g fill="#1A2340">
+    <circle cx="900" cy="90" r="9"/><circle cx="1090" cy="170" r="9"/><circle cx="1180" cy="60" r="9"/>
+    <circle cx="1150" cy="330" r="9"/><circle cx="980" cy="300" r="9"/><circle cx="1210" cy="500" r="9"/>
+    <circle cx="1040" cy="560" r="9"/><circle cx="860" cy="520" r="9"/>
+  </g>
+  <g transform="translate(96 150) scale(0.62)">
+    <g fill="none" stroke="#7C8AA5" stroke-width="10" stroke-linecap="round">
+      <path d="M84 68v120"/><path d="M84 68h92"/><path d="M84 128h68"/><path d="M84 188h92"/>
+    </g>
+    <g fill="#F2F5FA">
+      <circle cx="84" cy="68" r="18"/><circle cx="84" cy="128" r="18"/><circle cx="84" cy="188" r="18"/>
+      <circle cx="176" cy="68" r="18"/><circle cx="176" cy="188" r="18"/>
+    </g>
+    <circle cx="152" cy="128" r="18" fill="#FF6B35"/>
+  </g>
+  <text x="250" y="262" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="104" font-weight="700" fill="#F2F5FA" letter-spacing="-3">erdostack</text>
+  <text x="140" y="372" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="46" font-weight="600" fill="#FF6B35">Graph skills for coding agents.</text>
+  <text x="140" y="436" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="30" fill="#A9B4C8">Graph databases · algorithms · data structures · visualization</text>
+  <text x="140" y="548" font-family="'DejaVu Sans Mono', monospace" font-size="28" fill="#7C8AA5">$ npx skills add usergraphtheory/erdostack</text>
+</svg>

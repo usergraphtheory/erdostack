@@ -1,0 +1,153 @@
+name: Release
+
+# Pushing a tag like v0.1.0 publishes that version everywhere:
+#   npm            trusted publishing (OIDC), no stored token
+#   PyPI           trusted publishing (OIDC), no stored token
+#   GitHub Release one self-contained archive, which is also what Gemini CLI installs from
+#   ClawHub        optional, only when the CLAWHUB_OWNER repository variable is set
+# Git-based hosts (skills CLI, gh skill, Claude Code, Codex, Copilot CLI, Cursor) read the tag itself.
+# Run it by hand (workflow_dispatch) for a dry run that verifies and builds without publishing.
+# One-time setup is described in docs/RELEASING.md.
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify and build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Validate
+        run: |
+          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+            node scripts/validate.mjs --require-skills --tag "${GITHUB_REF_NAME}"
+          else
+            node scripts/validate.mjs
+          fi
+      - name: Test the installers
+        run: node --test tests/cli.test.mjs
+      - name: Build both packages
+        run: |
+          npm pack --dry-run
+          python -m pip install --upgrade build
+          python -m build
+
+  npm:
+    name: Publish to npm
+    needs: verify
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    environment: npm
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
+      - name: Publish
+        env:
+          NPM_PUBLISH_MODE: ${{ vars.NPM_PUBLISH_MODE }}
+        run: |
+          # Trusted publishing and staged publishing need a newer npm than Node bundles.
+          npm install -g npm@latest
+          npm --version
+          # "stage" (the default) uploads the version and waits for a maintainer to approve it with 2FA.
+          # Set the NPM_PUBLISH_MODE repository variable to "direct" to publish without that step.
+          if [ "${NPM_PUBLISH_MODE}" = "direct" ]; then
+            npm publish
+          else
+            npm stage publish
+          fi
+
+  pypi:
+    name: Publish to PyPI
+    needs: verify
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Build
+        run: |
+          python -m pip install --upgrade build
+          python -m build
+      - uses: pypa/gh-action-pypi-publish@release/v1
+
+  github-release:
+    name: Create the GitHub release
+    needs: verify
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Build the release archive
+        run: |
+          mkdir -p dist
+          # Exactly one asset, with gemini-extension.json at its root, so that
+          # "gemini extensions install" can use the release instead of cloning.
+          git archive --format=tar.gz -o "dist/erdostack-${GITHUB_REF_NAME#v}.tar.gz" HEAD \
+            skills references assets/logo.svg assets/logo.png \
+            plugin.json gemini-extension.json \
+            .claude-plugin .cursor-plugin .codex-plugin .agents \
+            README.md ROADMAP.md CHANGELOG.md LICENSE
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" dist/*.tar.gz \
+            --repo "${GITHUB_REPOSITORY}" \
+            --title "erdostack ${GITHUB_REF_NAME}" \
+            --generate-notes \
+            --verify-tag
+
+  clawhub:
+    name: Publish skills to ClawHub
+    needs: verify
+    if: github.ref_type == 'tag' && vars.CLAWHUB_OWNER != ''
+    permissions:
+      contents: read
+    uses: openclaw/clawhub/.github/workflows/skill-publish.yml@main
+    with:
+      owner: ${{ vars.CLAWHUB_OWNER }}
+      dry_run: false
+    secrets:
+      clawhub_token: ${{ secrets.CLAWHUB_TOKEN }}

@@ -1,0 +1,28 @@
+{
+  "name": "erdostack",
+  "version": "0.0.0",
+  "description": "Graph skills for coding agents: graph databases, graph data structures and algorithms, and graph visualization. Vendor-neutral.",
+  "author": {
+    "name": "usergraphtheory"
+  },
+  "homepage": "https://github.com/usergraphtheory/erdostack#readme",
+  "repository": "https://github.com/usergraphtheory/erdostack",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "graph",
+    "graph-database",
+    "knowledge-graph",
+    "graph-theory",
+    "graph-algorithms",
+    "graph-visualization",
+    "data-structures",
+    "cypher",
+    "gql",
+    "sql-pgq",
+    "neo4j",
+    "ladybugdb",
+    "crdt"
+  ],
+  "logo": "assets/logo.svg"
+}

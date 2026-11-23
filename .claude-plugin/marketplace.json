@@ -1,0 +1,27 @@
+{
+  "name": "erdostack",
+  "description": "Graph skills for coding agents: graph databases, graph data structures and algorithms, and graph visualization.",
+  "owner": {
+    "name": "usergraphtheory"
+  },
+  "plugins": [
+    {
+      "name": "erdostack",
+      "source": "./",
+      "description": "Vendor-neutral graph skills: decide whether you need a graph, model it, query it in the right dialect and version, pick the right algorithm, and avoid melting the database.",
+      "category": "database",
+      "tags": [
+        "graph",
+        "graph-database",
+        "knowledge-graph",
+        "cypher",
+        "gql",
+        "graph-algorithms",
+        "graph-visualization",
+        "data-structures",
+        "data-modeling",
+        "crdt"
+      ]
+    }
+  ]
+}

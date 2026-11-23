@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erdostack"
+version = "0.0.0"
+description = "Graph skills for coding agents: graph databases, graph data structures and algorithms, and graph visualization. Vendor-neutral Agent Skills."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "usergraphtheory" }]
+keywords = [
+  "agent-skills",
+  "skills",
+  "ai-agents",
+  "coding-agents",
+  "claude-code",
+  "cursor",
+  "codex",
+  "gemini-cli",
+  "copilot",
+  "graph",
+  "graph-database",
+  "knowledge-graph",
+  "graph-theory",
+  "graph-algorithms",
+  "graph-visualization",
+  "data-structures",
+  "cypher",
+  "gql",
+  "sql-pgq",
+  "neo4j",
+  "ladybugdb",
+  "networkx",
+  "crdt",
+  "graphrag",
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Database",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/usergraphtheory/erdostack"
+Repository = "https://github.com/usergraphtheory/erdostack"
+Issues = "https://github.com/usergraphtheory/erdostack/issues"
+Changelog = "https://github.com/usergraphtheory/erdostack/blob/main/CHANGELOG.md"
+Roadmap = "https://github.com/usergraphtheory/erdostack/blob/main/ROADMAP.md"
+
+[project.scripts]
+erdostack = "erdostack.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

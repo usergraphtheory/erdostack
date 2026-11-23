@@ -1,0 +1,4 @@
+include LICENSE README.md ROADMAP.md CHANGELOG.md
+graft skills
+graft references
+global-exclude __pycache__ *.py[cod] .DS_Store

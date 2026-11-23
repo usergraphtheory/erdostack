@@ -1,0 +1,73 @@
+{
+  "name": "erdostack",
+  "version": "0.0.0",
+  "description": "Graph skills for coding agents: graph databases, graph data structures and algorithms, and graph visualization. Vendor-neutral Agent Skills for Claude Code, Cursor, Codex, Gemini CLI, Copilot and more.",
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "ai-agents",
+    "coding-agents",
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini-cli",
+    "copilot",
+    "graph",
+    "graph-database",
+    "knowledge-graph",
+    "graph-theory",
+    "graph-algorithms",
+    "graph-visualization",
+    "data-structures",
+    "cypher",
+    "gql",
+    "sql-pgq",
+    "gremlin",
+    "sparql",
+    "neo4j",
+    "ladybugdb",
+    "crdt",
+    "graphrag"
+  ],
+  "homepage": "https://github.com/usergraphtheory/erdostack#readme",
+  "bugs": {
+    "url": "https://github.com/usergraphtheory/erdostack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usergraphtheory/erdostack.git"
+  },
+  "license": "MIT",
+  "author": "usergraphtheory (https://github.com/usergraphtheory)",
+  "type": "module",
+  "bin": {
+    "erdostack": "bin/erdostack.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "references/",
+    "assets/logo.svg",
+    "assets/logo.png",
+    "plugin.json",
+    "gemini-extension.json",
+    ".claude-plugin/",
+    ".cursor-plugin/",
+    ".codex-plugin/",
+    ".agents/plugins/",
+    "ROADMAP.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test tests/cli.test.mjs",
+    "check": "node scripts/validate.mjs && node --test tests/cli.test.mjs",
+    "version:set": "node scripts/sync-version.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

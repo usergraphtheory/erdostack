@@ -311,7 +311,9 @@ python3 evals/harness/erdo_eval.py advance --root runs
 python3 evals/harness/erdo_eval.py run --root runs --cmd 'claude -p --model {model} --permission-mode acceptEdits'
 
 python3 evals/harness/erdo_eval.py grade --root runs
-python3 evals/harness/erdo_eval.py judge-pack --root runs --skill roast-my-graph --set standards --out judge   # then answer the batches and run judge-apply
+# judge-pack also packs every labelled self-check variant of the skill, to measure your judge: more than 700
+# items for roast-my-graph, and some minutes to build. --no-calibration leaves them out.
+python3 evals/harness/erdo_eval.py judge-pack --root runs --skill roast-my-graph --set standards --out judge --no-calibration   # then answer the batches and run judge-apply
 for skill in roast-my-graph graph-or-not setup-graph schema-first query-review; do
   python3 evals/harness/erdo_eval.py report --root runs --skill $skill --set standards --save --label mine
 done

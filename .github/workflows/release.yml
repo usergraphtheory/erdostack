@@ -143,9 +143,13 @@ jobs:
     name: Publish skills to ClawHub
     needs: verify
     if: github.ref_type == 'tag' && vars.CLAWHUB_OWNER != ''
+    # The called workflow asks for id-token: write. A caller that grants less makes
+    # GitHub reject the whole Release workflow at startup, even when this job is skipped.
+    # Pinned to a commit so a change upstream cannot run here unreviewed.
     permissions:
       contents: read
-    uses: openclaw/clawhub/.github/workflows/skill-publish.yml@main
+      id-token: write
+    uses: openclaw/clawhub/.github/workflows/skill-publish.yml@94d0430e8d120b7dd0da0fa690398534c16d4ca3 # main, 2026-11-27
     with:
       owner: ${{ vars.CLAWHUB_OWNER }}
       dry_run: false

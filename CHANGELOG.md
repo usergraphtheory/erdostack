@@ -12,6 +12,7 @@ Notable changes to erdostack. The format follows [Keep a Changelog](https://keep
 - Validator for manifests, versions, skill frontmatter and engine packs.
 - CI on Linux, macOS and Windows, and a tag-driven release workflow for npm, PyPI and GitHub Releases.
 - An "Official sources" list in the README.
+- Profile pictures in `assets/`, and `assets/README.md` describing the mark, palette and typeface.
 
 ### Changed
 

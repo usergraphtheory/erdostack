@@ -47,14 +47,17 @@ Nothing below is stored in the repository. No registry token is ever added as a 
 - Create two environments, `npm` and `pypi`. Add required reviewers if you want a human gate before each publish.
 - Add the topics that directories crawl for, including `agent-skills` and `gemini-cli-extension`.
 - Protect `v*` tags and turn on immutable releases. `gh skill publish --dry-run` reports what is missing.
+- Upload `assets/social-preview.png` as the repository's social preview (Settings, General). Profile pictures use `assets/avatar.png`. [assets/README.md](../assets/README.md) describes every image.
 
 **PyPI**
 
-- Add a pending trusted publisher for the project `erdostack`: owner `usergraphtheory`, repository `erdostack`, workflow `release.yml`, environment `pypi`. A pending publisher works before the project exists, so the first release can go through the workflow.
+- The project exists. Version 0.0.0 was published from this workflow to hold the name, and it bundles no skills.
+- Its trusted publisher is bound to owner `usergraphtheory`, repository `erdostack`, workflow `release.yml`, environment `pypi`, so a tag release needs no further setup. If the repository is renamed or moved, add a publisher for the new location before the next release.
 
 **npm**
 
-- npm has no pending publishers: the package must exist before a trusted publisher can be attached. Publish the first version once from a maintainer machine, then on the package's settings page add a trusted publisher: user `usergraphtheory`, repository `erdostack`, workflow `release.yml`, environment `npm`.
+- The package exists. Version 0.0.0 was published by hand to hold the name. It bundles no skills and is marked deprecated in favour of the first release.
+- A trusted publisher can only be attached to a package that exists, which is now the case. On the package's settings page add one: user `usergraphtheory`, repository `erdostack`, workflow `release.yml`, environment `npm`.
 - A new trusted publisher must complete a successful publish within two days or it expires, so add it just before a release.
 - Trusted publishing needs npm 11.5.1 or later, so the workflow runs on Node 24 and upgrades npm before publishing. Provenance is attached automatically.
 
@@ -64,11 +67,11 @@ Nothing below is stored in the repository. No registry token is ever added as a 
 
 **Claude Code plugin directory**
 
-- The repository already works as its own marketplace. To be listed in the official directory as well, use the submission form linked from `anthropics/claude-plugins-official`.
+- The repository already works as its own marketplace. To be listed in the official directory as well, submit the plugin at `claude.ai/directory/manage`. The older form linked from `anthropics/claude-plugins-official` is no longer used.
 
 **ClawHub (optional)**
 
-- Create the owner, store a CLI token as the `CLAWHUB_TOKEN` secret and set the `CLAWHUB_OWNER` variable. This job calls ClawHub's reusable workflow and has not been exercised yet.
+- Create the owner, store a CLI token as the `CLAWHUB_TOKEN` secret and set the `CLAWHUB_OWNER` variable. This job calls ClawHub's reusable workflow, pinned to a commit, and has not been exercised yet. The job grants `id-token: write` because the called workflow requests it; without that grant GitHub refuses to start the whole release workflow.
 
 ## Not automated
 

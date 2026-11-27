@@ -11,6 +11,7 @@ This repo packages Agent Skills about graphs for many agent hosts. The skills ar
 - `plugin.json`, `.claude-plugin/`, `.cursor-plugin/`, `.codex-plugin/`, `.agents/plugins/`, `gemini-extension.json`: host manifests. They all point at the same `skills/` directory.
 - `bin/erdostack.mjs` and `src/erdostack/`: the npm and PyPI installers. They only copy files, and their `AGENTS` tables must stay identical.
 - `scripts/validate.mjs`: the single source of truth for what is valid here.
+- `assets/`: the logo, share image and profile pictures, in the same chalkboard identity as erdostack.com. `assets/README.md` has the palette, the typeface and the rules for the mark.
 
 ## Rules
 

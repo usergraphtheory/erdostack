@@ -4,6 +4,8 @@ Notable changes to erdostack. The format follows [Keep a Changelog](https://keep
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-27
+
 ### Added
 
 - Five skills: `roast-my-graph`, `graph-or-not`, `setup-graph`, `schema-first` and `query-review`. Each has an eval spec with thresholds set before the runs, and each passed a gate on cases written from documented problems before it was included.

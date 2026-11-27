@@ -1,6 +1,6 @@
 {
   "name": "erdostack",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Graph skills for coding agents: graph databases, graph data structures and algorithms, and graph visualization. Vendor-neutral Agent Skills for Claude Code, Cursor, Codex, Gemini CLI, Copilot and more.",
   "keywords": [
     "agent-skills",

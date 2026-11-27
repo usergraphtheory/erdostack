@@ -76,7 +76,7 @@ A skill for querying codebase knowledge graphs well. Decided after Phase 3, base
 
 ### Phase 2: launch and depth
 
-- [ ] First tagged release, with the five Phase 1 skills and the benchmark.
+- [x] First tagged release, with the five Phase 1 skills and the benchmark.
 - [ ] `query-dialects`, `graph-modeling`, `algorithm-picker`, `graph-crdts`, `graphs-in-process`, `graphs-in-sql`, on a regular release rhythm.
 - [ ] The Neo4j and LadybugDB packs; the contributor path opens.
 

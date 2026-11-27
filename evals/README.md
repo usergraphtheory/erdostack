@@ -55,7 +55,7 @@ python3 evals/harness/erdo_eval.py grade --root runs
 python3 evals/harness/erdo_eval.py report --root runs --skill roast-my-graph --set standards
 ```
 
-The harness is standard library only. The cases need Python 3.10 or later with its bundled `sqlite3`, and NetworkX; the recorded runs used Python 3.13.18, SQLite 3.53.1 and NetworkX 3.7.
+The harness is standard library only. The cases need Python 3.10 or later with its bundled `sqlite3`, and NetworkX with NumPy and SciPy, which NetworkX needs for PageRank; the recorded runs used Python 3.13.18, SQLite 3.53.1, NetworkX 3.7, NumPy 2.5.3 and SciPy 1.18.1.
 
 ## Rules
 

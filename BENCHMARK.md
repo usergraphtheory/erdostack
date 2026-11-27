@@ -280,7 +280,7 @@ python3 evals/harness/erdo_eval.py summary --pool \
   $R/query-review/2026-11-27-standards-standards-v1.json
 ```
 
-The cases are in the companion repository [`erdostack/bench`](https://github.com/erdostack/bench), mirrored as a dataset at [huggingface.co/datasets/erdostack/bench](https://huggingface.co/datasets/erdostack/bench): all 1,527 of them, with their graders, the recorded runs, this harness and the five skills at the versions measured here. They are kept apart from the skills because a case library is large and its paths are long, and neither belongs in something people install. Requirements there: Python 3.10 or later with its bundled `sqlite3`, and NetworkX. The recorded runs used Python 3.13.18, SQLite 3.53.1 and NetworkX 3.7.
+The cases are in the companion repository [`erdostack/bench`](https://github.com/erdostack/bench), mirrored as a dataset at [huggingface.co/datasets/erdostack/bench](https://huggingface.co/datasets/erdostack/bench): all 1,527 of them, with their graders, the recorded runs, this harness and the five skills at the versions measured here. They are kept apart from the skills because a case library is large and its paths are long, and neither belongs in something people install. Requirements there: Python 3.10 or later with its bundled `sqlite3`, and NetworkX with NumPy and SciPy, which NetworkX needs for PageRank. The recorded runs used Python 3.13.18, SQLite 3.53.1, NetworkX 3.7, NumPy 2.5.3 and SciPy 1.18.1.
 
 To run Track B yourself, on any model your agent CLI can reach:
 

@@ -1,18 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
   <title id="title">erdostack</title>
-  <rect width="256" height="256" rx="56" fill="#0B1020"/>
-  <g fill="none" stroke="#7C8AA5" stroke-width="10" stroke-linecap="round">
-    <path d="M84 68v120"/>
-    <path d="M84 68h92"/>
-    <path d="M84 128h68"/>
-    <path d="M84 188h92"/>
+  <!-- The erdostack.com favicon at eight times the size: three joined vertices on a chalkboard, the source vertex in yellow. -->
+  <rect width="256" height="256" rx="40" fill="#22302a"/>
+  <g fill="none" stroke="#edeae0" stroke-width="14.4" stroke-linecap="round">
+    <path d="M72 80 184 64"/>
+    <path d="M72 80l40 104"/>
+    <path d="M184 64 112 184"/>
   </g>
-  <g fill="#F2F5FA">
-    <circle cx="84" cy="68" r="18"/>
-    <circle cx="84" cy="128" r="18"/>
-    <circle cx="84" cy="188" r="18"/>
-    <circle cx="176" cy="68" r="18"/>
-    <circle cx="176" cy="188" r="18"/>
-  </g>
-  <circle cx="152" cy="128" r="18" fill="#FF6B35"/>
+  <circle cx="72" cy="80" r="27.2" fill="#f0d264"/>
+  <circle cx="184" cy="64" r="24" fill="#edeae0"/>
+  <circle cx="112" cy="184" r="24" fill="#edeae0"/>
 </svg>

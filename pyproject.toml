@@ -51,7 +51,7 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/usergraphtheory/erdostack"
+Homepage = "https://erdostack.com"
 Repository = "https://github.com/usergraphtheory/erdostack"
 Issues = "https://github.com/usergraphtheory/erdostack/issues"
 Changelog = "https://github.com/usergraphtheory/erdostack/blob/main/CHANGELOG.md"

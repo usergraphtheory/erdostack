@@ -1,25 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
-  <rect width="1280" height="640" fill="#0B1020"/>
-  <g fill="none" stroke="#1A2340" stroke-width="2">
-    <path d="M900 90L1090 170L1180 60M1090 170L1150 330L980 300L900 90M1150 330L1210 500L1040 560L980 300M1040 560L860 520L980 300"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-labelledby="t">
+  <title id="t">erdostack: graph skills for coding agents</title>
+  <!-- The erdostack.com share card at 1280 x 640. social-preview.png is this file rendered with Latin Modern Roman, the typeface the site uses. -->
+  <defs>
+    <filter id="dusts" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0"/>
+    </filter>
+    <radialGradient id="lightAs" cx="78%" cy="12%" r="60%">
+      <stop offset="0" stop-color="#edeae0" stop-opacity=".07"/><stop offset="1" stop-color="#edeae0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lightBs" cx="8%" cy="96%" r="55%">
+      <stop offset="0" stop-color="#1b2621" stop-opacity=".55"/><stop offset="1" stop-color="#1b2621" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="chalks" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" fill="#22302a"/>
+  <rect width="1280" height="640" fill="url(#lightBs)"/>
+  <rect width="1280" height="640" fill="url(#lightAs)"/>
+  <rect width="1280" height="640" filter="url(#dusts)"/>
+  <text x="80" y="96" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="30" fill="#edeae0" letter-spacing=".3">erdostack</text>
+  <g font-family="'LM Roman Display','LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-size="58" fill="#edeae0">
+    <text x="80" y="210"><tspan font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700">Claim.</tspan><tspan x="287.7">Your coding</tspan></text>
+    <text x="80" y="278">agent is bad at graphs.</text>
+    <text x="80" y="376"><tspan font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-style="italic">Proof.</tspan><tspan x="248.8">Ask it for a</tspan></text>
+    <text x="80" y="444">Cypher query.</text>
   </g>
-  <g fill="#1A2340">
-    <circle cx="900" cy="90" r="9"/><circle cx="1090" cy="170" r="9"/><circle cx="1180" cy="60" r="9"/>
-    <circle cx="1150" cy="330" r="9"/><circle cx="980" cy="300" r="9"/><circle cx="1210" cy="500" r="9"/>
-    <circle cx="1040" cy="560" r="9"/><circle cx="860" cy="520" r="9"/>
-  </g>
-  <g transform="translate(96 150) scale(0.62)">
-    <g fill="none" stroke="#7C8AA5" stroke-width="10" stroke-linecap="round">
-      <path d="M84 68v120"/><path d="M84 68h92"/><path d="M84 128h68"/><path d="M84 188h92"/>
+  <rect x="427.7" y="418" width="24" height="24" fill="none" stroke="#edeae0" stroke-width="3.2"/>
+  <text x="80" y="574" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-size="27" fill="#aab6ad">Graph skills for coding agents. Open source. <tspan x="612.8" fill="#f0d264">erdostack.com</tspan></text>
+  <g transform="translate(704 68) scale(.93)">
+    <g filter="url(#chalks)" stroke="#edeae0" stroke-width="2.3" stroke-linecap="round" opacity=".86">
+    <line x1="150" y1="112" x2="58" y2="206"/>
+    <line x1="150" y1="112" x2="262" y2="62"/>
+    <line x1="150" y1="112" x2="272" y2="190"/>
+    <line x1="150" y1="112" x2="152" y2="252"/>
+    <line x1="262" y1="62" x2="392" y2="104"/>
+    <line x1="272" y1="190" x2="392" y2="104"/>
+    <line x1="272" y1="190" x2="404" y2="232"/>
+    <line x1="272" y1="190" x2="276" y2="322"/>
+    <line x1="152" y1="252" x2="276" y2="322"/>
+    <line x1="152" y1="252" x2="76" y2="352"/>
+    <line x1="58" y1="206" x2="76" y2="352"/>
+    <line x1="392" y1="104" x2="498" y2="168"/>
+    <line x1="404" y1="232" x2="498" y2="168"/>
+    <line x1="404" y1="232" x2="488" y2="306"/>
+    <line x1="276" y1="322" x2="172" y2="432"/>
+    <line x1="76" y1="352" x2="172" y2="432"/>
     </g>
-    <g fill="#F2F5FA">
-      <circle cx="84" cy="68" r="18"/><circle cx="84" cy="128" r="18"/><circle cx="84" cy="188" r="18"/>
-      <circle cx="176" cy="68" r="18"/><circle cx="176" cy="188" r="18"/>
-    </g>
-    <circle cx="152" cy="128" r="18" fill="#FF6B35"/>
+    <circle cx="150" cy="112" r="23" fill="#22302a" stroke="#f0d264" stroke-width="3" filter="url(#chalks)"/>
+    <text x="150" y="113" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#f0d264" text-anchor="middle" dominant-baseline="central">0</text>
+    <circle cx="58" cy="206" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="58" y="207" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">1</text>
+    <circle cx="262" cy="62" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="262" y="63" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">1</text>
+    <circle cx="272" cy="190" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="272" y="191" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">1</text>
+    <circle cx="152" cy="252" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="152" y="253" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">1</text>
+    <circle cx="392" cy="104" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="392" y="105" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">2</text>
+    <circle cx="404" cy="232" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="404" y="233" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">2</text>
+    <circle cx="276" cy="322" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="276" y="323" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">2</text>
+    <circle cx="76" cy="352" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="76" y="353" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">2</text>
+    <circle cx="498" cy="168" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="498" y="169" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">3</text>
+    <circle cx="488" cy="306" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="488" y="307" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">3</text>
+    <circle cx="172" cy="432" r="23" fill="#22302a" stroke="#edeae0" stroke-width="2.3" filter="url(#chalks)"/>
+    <text x="172" y="433" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#edeae0" text-anchor="middle" dominant-baseline="central">3</text>
+    <circle cx="452" cy="430" r="23" fill="#22302a" stroke="#f29a94" stroke-width="2.3" stroke-dasharray="5 5" filter="url(#chalks)"/>
+    <text x="452" y="431" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-weight="700" font-size="22" fill="#f29a94" text-anchor="middle" dominant-baseline="central">∞</text>
+    <text x="150" y="64" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-size="20" fill="#f0d264" text-anchor="middle">Erdős</text>
+    <text x="452" y="476" font-family="'LM Roman','Latin Modern Roman','CMU Serif',Cambria,'Times New Roman',serif" font-size="20" fill="#f29a94" text-anchor="middle">your agent</text>
   </g>
-  <text x="250" y="262" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="104" font-weight="700" fill="#F2F5FA" letter-spacing="-3">erdostack</text>
-  <text x="140" y="372" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="46" font-weight="600" fill="#FF6B35">Graph skills for coding agents.</text>
-  <text x="140" y="436" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="30" fill="#A9B4C8">Graph databases · algorithms · data structures · visualization</text>
-  <text x="140" y="548" font-family="'DejaVu Sans Mono', monospace" font-size="28" fill="#7C8AA5">$ npx skills add usergraphtheory/erdostack</text>
 </svg>

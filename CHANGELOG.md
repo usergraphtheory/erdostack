@@ -11,5 +11,15 @@ Notable changes to erdostack. The format follows [Keep a Changelog](https://keep
 - `erdostack` installers for npm and PyPI that copy bundled skills into an agent's skills directory.
 - Validator for manifests, versions, skill frontmatter and engine packs.
 - CI on Linux, macOS and Windows, and a tag-driven release workflow for npm, PyPI and GitHub Releases.
+- An "Official sources" list in the README.
+
+### Changed
+
+- The logo, share image and brand color now match [erdostack.com](https://erdostack.com): chalk on a chalkboard, with the source vertex in yellow.
+- Package and plugin homepages point to erdostack.com.
+
+### Fixed
+
+- The release workflow no longer fails at startup.
 
 No skills have shipped yet.

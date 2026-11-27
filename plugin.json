@@ -7,7 +7,7 @@
     "name": "usergraphtheory",
     "url": "https://github.com/usergraphtheory"
   },
-  "homepage": "https://github.com/usergraphtheory/erdostack#readme",
+  "homepage": "https://erdostack.com",
   "repository": "https://github.com/usergraphtheory/erdostack",
   "license": "MIT",
   "keywords": [
@@ -34,8 +34,8 @@
         "longDescription": "A skill profile for agents that work with graphs: decide whether you need a graph at all, model it, query it in the right dialect and version, pick the right algorithm, and avoid melting the database. Vendor-neutral and independent.",
         "developerName": "usergraphtheory",
         "category": "Coding",
-        "websiteURL": "https://github.com/usergraphtheory/erdostack",
-        "brandColor": "#FF6B35",
+        "websiteURL": "https://erdostack.com",
+        "brandColor": "#F0D264",
         "logo": "./assets/logo.png"
       }
     }

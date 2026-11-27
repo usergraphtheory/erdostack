@@ -1,19 +1,20 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/usergraphtheory/erdostack/main/assets/logo.svg" width="96" height="96" alt="erdostack logo: a six-node tree in the shape of the letter E">
+  <img src="https://raw.githubusercontent.com/usergraphtheory/erdostack/main/assets/logo.svg" width="96" height="96" alt="erdostack logo: three joined vertices drawn in chalk on a chalkboard, one of them yellow">
 </p>
 
 <h1 align="center">erdostack</h1>
 
 <p align="center">
   <strong>Graph skills for coding agents.</strong><br>
-  Graph databases, graph algorithms, data structures and visualization in one vendor-neutral skill profile.
+  Graph databases, graph algorithms, data structures and visualization in one vendor-neutral skill profile.<br>
+  <a href="https://erdostack.com">erdostack.com</a>
 </p>
 
 <p align="center">
   <a href="https://github.com/usergraphtheory/erdostack/actions/workflows/ci.yml"><img src="https://github.com/usergraphtheory/erdostack/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://github.com/usergraphtheory/erdostack/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a>
-  <a href="https://github.com/usergraphtheory/erdostack/blob/main/ROADMAP.md"><img src="https://img.shields.io/badge/status-pre--release-orange" alt="Status: pre-release"></a>
-  <a href="https://agentskills.io"><img src="https://img.shields.io/badge/format-Agent%20Skills-8A2BE2" alt="Agent Skills format"></a>
+  <a href="https://github.com/usergraphtheory/erdostack/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-93cbe8?labelColor=22302a" alt="MIT license"></a>
+  <a href="https://github.com/usergraphtheory/erdostack/blob/main/ROADMAP.md"><img src="https://img.shields.io/badge/status-pre--release-f0d264?labelColor=22302a" alt="Status: pre-release"></a>
+  <a href="https://agentskills.io"><img src="https://img.shields.io/badge/format-Agent%20Skills-edeae0?labelColor=22302a" alt="Agent Skills format"></a>
 </p>
 
 ```bash
@@ -132,6 +133,18 @@ Fork it, adapt it, and send back what works. Engine packs, eval cases and report
 ## The name
 
 Paul Erdős wrote more than 1,500 papers with over 500 coauthors, many of them on graphs, and carried everything he owned in two suitcases. Small, portable and built for collaboration seemed like the right design goals for a skill stack. Installing it will not lower your Erdős number. It might lower your agent's rate of Cartesian products.
+
+## Official sources
+
+An anonymous project is easy to imitate, so this is the whole list. Anything else using the name is not this project.
+
+- Website: [erdostack.com](https://erdostack.com)
+- Source: this repository. The [erdostack](https://github.com/erdostack) organization on GitHub is reserved for the project.
+- npm: [`erdostack`](https://www.npmjs.com/package/erdostack). PyPI: [`erdostack`](https://pypi.org/project/erdostack/).
+- Hugging Face: [erdostack](https://huggingface.co/erdostack), reserved, nothing published yet.
+- Announcements: [@graphtheory on X](https://x.com/graphtheory).
+
+The name is one word, lowercase.
 
 ## Updates
 

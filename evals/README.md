@@ -11,6 +11,7 @@ evals/
 ├── REAL_PROBLEMS.md         register of documented graph problems that cases stage
 ├── STANDARDS.md             published benchmarks the standards track borrows from, its protocol and its result
 ├── PROVENANCE.md            how much of each skill's evidence rests on documented problems
+├── PASS_AUDIT.md            the audit of passing grades: its protocol, the result and what departed from the protocol
 ├── <skill>/
 │   ├── EVALS.md             correctness claim, thresholds, graders, every gate, results log, changelog
 │   ├── SOURCES.md           outside facts the cases rely on, with the date each was checked
@@ -31,7 +32,7 @@ A case is a folder: `prompt.md` (the request as a user would type it), `files/` 
    - **contract**: conventions only the skills define (file locations and formats). Reported separately. They never count toward lift.
 4. Assertions a script cannot decide are packed into blind batches (`judge-pack`) for a model to answer yes or no, together with labelled calibration items that measure how often that judge agrees with the labels (`judge-apply` reports the agreement).
 5. `report` gives pass rates with 95% Wilson intervals, and a paired sign test over cases: for each case, did the skill arm pass more often than the baseline arm. Counting cases, not runs, is deliberate: two models on one case are not two independent observations.
-6. Before a result decides anything, every run with a failing script-graded assertion is re-read by a reviewer who is not told the arm. A disputed grader is repaired in general terms, with a known-good variant and a near miss that still fails, and the set is graded again. A bar has to hold on the grades as first produced and on the audited grades.
+6. Before a result decides anything, every run with a failing script-graded assertion is re-read by a reviewer who is not told the arm. A disputed grader is repaired in general terms, with a known-good variant and a near miss that still fails, and the set is graded again. A bar has to hold on the grades as first produced and on the audited grades. This step reads failures. A later audit read runs that passed, every one of the skill arm's and 44 of the baseline's; [`PASS_AUDIT.md`](PASS_AUDIT.md) has its protocol and its result.
 7. `summary` recomputes the deciding numbers from saved reports, with exact p-values, and `--pool` runs one sign test over the cases of several reports.
 8. `export` writes what each agent created or changed as an overlay on its case, and `regrade` builds such a run again and checks that the graders give the grades recorded with it. The runs behind the five deciding gates and the core set are published that way, in `recorded-runs/` of the case repository.
 

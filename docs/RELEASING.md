@@ -38,6 +38,20 @@ The `Release` workflow then:
 
 To rehearse without publishing, run the workflow by hand from the Actions tab. A manual run verifies and builds and then stops.
 
+## The case repository
+
+The eval cases live in a second repository, `erdostack/bench`, so that this one stays small enough to install from. It is a snapshot: the full `evals/` tree with every case and grader, `skills/` at the versions the saved reports name, an index of the cases and the recorded runs. A workflow there mirrors it to the Hugging Face dataset `erdostack/bench`.
+
+Cut a new snapshot whenever a release changes a skill, adds cases or adds results:
+
+1. Copy `evals/` and `skills/` from the working tree that holds the cases into a checkout of `erdostack/bench`. Every new `case.yaml` starts with that repository's canary line; a harness test fails if one does not.
+2. Regenerate the index: `python3 evals/harness/erdo_eval.py index --out cases.jsonl`.
+3. For a result that a claim rests on, publish its runs: `python3 evals/harness/erdo_eval.py export --root <runs> --report <report.json> --out recorded-runs/<skill>/<gate>`. Read what it wrote before you commit it. An agent's output can hold anything, including the name of the machine it ran on.
+4. There, run `python3 -m unittest discover -s evals/harness -p 'test_*.py'`, `python3 evals/harness/erdo_eval.py selftest` and `python3 evals/harness/erdo_eval.py regrade --runs recorded-runs`. All three must pass in a fresh clone, not only in the working tree: git drops empty directories and applies ignore rules that a working tree hides, so add files with `git add -f -A`.
+5. Commit, tag it with the same version as this repository, and push. The tag starts the sync to Hugging Face.
+
+A report under `evals/results/` here must never name a case that is not in a pushed snapshot.
+
 ## One-time setup
 
 Nothing below is stored in the repository. No registry token is ever added as a secret for npm or PyPI.
@@ -48,6 +62,10 @@ Nothing below is stored in the repository. No registry token is ever added as a 
 - Add the topics that directories crawl for, including `agent-skills` and `gemini-cli-extension`.
 - Protect `v*` tags and turn on immutable releases. `gh skill publish --dry-run` reports what is missing.
 - Upload `assets/social-preview.png` as the repository's social preview (Settings, General). Profile pictures use `assets/avatar.png`. [assets/README.md](../assets/README.md) describes every image.
+
+**Hugging Face**
+
+- The dataset `erdostack/bench` belongs to the `erdostack` organization. The sync workflow in the case repository needs one repository secret on GitHub, `HF_TOKEN`: a Hugging Face token that may write to that dataset. The workflow has not been run yet.
 
 **PyPI**
 

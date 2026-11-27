@@ -6,7 +6,9 @@ This repo packages Agent Skills about graphs for many agent hosts. The skills ar
 
 - `skills/<name>/SKILL.md`: the skills. One folder each, `name` equal to the folder name.
 - `references/engines/<engine>.md`: engine packs. Each needs a `Last verified: YYYY-MM-DD` line.
-- `evals/`: eval cases and the harness.
+- `evals/`: the eval harness, each skill's eval spec (`EVALS.md`) and saved results. The cases themselves live in the companion repository `erdostack/bench`, not here: a case library is large and its paths are long.
+- `BENCHMARK.md`: the measured results on one page.
+- `tests/`: installer tests.
 - `templates/`: starting points for a new skill or engine pack. Named `*.template.md` so installers do not mistake them for skills.
 - `plugin.json`, `.claude-plugin/`, `.cursor-plugin/`, `.codex-plugin/`, `.agents/plugins/`, `gemini-extension.json`: host manifests. They all point at the same `skills/` directory.
 - `bin/erdostack.mjs` and `src/erdostack/`: the npm and PyPI installers. They only copy files, and their `AGENTS` tables must stay identical.
@@ -24,5 +26,8 @@ This repo packages Agent Skills about graphs for many agent hosts. The skills ar
 - Nothing shipped from here may make network calls or collect data.
 - Do not add dependencies to `package.json` or `pyproject.toml`. The installers and scripts are dependency-free on purpose.
 - Do not add a file named `SKILL.md` outside `skills/<name>/`.
+- Every number in `BENCHMARK.md` and the README's results comes from a saved report in `evals/results/`. Regenerate it with `python3 evals/harness/erdo_eval.py summary`; never edit one by hand.
+- A skill that changes is an ungated skill: it needs a fresh gate on unseen cases before its results are quoted again. Every case published in `erdostack/bench` counts as seen.
+- Do not add eval cases to this repository. They go to `erdostack/bench`.
 
 See `CONTRIBUTING.md` for the bar a new skill has to clear and `docs/RELEASING.md` for how releases work.

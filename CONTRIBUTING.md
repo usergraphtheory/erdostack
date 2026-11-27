@@ -6,14 +6,14 @@ Thanks for looking. Contributions are credited in the changelog, and small fixes
 
 1. **Engine packs.** If you maintain or work daily with a graph engine, a pack in `references/engines/` is the highest-value contribution. You must be able to test against the real engine.
 2. **Agent failures.** A reproducible case where an agent got a graph task wrong, on a public dataset. Open an issue with the "Agent failure" template. These become eval cases.
-3. **Eval cases** for an existing or planned skill.
+3. **Eval cases** for an existing or planned skill, sent to [`erdostack/bench`](https://github.com/erdostack/bench).
 4. **Skills.** Read the bar below first. A skill with no named failure behind it will not be merged.
 
 ## The bar for a skill
 
 - It maps to a row in the README's failure table, or you can name a new failure people have actually hit.
 - The author would reach for it at least weekly. Skills nobody uses get retired.
-- It ships with at least one eval case showing the agent's behaviour with and without it.
+- It comes with at least one eval case showing the agent's behaviour with and without it. [`evals/README.md`](evals/README.md) has the case format and the rules; [`BENCHMARK.md`](BENCHMARK.md) shows what a result looks like, misses included. Cases live in [`erdostack/bench`](https://github.com/erdostack/bench): send the case there and link it from the skill's pull request.
 - It works on more than one model. Do not lean on one model version's habits.
 
 ## House style
@@ -51,6 +51,7 @@ You need Node 20+ and, for the Python installer tests, Python 3.10+. There are n
 ```bash
 npm run check        # validate manifests and skills, then run the installer tests
 npm run validate     # validation only
+python3 -m unittest discover -s evals/harness -p 'test_*.py'   # eval harness tests
 ```
 
 The validator checks every host manifest, version agreement, SKILL.md frontmatter against the [Agent Skills spec](https://agentskills.io/specification), and the `Last verified` line on engine packs. CI runs the same commands on Linux, macOS and Windows.

@@ -10,7 +10,7 @@ skills/
     └── scripts/        # optional: helper scripts
 ```
 
-No skill has shipped yet. The planned set and its order are in the [roadmap](../ROADMAP.md).
+Five skills are here: `roast-my-graph`, `graph-or-not`, `setup-graph`, `schema-first` and `query-review`. Each passed an eval gate before it was released; [`BENCHMARK.md`](../BENCHMARK.md) has the results. The planned set and its order are in the [roadmap](../ROADMAP.md).
 
 Every host reads this directory directly: the skills CLI, `gh skill`, the Claude Code, Cursor, Codex and Copilot plugins, the Gemini CLI extension, and the npm and PyPI packages. Nothing is generated or copied per host.
 

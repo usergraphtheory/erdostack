@@ -24,5 +24,5 @@ Skills are instructions that an agent follows with your permissions, so the thre
 ## Using the skills safely
 
 - Read a skill before you install it. They are short on purpose.
-- Give your agent read-only database credentials unless a task needs writes, and set query timeouts on the server. `query-review` reduces risk; it is not an access control.
+- Give your agent read-only database credentials unless a task needs writes, and set query timeouts on the server. A skill reduces risk; it is not an access control.
 - Pin to a tag if you need reproducibility. See [docs/INSTALL.md](docs/INSTALL.md).

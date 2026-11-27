@@ -15,6 +15,6 @@ A pack loads only when the repo's `docs/graph/CONTEXT.md` (written by `setup-gra
 
 ## Status
 
-No packs yet. Neo4j and LadybugDB are seeded first; the third slot is reserved for the first outside contributor. See the [roadmap](../../ROADMAP.md).
+No packs yet. Neo4j and LadybugDB are planned first; the third slot is reserved for the first outside contributor. See the [roadmap](../../ROADMAP.md).
 
 How packs travel with skills that are installed one folder at a time is settled together with the first skill that needs them.

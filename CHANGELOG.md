@@ -6,6 +6,12 @@ Notable changes to erdostack. The format follows [Keep a Changelog](https://keep
 
 ### Added
 
+- Five skills: `roast-my-graph`, `graph-or-not`, `setup-graph`, `schema-first` and `query-review`. Each has an eval spec with thresholds set before the runs, and each passed a gate on cases written from documented problems before it was included.
+- `BENCHMARK.md`: the results for all five skills on one page, by model and with cost; a second track of thirty cases staged on the schema and tasks of two LDBC benchmarks (LDBC-derived work, not LDBC Benchmark Results); the method, the limits, and every gate that missed.
+- Eval harness (`evals/harness/erdo_eval.py`, standard library only): with-skill and no-skill arms, script graders with self-tests, blind judge batches with calibration, two-session cases, a headless runner, Wilson intervals, a paired sign test, a `summary` command that recomputes any published table from saved reports, an `index` command that lists every case as one JSON line, and `export` and `regrade`, which publish what an agent changed in a run and grade it again.
+- The case library is published separately as `erdostack/bench`, with a dataset mirror on Hugging Face: 1,527 cases with their graders, including the 30-case LDBC-derived core set, an index of every case (`cases.jsonl`), what the agents wrote in the 1,480 runs the results rest on (`recorded-runs/`), the harness and the skills at the versions measured. This repository keeps the claims, protocols and saved reports.
+- `evals/REAL_PROBLEMS.md`: a register of 34 graph problems with sources. `evals/PROVENANCE.md`: how much of each skill's evidence rests on them. `evals/STANDARDS.md`: the published benchmarks the core set borrows from, with what was and was not taken.
+- Every gate result under `evals/results/`, including the gates that missed.
 - Repository skeleton: `skills/`, `references/engines/`, `evals/` and authoring templates.
 - Host manifests over the same markdown: Agent Plugins (`plugin.json`), Claude Code, Cursor, Codex and Gemini CLI.
 - `erdostack` installers for npm and PyPI that copy bundled skills into an agent's skills directory.
@@ -23,4 +29,21 @@ Notable changes to erdostack. The format follows [Keep a Changelog](https://keep
 
 - The release workflow no longer fails at startup.
 
-No skills have shipped yet.
+### Measured
+
+- `roast-my-graph`: 29 cases won, 8 lost, 83 tied of 120 (p = 0.0008). The gain is restraint on sound designs, not detection.
+- `schema-first`: 14 won, 0 lost, 6 tied of 20 two-session cases (p = 0.0001). The gain is in a later session; within one session none was shown.
+- `graph-or-not`: 30 won, 1 lost, 9 tied of 40 two-session cases (p under 0.000001), after three gates that missed. A decision survives into the next session; the skill does not decide better.
+- `setup-graph`: 16 won, 2 lost, 62 tied of 80 (p = 0.0013). The claim is for three kinds of repo where bare agents record the wrong fact, which are 64 of the 80 cases and hold every win. On ordinary repos two gates showed no gain.
+- `query-review`: 18 won, 0 lost, 62 tied of 80 (p = 0.000008), for bulk changes aimed at production, nearly all of it on the smaller model. The rest of the skill showed no measurable gain.
+- All five on the core set: 11 won, 0 lost, 19 tied of 30 (p = 0.001). These cases adapt the schema and tasks of the LDBC Social Network Benchmark and LDBC Graphalytics. They are not an LDBC Benchmark, and these are not LDBC Benchmark Results.
+
+### Dropped on the way
+
+- The first design of `query-review` (read-query checks, writes and reviews in one skill) was gated three times on 140 fresh cases without showing a gain over the bare model. It was narrowed twice more before its ninth gate passed; `evals/query-review/EVALS.md` has all nine.
+- Earlier gate results for all five skills, on generated cases not tied to documented problems. They are kept in `evals/results/` and are no longer what any claim rests on.
+
+### Not yet
+
+- Nothing has been run against a live Neo4j or LadybugDB. Cypher in the eval cases is read, not executed.
+- No model outside Claude Haiku 5.5 and Claude Sonnet 5.5 has been measured.

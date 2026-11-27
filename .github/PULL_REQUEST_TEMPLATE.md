@@ -14,5 +14,5 @@
 - [ ] Sources are cited and restated in my own words, with no copied passages
 - [ ] Examples use public datasets only: no schemas, queries or hostnames from an employer, a client or a private project
 - [ ] No network calls, telemetry or instructions that could surprise the person installing this
-- [ ] New or changed skills include an eval case
+- [ ] New or changed skills come with an eval case, sent to `erdostack/bench` and linked here
 - [ ] I have not bumped any version numbers

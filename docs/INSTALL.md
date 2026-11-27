@@ -1,6 +1,6 @@
 # Installing erdostack
 
-Every install path delivers the same markdown from `skills/`. Until the first release there are no skills to deliver, so the commands below run but install nothing.
+Every install path delivers the same markdown from `skills/`. Five skills are there now: `roast-my-graph`, `graph-or-not`, `setup-graph`, `schema-first` and `query-review`. The npm and PyPI packages carry the same five.
 
 ## Pick a model first
 
@@ -105,7 +105,7 @@ gemini extensions install https://github.com/usergraphtheory/erdostack --ref v0.
 
 ### Cursor
 
-A Cursor Marketplace listing follows the first release. Until then, use the skills CLI with `-a cursor`, or `npx erdostack install -a cursor`.
+A Cursor Marketplace listing is a separate submission and review. Until it is listed, use the skills CLI with `-a cursor`, or `npx erdostack install -a cursor`.
 
 ## Teams
 

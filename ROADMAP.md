@@ -4,15 +4,15 @@ What is planned, in what order, and what has to be true before each phase is cal
 
 ## Skill inventory
 
-**U** is user-invoked, **M** is model-invoked. No skill has shipped yet.
+**U** is user-invoked, **M** is model-invoked. The five Phase 1 skills are released, and each has passed an eval gate on cases written from documented problems; [BENCHMARK.md](BENCHMARK.md) has the results and says how narrow each claim is. The rest are planned.
 
 | Skill | Type | Phase | What it does | Writes |
 |---|---|---|---|---|
 | `roast-my-graph` | U | 1 | **Entry point.** Audits a schema, model or query file (graph or relational) and returns real findings with severity and fixes, with jokes. `--serious` drops the jokes | `docs/graph/ROAST.md` |
-| `graph-or-not` | U | 1 | Decides between a graph database, an in-process library, recursive SQL, or nothing | `docs/graph/DECISION.md` |
+| `graph-or-not` | U | 1 | Decides between a graph database, an in-process library, recursive SQL, or nothing, and records the decision for later sessions | `docs/graph/DECISION.md` |
 | `setup-graph` | U | 1 | Once per repo: engine, version, driver, how to run queries, read-only or write, where the schema snapshot lives | `docs/graph/CONTEXT.md` |
 | `schema-first` | M | 1 | Introspect before writing; validate labels, types, direction, properties | Schema snapshot |
-| `query-review` | M | 1 | EXPLAIN or PROFILE before run; anti-pattern checks; bounded writes; parameterization | Review notes |
+| `query-review` | M | 1 | Bulk changes scoped to the repo's rule, batched, proven on a copy and handed back for review; a wrong lint or review flag answered, not obeyed. Read-query checks were tried and dropped: no measured gain | Review note, appended to `docs/graph/REVIEW.md` when `docs/graph/` exists |
 | `query-dialects` | M | 2 | Version-aware matrix across Cypher 25, openCypher, GQL, SQL/PGQ, Gremlin, SPARQL, AQL, GSQL. Rule: check, do not recall. First content: the Neo4j versus LadybugDB Cypher gap | n/a |
 | `graph-modeling` | M | 2 | Node, edge or property; reification; supernodes; temporal and versioned graphs; relational to graph | Model sketch |
 | `algorithm-picker` | M | 2 | Problem to algorithm to complexity to the library call or engine procedure; exact or approximate | n/a |
@@ -30,10 +30,10 @@ What is planned, in what order, and what has to be true before each phase is cal
 
 ### Engine packs
 
-Engine-specific detail lives in `references/engines/<engine>.md`, loaded only when `CONTEXT.md` names that engine. Two packs are seeded, both for engines that run locally with no account:
+Engine-specific detail lives in `references/engines/<engine>.md`, loaded only when `CONTEXT.md` names that engine. No pack is written yet. The first two are planned, both for engines that run locally with no account:
 
 - **Neo4j**: a server, run in a container.
-- **LadybugDB**: the maintained Kuzu fork. Embedded, in-process, MIT licensed.
+- **LadybugDB**: a maintained Kuzu fork. Embedded, in-process, MIT licensed (its repository, checked 2026-11-27).
 
 The third slot is left for the first outside contributor. After that the rest open up, in no particular order: Amazon Neptune, Apache AGE, ArangoDB, ArcadeDB, Dgraph, DuckPGQ, FalkorDB, JanusGraph, Memgraph, NebulaGraph, Spanner Graph, SurrealDB, TigerGraph. Each pack ends with a pointer to the vendor's own skills where they exist.
 
@@ -41,7 +41,7 @@ A pack is only accepted from someone who can test against the real engine. Emula
 
 ### Why LadybugDB is the second engine
 
-It installs as a library, so the eval harness and any reader can run it with no server, container or account. It speaks Cypher but is not Neo4j, so it exercises the dialect skill. It is also a live stale-knowledge trap: Kuzu was archived in October 2025, the fork ships under different package names, and agents still reach for the old ones. If it does not hold up under real use before launch, the fallbacks are Memgraph or Apache AGE.
+It installs as a library, so the eval harness and any reader can run it with no server, container or account. It speaks Cypher but is not Neo4j, so it exercises the dialect skill. It is also a live stale-knowledge trap: Kuzu's repository was archived on 10 October 2025 at 0.11.3, the fork ships under different package names, and agents still reach for the old ones. If it does not hold up under real use before launch, the fallbacks are Memgraph or Apache AGE.
 
 ### Possible later bet
 
@@ -52,21 +52,31 @@ A skill for querying codebase knowledge graphs well. Decided after Phase 3, base
 ### Phase 0: foundations
 
 - [x] Repo skeleton: `skills/`, `references/engines/`, `evals/`, thin manifests per host over the same markdown, release pipeline.
-- [ ] Eval harness: a fixed task set on public datasets, run with and without skills, on at least two models. Neo4j runs in a container; LadybugDB runs in-process. No cloud account is needed.
+- [x] Eval harness: task sets on public or generated data, run with and without skills, on two models, with a paired test and a blind judge that is itself checked. No cloud account is needed.
+- [ ] Live engines in the harness: Neo4j in a container and LadybugDB in-process. Today's cases run SQLite and NetworkX and analyse Cypher statically.
 - [ ] A failure log from real use, which seeds the eval cases.
 
 **Gate:** the harness runs end to end and produces a baseline number.
 
 ### Phase 1: the wedge
 
-- [ ] Five skills: `roast-my-graph`, `graph-or-not`, `setup-graph`, `schema-first`, `query-review`.
-- [ ] Daily use on both seeded engines; anything not reached for weekly gets pruned.
+- [x] Five skills written and gated: `roast-my-graph`, `graph-or-not`, `setup-graph`, `schema-first`, `query-review`.
+- [x] A register of documented graph problems (`evals/REAL_PROBLEMS.md`), and every skill gated again on cases written from it, with an arm-blind review of failing grades.
+- [x] All five passed a gate on register cases: `roast-my-graph` (version 3), `schema-first`, `graph-or-not` (after three misses), `setup-graph` (version 4, for three kinds of repo) and `query-review` (version 7, for bulk changes aimed at production).
+- [x] A core set of thirty cases staged on the schema and tasks of two LDBC benchmarks, and one pooled test on it passed. It is LDBC-derived work, not an LDBC Benchmark Result. The whole case library is published separately as `erdostack/bench`.
+- [ ] Run the Cypher cases against live Neo4j and LadybugDB. Everything so far analyses Cypher statically.
+- [ ] `query-review`: test a Cypher change on a live development database. With a stand-in that only logs, the skill held changes the bare agents sent.
+- [ ] `roast-my-graph`: a whole-pattern `MERGE` that duplicates nodes was found and under-rated by both models in the core set. Fix it in the next version and gate on fresh cases.
+- [ ] `graph-or-not`: Haiku with the skill took 1.75 times as long as without in its gate and 5.7 times as long on the core set. Find out why.
+- [ ] `setup-graph`: the two cases it lost, and a gain on ordinary repos, which two gates did not show.
+- [ ] An outside replication: somebody who is not the author runs the core set and publishes what they get.
+- [ ] Daily use on both planned engines; anything not reached for weekly gets pruned.
 
 **Gate:** a measured with-versus-without result worth stating, including where it made no difference; install tested on a clean machine per OS; at least one person who is not the author has used it.
 
 ### Phase 2: launch and depth
 
-- [ ] First tagged release with the Phase 1 five.
+- [ ] First tagged release, with the five Phase 1 skills and the benchmark.
 - [ ] `query-dialects`, `graph-modeling`, `algorithm-picker`, `graph-crdts`, `graphs-in-process`, `graphs-in-sql`, on a regular release rhythm.
 - [ ] The Neo4j and LadybugDB packs; the contributor path opens.
 

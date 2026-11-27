@@ -1,0 +1,1167 @@
+{
+  "skill": "setup-graph",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-24",
+  "skill_version": [
+    "359ccadb2cf0"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 112,
+        "runs": 120,
+        "rate": 0.9333333333333333,
+        "ci95": [
+          0.874,
+          0.966
+        ]
+      },
+      "contract": {
+        "passed": 0,
+        "runs": 120,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.031
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 116,
+        "runs": 120,
+        "rate": 0.9666666666666667,
+        "ci95": [
+          0.917,
+          0.987
+        ]
+      },
+      "contract": {
+        "passed": 120,
+        "runs": 120,
+        "rate": 1.0,
+        "ci95": [
+          0.969,
+          1.0
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 54,
+      "runs": 60,
+      "rate": 0.9,
+      "ci95": [
+        0.799,
+        0.953
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 58,
+      "runs": 60,
+      "rate": 0.9666666666666667,
+      "ci95": [
+        0.886,
+        0.991
+      ]
+    },
+    "skill/haiku": {
+      "passed": 58,
+      "runs": 60,
+      "rate": 0.9666666666666667,
+      "ci95": [
+        0.886,
+        0.991
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 58,
+      "runs": 60,
+      "rate": 0.9666666666666667,
+      "ci95": [
+        0.886,
+        0.991
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 18162.0,
+      "median_seconds": 19.0,
+      "runs_with_timing": 120
+    },
+    "skill": {
+      "median_tokens": 21737.5,
+      "median_seconds": 25.2,
+      "runs_with_timing": 120
+    }
+  },
+  "cases": {
+    "node-ward-handover-yarn-berry-resolutions": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "node-campus-workspaces-legacy-report-driver": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-version-stated,driver-from-lockfile,version-conflict-surfaced-under-open-questions,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "node-site-links-pnpm-catalog-embedded-ladybug": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "run-helm-set-flag-overrides-values-file-tag": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-sbt-sqlite-dangling-check-quotes-old-column": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "py-railhop-embedded-ladybug-uv-override": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "run-makefile-export-beats-dotenv-tag": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "py-les-miserables-seminar-conda-lock": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-resolution-force-holds-embedded-neo4j": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "node-ground-station-cli-shrinkwrap-and-package-lock": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "run-devcontainer-build-arg-sets-sqlite-cli": {
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "FAIL:foreign-keys-not-enforced-flagged"
+      ]
+    },
+    "run-age-spare-dockerfile-not-built": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-maven-sqlite-jdbc-foreign-keys-never-enabled": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "FAIL:foreign-keys-not-enforced-flagged"
+      ]
+    },
+    "run-devcontainer-compose-files-replace-image": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-java-platform-subproject-pins-driver": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "go-sum-lists-older-driver-hashes": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "run-tox-next-env-not-default": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-canal-reaches-sqlite-from-conda-explicit-lock": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "node-grant-coinvestigators-yarn-lock-version-table": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "run-compose-build-target-picks-earlier-stage": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "run-kustomize-staging-overlay-not-applied": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "run-makefile-builds-second-dockerfile-for-sqlite": {
+      "skill/haiku": [
+        "FAIL:driver-from-lockfile,foreign-keys-not-enforced-flagged"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "FAIL:foreign-keys-not-enforced-flagged"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "go-nested-module-keeps-v4-driver": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "dotnet-packages-lock-resolves-floating-driver": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-convention-plugin-constraint-raises-driver": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "run-makefile-include-sets-postgres-build-arg": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "rust-renamed-dependency-key-for-lbug": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-sewer-asset-graph-sqlalchemy-on-sqlite": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "dotnet-nearest-directory-build-props-wins": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "run-service-env-file-does-not-set-image-tag": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:engine-version-pinned,query-language-version-stated,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,query-language-version-stated,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "run-kustomize-patch-replaces-memgraph-image": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "jvm-maven-module-declares-driver-over-managed": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "run-sqlite-canary-workflow-build-arg": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "jvm-maven-driver-bom-import-agrees-with-readme": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-sbt-driver-version-in-project-dependencies": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-cypher-dsl-calendar-version-beside-server": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "run-dotenv-compose-file-adds-second-file": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "rust-excluded-bench-crate-keeps-own-lock": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-uv-workspace-member-driver-locked-at-root": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "py-freight-lanes-pip-compiled-graph-extra": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "dotnet-version-override-in-query-project": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-pollinator-visits-memgraph-conda-pip-section": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "run-helm-empty-tag-falls-back-to-app-version": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "jvm-maven-config-overrides-embedded-neo4j-property": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "run-compose-second-file-merges-build-args": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "py-permit-review-graph-poetry-tilde-constraint": {
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,query-language-version-stated,version-conflict-surfaced-under-open-questions,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "node-toll-plaza-memgraph-npm-lock-and-history-note": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-court-citations-poetry-capped-networkx": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "rust-workspace-member-lockfile-is-ignored": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "run-kustomize-overlay-images-newtag": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-kelp-forest-food-web-conda-lock-and-readme": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "node-bird-survey-embedded-kuzu-yarn-berry": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-bike-dock-graph-sqlalchemy-connect-listener": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "go-mod-replace-directive-pins-newer-driver": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "run-ci-service-container-is-the-only-database": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "run-tox-setenv-picks-testcontainers-image": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "dotnet-sqlite-lock-newer-than-readme": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "node-tram-outage-graph-pnpm-override-below-range": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "run-compose-profile-flag-picks-current-service": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "node-cable-landings-memgraph-yarn-classic-lock": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "node-campus-workspaces-legacy-report-driver",
+      "py-permit-review-graph-poetry-tilde-constraint",
+      "run-devcontainer-build-arg-sets-sqlite-cli",
+      "run-devcontainer-compose-files-replace-image",
+      "run-service-env-file-does-not-set-image-tag",
+      "rust-renamed-dependency-key-for-lbug"
+    ],
+    "baseline_wins": [
+      "jvm-maven-sqlite-jdbc-foreign-keys-never-enabled",
+      "run-makefile-builds-second-dockerfile-for-sqlite"
+    ],
+    "ties": [
+      "dotnet-nearest-directory-build-props-wins",
+      "dotnet-packages-lock-resolves-floating-driver",
+      "dotnet-sqlite-lock-newer-than-readme",
+      "dotnet-version-override-in-query-project",
+      "go-mod-replace-directive-pins-newer-driver",
+      "go-nested-module-keeps-v4-driver",
+      "go-sum-lists-older-driver-hashes",
+      "jvm-gradle-convention-plugin-constraint-raises-driver",
+      "jvm-gradle-cypher-dsl-calendar-version-beside-server",
+      "jvm-gradle-java-platform-subproject-pins-driver",
+      "jvm-gradle-resolution-force-holds-embedded-neo4j",
+      "jvm-maven-config-overrides-embedded-neo4j-property",
+      "jvm-maven-driver-bom-import-agrees-with-readme",
+      "jvm-maven-module-declares-driver-over-managed",
+      "jvm-sbt-driver-version-in-project-dependencies",
+      "jvm-sbt-sqlite-dangling-check-quotes-old-column",
+      "node-bird-survey-embedded-kuzu-yarn-berry",
+      "node-cable-landings-memgraph-yarn-classic-lock",
+      "node-grant-coinvestigators-yarn-lock-version-table",
+      "node-ground-station-cli-shrinkwrap-and-package-lock",
+      "node-site-links-pnpm-catalog-embedded-ladybug",
+      "node-toll-plaza-memgraph-npm-lock-and-history-note",
+      "node-tram-outage-graph-pnpm-override-below-range",
+      "node-ward-handover-yarn-berry-resolutions",
+      "py-bike-dock-graph-sqlalchemy-connect-listener",
+      "py-canal-reaches-sqlite-from-conda-explicit-lock",
+      "py-court-citations-poetry-capped-networkx",
+      "py-freight-lanes-pip-compiled-graph-extra",
+      "py-kelp-forest-food-web-conda-lock-and-readme",
+      "py-les-miserables-seminar-conda-lock",
+      "py-pollinator-visits-memgraph-conda-pip-section",
+      "py-railhop-embedded-ladybug-uv-override",
+      "py-sewer-asset-graph-sqlalchemy-on-sqlite",
+      "py-uv-workspace-member-driver-locked-at-root",
+      "run-age-spare-dockerfile-not-built",
+      "run-ci-service-container-is-the-only-database",
+      "run-compose-build-target-picks-earlier-stage",
+      "run-compose-profile-flag-picks-current-service",
+      "run-compose-second-file-merges-build-args",
+      "run-dotenv-compose-file-adds-second-file",
+      "run-helm-empty-tag-falls-back-to-app-version",
+      "run-helm-set-flag-overrides-values-file-tag",
+      "run-kustomize-overlay-images-newtag",
+      "run-kustomize-patch-replaces-memgraph-image",
+      "run-kustomize-staging-overlay-not-applied",
+      "run-makefile-export-beats-dotenv-tag",
+      "run-makefile-include-sets-postgres-build-arg",
+      "run-sqlite-canary-workflow-build-arg",
+      "run-tox-next-env-not-default",
+      "run-tox-setenv-picks-testcontainers-image",
+      "rust-excluded-bench-crate-keeps-own-lock",
+      "rust-workspace-member-lockfile-is-ignored"
+    ],
+    "regressions": [
+      "run-makefile-builds-second-dockerfile-for-sqlite"
+    ],
+    "p": 0.2891
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "node-campus-workspaces-legacy-report-driver",
+        "py-permit-review-graph-poetry-tilde-constraint",
+        "run-devcontainer-compose-files-replace-image",
+        "run-service-env-file-does-not-set-image-tag",
+        "rust-renamed-dependency-key-for-lbug"
+      ],
+      "baseline_wins": [
+        "run-makefile-builds-second-dockerfile-for-sqlite"
+      ],
+      "ties": [
+        "dotnet-nearest-directory-build-props-wins",
+        "dotnet-packages-lock-resolves-floating-driver",
+        "dotnet-sqlite-lock-newer-than-readme",
+        "dotnet-version-override-in-query-project",
+        "go-mod-replace-directive-pins-newer-driver",
+        "go-nested-module-keeps-v4-driver",
+        "go-sum-lists-older-driver-hashes",
+        "jvm-gradle-convention-plugin-constraint-raises-driver",
+        "jvm-gradle-cypher-dsl-calendar-version-beside-server",
+        "jvm-gradle-java-platform-subproject-pins-driver",
+        "jvm-gradle-resolution-force-holds-embedded-neo4j",
+        "jvm-maven-config-overrides-embedded-neo4j-property",
+        "jvm-maven-driver-bom-import-agrees-with-readme",
+        "jvm-maven-module-declares-driver-over-managed",
+        "jvm-maven-sqlite-jdbc-foreign-keys-never-enabled",
+        "jvm-sbt-driver-version-in-project-dependencies",
+        "jvm-sbt-sqlite-dangling-check-quotes-old-column",
+        "node-bird-survey-embedded-kuzu-yarn-berry",
+        "node-cable-landings-memgraph-yarn-classic-lock",
+        "node-grant-coinvestigators-yarn-lock-version-table",
+        "node-ground-station-cli-shrinkwrap-and-package-lock",
+        "node-site-links-pnpm-catalog-embedded-ladybug",
+        "node-toll-plaza-memgraph-npm-lock-and-history-note",
+        "node-tram-outage-graph-pnpm-override-below-range",
+        "node-ward-handover-yarn-berry-resolutions",
+        "py-bike-dock-graph-sqlalchemy-connect-listener",
+        "py-canal-reaches-sqlite-from-conda-explicit-lock",
+        "py-court-citations-poetry-capped-networkx",
+        "py-freight-lanes-pip-compiled-graph-extra",
+        "py-kelp-forest-food-web-conda-lock-and-readme",
+        "py-les-miserables-seminar-conda-lock",
+        "py-pollinator-visits-memgraph-conda-pip-section",
+        "py-railhop-embedded-ladybug-uv-override",
+        "py-sewer-asset-graph-sqlalchemy-on-sqlite",
+        "py-uv-workspace-member-driver-locked-at-root",
+        "run-age-spare-dockerfile-not-built",
+        "run-ci-service-container-is-the-only-database",
+        "run-compose-build-target-picks-earlier-stage",
+        "run-compose-profile-flag-picks-current-service",
+        "run-compose-second-file-merges-build-args",
+        "run-devcontainer-build-arg-sets-sqlite-cli",
+        "run-dotenv-compose-file-adds-second-file",
+        "run-helm-empty-tag-falls-back-to-app-version",
+        "run-helm-set-flag-overrides-values-file-tag",
+        "run-kustomize-overlay-images-newtag",
+        "run-kustomize-patch-replaces-memgraph-image",
+        "run-kustomize-staging-overlay-not-applied",
+        "run-makefile-export-beats-dotenv-tag",
+        "run-makefile-include-sets-postgres-build-arg",
+        "run-sqlite-canary-workflow-build-arg",
+        "run-tox-next-env-not-default",
+        "run-tox-setenv-picks-testcontainers-image",
+        "rust-excluded-bench-crate-keeps-own-lock",
+        "rust-workspace-member-lockfile-is-ignored"
+      ],
+      "regressions": [
+        "run-makefile-builds-second-dockerfile-for-sqlite"
+      ],
+      "p": 0.2188
+    },
+    "sonnet": {
+      "skill_wins": [
+        "run-devcontainer-build-arg-sets-sqlite-cli",
+        "run-service-env-file-does-not-set-image-tag"
+      ],
+      "baseline_wins": [
+        "jvm-maven-sqlite-jdbc-foreign-keys-never-enabled",
+        "run-makefile-builds-second-dockerfile-for-sqlite"
+      ],
+      "ties": [
+        "dotnet-nearest-directory-build-props-wins",
+        "dotnet-packages-lock-resolves-floating-driver",
+        "dotnet-sqlite-lock-newer-than-readme",
+        "dotnet-version-override-in-query-project",
+        "go-mod-replace-directive-pins-newer-driver",
+        "go-nested-module-keeps-v4-driver",
+        "go-sum-lists-older-driver-hashes",
+        "jvm-gradle-convention-plugin-constraint-raises-driver",
+        "jvm-gradle-cypher-dsl-calendar-version-beside-server",
+        "jvm-gradle-java-platform-subproject-pins-driver",
+        "jvm-gradle-resolution-force-holds-embedded-neo4j",
+        "jvm-maven-config-overrides-embedded-neo4j-property",
+        "jvm-maven-driver-bom-import-agrees-with-readme",
+        "jvm-maven-module-declares-driver-over-managed",
+        "jvm-sbt-driver-version-in-project-dependencies",
+        "jvm-sbt-sqlite-dangling-check-quotes-old-column",
+        "node-bird-survey-embedded-kuzu-yarn-berry",
+        "node-cable-landings-memgraph-yarn-classic-lock",
+        "node-campus-workspaces-legacy-report-driver",
+        "node-grant-coinvestigators-yarn-lock-version-table",
+        "node-ground-station-cli-shrinkwrap-and-package-lock",
+        "node-site-links-pnpm-catalog-embedded-ladybug",
+        "node-toll-plaza-memgraph-npm-lock-and-history-note",
+        "node-tram-outage-graph-pnpm-override-below-range",
+        "node-ward-handover-yarn-berry-resolutions",
+        "py-bike-dock-graph-sqlalchemy-connect-listener",
+        "py-canal-reaches-sqlite-from-conda-explicit-lock",
+        "py-court-citations-poetry-capped-networkx",
+        "py-freight-lanes-pip-compiled-graph-extra",
+        "py-kelp-forest-food-web-conda-lock-and-readme",
+        "py-les-miserables-seminar-conda-lock",
+        "py-permit-review-graph-poetry-tilde-constraint",
+        "py-pollinator-visits-memgraph-conda-pip-section",
+        "py-railhop-embedded-ladybug-uv-override",
+        "py-sewer-asset-graph-sqlalchemy-on-sqlite",
+        "py-uv-workspace-member-driver-locked-at-root",
+        "run-age-spare-dockerfile-not-built",
+        "run-ci-service-container-is-the-only-database",
+        "run-compose-build-target-picks-earlier-stage",
+        "run-compose-profile-flag-picks-current-service",
+        "run-compose-second-file-merges-build-args",
+        "run-devcontainer-compose-files-replace-image",
+        "run-dotenv-compose-file-adds-second-file",
+        "run-helm-empty-tag-falls-back-to-app-version",
+        "run-helm-set-flag-overrides-values-file-tag",
+        "run-kustomize-overlay-images-newtag",
+        "run-kustomize-patch-replaces-memgraph-image",
+        "run-kustomize-staging-overlay-not-applied",
+        "run-makefile-export-beats-dotenv-tag",
+        "run-makefile-include-sets-postgres-build-arg",
+        "run-sqlite-canary-workflow-build-arg",
+        "run-tox-next-env-not-default",
+        "run-tox-setenv-picks-testcontainers-image",
+        "rust-excluded-bench-crate-keeps-own-lock",
+        "rust-renamed-dependency-key-for-lbug",
+        "rust-workspace-member-lockfile-is-ignored"
+      ],
+      "regressions": [
+        "jvm-maven-sqlite-jdbc-foreign-keys-never-enabled",
+        "run-makefile-builds-second-dockerfile-for-sqlite"
+      ],
+      "p": 1.0
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

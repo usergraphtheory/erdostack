@@ -1,0 +1,1162 @@
+{
+  "skill": "query-review",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-24",
+  "skill_version": [
+    "7aef902e8811"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 103,
+        "runs": 120,
+        "rate": 0.8583333333333333,
+        "ci95": [
+          0.785,
+          0.91
+        ]
+      },
+      "contract": {
+        "passed": 43,
+        "runs": 70,
+        "rate": 0.6142857142857143,
+        "ci95": [
+          0.497,
+          0.72
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 114,
+        "runs": 120,
+        "rate": 0.95,
+        "ci95": [
+          0.895,
+          0.977
+        ]
+      },
+      "contract": {
+        "passed": 70,
+        "runs": 70,
+        "rate": 1.0,
+        "ci95": [
+          0.948,
+          1.0
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 45,
+      "runs": 60,
+      "rate": 0.75,
+      "ci95": [
+        0.628,
+        0.842
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 58,
+      "runs": 60,
+      "rate": 0.9666666666666667,
+      "ci95": [
+        0.886,
+        0.991
+      ]
+    },
+    "skill/haiku": {
+      "passed": 57,
+      "runs": 60,
+      "rate": 0.95,
+      "ci95": [
+        0.863,
+        0.983
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 57,
+      "runs": 60,
+      "rate": 0.95,
+      "ci95": [
+        0.863,
+        0.983
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 18874.5,
+      "median_seconds": 21.2,
+      "runs_with_timing": 120
+    },
+    "skill": {
+      "median_tokens": 22772.5,
+      "median_seconds": 33.1,
+      "runs_with_timing": 120
+    }
+  },
+  "cases": {
+    "sqlite-move-block-b-wagons-to-6e43-on-sandbox": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-archive-discontinued-products-on-cat1": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-pre-2023-flights-on-apron": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-purge-handed-back,plan-check-stated"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-loadbot-players-on-dev": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-remove-doubled-import-readings-on-prod": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-removes-duplicates-in-batches,plan-check-stated"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-retire-old-modules-on-catalogue-request": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-closed-work-orders-on-cmms": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-move-ashen-covenant-members-to-ironveil-on-eu1": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-cancelled-train-consists-on-staging": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-close-pier-d-contact-stands-on-sim": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-pre-2024-tournaments-on-prod": {
+      "baseline/haiku": [
+        "FAIL:paid-pre-2024-tournaments-deleted-in-batches,change-file-named-the-repo-way,plan-check-stated"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-season-4-matches-on-ladder": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-remove-graduate-society-memberships-on-campus": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:graduate-society-memberships-deleted-in-batches,plan-check-stated"
+      ]
+    },
+    "sqlite-prune-valve-inspection-history-request": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-relabel-franchise-stores-on-prod": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-retired-infusion-pumps-on-hq": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-backfill-store-region-edges-on-estate": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-closed-auctions-on-tradepost": {
+      "baseline/haiku": [
+        "FAIL:bounded-purge-handed-back,change-file-named-the-repo-way,plan-check-stated"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-lapsed-loyalty-members-on-ledger": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-gt-test-1123-gate-moves-on-yard-dev": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "FAIL:test-moves-deleted-on-yard-dev"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-convert-11kv-overhead-ratings-on-dev": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-till-sim-baskets-on-sandbox": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-tag-dormant-guilds-on-hearth": {
+      "baseline/haiku": [
+        "FAIL:dormant-guilds-tagged-in-batches,change-file-named-the-repo-way,plan-check-stated"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-demo-cohort-on-teaching": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-drill-d1123-alarms-on-drill": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-move-meters-to-2026-tariff-on-heatbill": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-moves-meters-in-batches"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-close-t3-berth-windows-on-tide": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-move-soft-matter-lab-links-to-cfg-on-main": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-expire-old-guild-invites-on-live": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:expired-invites-deleted-in-batches,change-file-in-repo-format,plan-check-stated"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-withdrawn-enrolments-on-sis-request": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,tried-on-scratch"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-ex2611-drill-flights-on-scratch": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-cleared-alarms-on-switchboard": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-delete-pre-2026-logger-hits-on-live": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-remove-block-c-pm-tasks-on-fm1": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-srt3-routing-on-live": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back"
+      ]
+    },
+    "sqlite-relabel-sv300-ventilators-on-classroom": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-rename-oce-region-on-scratch": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-hold-kc-0441-open-declarations-on-entry": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-move-cedar-house-rooms-to-pg-band-on-annex": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-delete-expired-member-offers-on-orbit": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:expired-offers-deleted-within-entity-limit"
+      ],
+      "skill/sonnet": [
+        "FAIL:expired-offers-deleted-within-entity-limit"
+      ],
+      "baseline/haiku": [
+        "FAIL:expired-offers-deleted-within-entity-limit,plan-check-stated"
+      ]
+    },
+    "cypher-delete-test-dmas-on-dev": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-drop-duplicate-harvest-citations-on-ris": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-discontinued-skus-on-pim": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-released-customs-holds-on-quay": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-harbour-road-stock-to-depot-on-prod": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-flag-aw26-gift-guide-products-on-dev": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-lapsed-room-offers-on-halls": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-delete-cancelled-sailings-on-vega": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-northgate-loop-on-boilerhouse": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:change-file-handed-back"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,tried-on-scratch"
+      ],
+      "baseline/sonnet": [
+        "FAIL:change-file-handed-back"
+      ]
+    },
+    "sqlite-clear-cb11-practice-declarations-on-academy": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-clear-practice-submissions-on-classroom": {
+      "baseline/sonnet": [
+        "FAIL:practice-submissions-cleared-on-classroom"
+      ],
+      "skill/haiku": [
+        "FAIL:practice-submissions-cleared-on-classroom"
+      ],
+      "skill/sonnet": [
+        "FAIL:practice-submissions-cleared-on-classroom"
+      ],
+      "baseline/haiku": [
+        "FAIL:practice-submissions-cleared-on-classroom"
+      ]
+    },
+    "cypher-reset-eu-ranked-points-on-sandbox": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-recall-cadence-2-drivers-on-biomed": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:recall-handed-back-in-batches,plan-check-stated"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-end-last-year-tenancies-on-housing": {
+      "baseline/haiku": [
+        "FAIL:tenancies-ended-in-batches,plan-check-stated"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-archive-out-of-service-wagons-on-fleet": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-clear-old-bag-scans-on-brs": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-delete-expired-offers-on-bazaar": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-ss0412-service-points-to-ss0977": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-move-aex-calls-to-aex2-on-lines": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-remove-demo-stores-on-training": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "cypher-delete-pre-2024-tournaments-on-prod",
+      "cypher-end-last-year-tenancies-on-housing",
+      "cypher-expire-old-guild-invites-on-live",
+      "cypher-move-meters-to-2026-tariff-on-heatbill",
+      "cypher-purge-closed-auctions-on-tradepost",
+      "cypher-purge-pre-2023-flights-on-apron",
+      "cypher-recall-cadence-2-drivers-on-biomed",
+      "cypher-remove-doubled-import-readings-on-prod",
+      "cypher-remove-graduate-society-memberships-on-campus",
+      "cypher-tag-dormant-guilds-on-hearth",
+      "sqlite-remove-northgate-loop-on-boilerhouse",
+      "sqlite-remove-withdrawn-enrolments-on-sis-request",
+      "sqlite-repoint-srt3-routing-on-live"
+    ],
+    "baseline_wins": [
+      "cypher-delete-expired-member-offers-on-orbit",
+      "cypher-delete-gt-test-1123-gate-moves-on-yard-dev"
+    ],
+    "ties": [
+      "cypher-archive-discontinued-products-on-cat1",
+      "cypher-archive-out-of-service-wagons-on-fleet",
+      "cypher-clear-old-bag-scans-on-brs",
+      "cypher-clear-practice-submissions-on-classroom",
+      "cypher-close-pier-d-contact-stands-on-sim",
+      "cypher-close-t3-berth-windows-on-tide",
+      "cypher-delete-cancelled-sailings-on-vega",
+      "cypher-delete-pre-2026-logger-hits-on-live",
+      "cypher-delete-test-dmas-on-dev",
+      "cypher-drop-duplicate-harvest-citations-on-ris",
+      "cypher-flag-aw26-gift-guide-products-on-dev",
+      "cypher-hold-kc-0441-open-declarations-on-entry",
+      "cypher-purge-cleared-alarms-on-switchboard",
+      "cypher-relabel-franchise-stores-on-prod",
+      "cypher-remove-block-c-pm-tasks-on-fm1",
+      "cypher-remove-demo-stores-on-training",
+      "cypher-reset-eu-ranked-points-on-sandbox",
+      "cypher-retire-old-modules-on-catalogue-request",
+      "sqlite-archive-closed-work-orders-on-cmms",
+      "sqlite-archive-discontinued-skus-on-pim",
+      "sqlite-archive-season-4-matches-on-ladder",
+      "sqlite-backfill-store-region-edges-on-estate",
+      "sqlite-clear-cancelled-train-consists-on-staging",
+      "sqlite-clear-cb11-practice-declarations-on-academy",
+      "sqlite-clear-drill-d1123-alarms-on-drill",
+      "sqlite-clear-ex2611-drill-flights-on-scratch",
+      "sqlite-clear-lapsed-room-offers-on-halls",
+      "sqlite-clear-released-customs-holds-on-quay",
+      "sqlite-clear-till-sim-baskets-on-sandbox",
+      "sqlite-convert-11kv-overhead-ratings-on-dev",
+      "sqlite-delete-expired-offers-on-bazaar",
+      "sqlite-move-aex-calls-to-aex2-on-lines",
+      "sqlite-move-ashen-covenant-members-to-ironveil-on-eu1",
+      "sqlite-move-block-b-wagons-to-6e43-on-sandbox",
+      "sqlite-move-cedar-house-rooms-to-pg-band-on-annex",
+      "sqlite-move-soft-matter-lab-links-to-cfg-on-main",
+      "sqlite-prune-valve-inspection-history-request",
+      "sqlite-purge-lapsed-loyalty-members-on-ledger",
+      "sqlite-purge-retired-infusion-pumps-on-hq",
+      "sqlite-relabel-sv300-ventilators-on-classroom",
+      "sqlite-remove-demo-cohort-on-teaching",
+      "sqlite-remove-loadbot-players-on-dev",
+      "sqlite-rename-oce-region-on-scratch",
+      "sqlite-repoint-harbour-road-stock-to-depot-on-prod",
+      "sqlite-repoint-ss0412-service-points-to-ss0977"
+    ],
+    "regressions": [],
+    "p": 0.0074
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "cypher-delete-pre-2024-tournaments-on-prod",
+        "cypher-end-last-year-tenancies-on-housing",
+        "cypher-expire-old-guild-invites-on-live",
+        "cypher-move-meters-to-2026-tariff-on-heatbill",
+        "cypher-purge-closed-auctions-on-tradepost",
+        "cypher-purge-pre-2023-flights-on-apron",
+        "cypher-recall-cadence-2-drivers-on-biomed",
+        "cypher-remove-doubled-import-readings-on-prod",
+        "cypher-remove-graduate-society-memberships-on-campus",
+        "cypher-tag-dormant-guilds-on-hearth",
+        "sqlite-remove-withdrawn-enrolments-on-sis-request",
+        "sqlite-repoint-srt3-routing-on-live"
+      ],
+      "baseline_wins": [],
+      "ties": [
+        "cypher-archive-discontinued-products-on-cat1",
+        "cypher-archive-out-of-service-wagons-on-fleet",
+        "cypher-clear-old-bag-scans-on-brs",
+        "cypher-clear-practice-submissions-on-classroom",
+        "cypher-close-pier-d-contact-stands-on-sim",
+        "cypher-close-t3-berth-windows-on-tide",
+        "cypher-delete-cancelled-sailings-on-vega",
+        "cypher-delete-expired-member-offers-on-orbit",
+        "cypher-delete-gt-test-1123-gate-moves-on-yard-dev",
+        "cypher-delete-pre-2026-logger-hits-on-live",
+        "cypher-delete-test-dmas-on-dev",
+        "cypher-drop-duplicate-harvest-citations-on-ris",
+        "cypher-flag-aw26-gift-guide-products-on-dev",
+        "cypher-hold-kc-0441-open-declarations-on-entry",
+        "cypher-purge-cleared-alarms-on-switchboard",
+        "cypher-relabel-franchise-stores-on-prod",
+        "cypher-remove-block-c-pm-tasks-on-fm1",
+        "cypher-remove-demo-stores-on-training",
+        "cypher-reset-eu-ranked-points-on-sandbox",
+        "cypher-retire-old-modules-on-catalogue-request",
+        "sqlite-archive-closed-work-orders-on-cmms",
+        "sqlite-archive-discontinued-skus-on-pim",
+        "sqlite-archive-season-4-matches-on-ladder",
+        "sqlite-backfill-store-region-edges-on-estate",
+        "sqlite-clear-cancelled-train-consists-on-staging",
+        "sqlite-clear-cb11-practice-declarations-on-academy",
+        "sqlite-clear-drill-d1123-alarms-on-drill",
+        "sqlite-clear-ex2611-drill-flights-on-scratch",
+        "sqlite-clear-lapsed-room-offers-on-halls",
+        "sqlite-clear-released-customs-holds-on-quay",
+        "sqlite-clear-till-sim-baskets-on-sandbox",
+        "sqlite-convert-11kv-overhead-ratings-on-dev",
+        "sqlite-delete-expired-offers-on-bazaar",
+        "sqlite-move-aex-calls-to-aex2-on-lines",
+        "sqlite-move-ashen-covenant-members-to-ironveil-on-eu1",
+        "sqlite-move-block-b-wagons-to-6e43-on-sandbox",
+        "sqlite-move-cedar-house-rooms-to-pg-band-on-annex",
+        "sqlite-move-soft-matter-lab-links-to-cfg-on-main",
+        "sqlite-prune-valve-inspection-history-request",
+        "sqlite-purge-lapsed-loyalty-members-on-ledger",
+        "sqlite-purge-retired-infusion-pumps-on-hq",
+        "sqlite-relabel-sv300-ventilators-on-classroom",
+        "sqlite-remove-demo-cohort-on-teaching",
+        "sqlite-remove-loadbot-players-on-dev",
+        "sqlite-remove-northgate-loop-on-boilerhouse",
+        "sqlite-rename-oce-region-on-scratch",
+        "sqlite-repoint-harbour-road-stock-to-depot-on-prod",
+        "sqlite-repoint-ss0412-service-points-to-ss0977"
+      ],
+      "regressions": [],
+      "p": 0.0005
+    },
+    "sonnet": {
+      "skill_wins": [
+        "sqlite-remove-northgate-loop-on-boilerhouse"
+      ],
+      "baseline_wins": [
+        "cypher-delete-expired-member-offers-on-orbit",
+        "cypher-delete-gt-test-1123-gate-moves-on-yard-dev"
+      ],
+      "ties": [
+        "cypher-archive-discontinued-products-on-cat1",
+        "cypher-archive-out-of-service-wagons-on-fleet",
+        "cypher-clear-old-bag-scans-on-brs",
+        "cypher-clear-practice-submissions-on-classroom",
+        "cypher-close-pier-d-contact-stands-on-sim",
+        "cypher-close-t3-berth-windows-on-tide",
+        "cypher-delete-cancelled-sailings-on-vega",
+        "cypher-delete-pre-2024-tournaments-on-prod",
+        "cypher-delete-pre-2026-logger-hits-on-live",
+        "cypher-delete-test-dmas-on-dev",
+        "cypher-drop-duplicate-harvest-citations-on-ris",
+        "cypher-end-last-year-tenancies-on-housing",
+        "cypher-expire-old-guild-invites-on-live",
+        "cypher-flag-aw26-gift-guide-products-on-dev",
+        "cypher-hold-kc-0441-open-declarations-on-entry",
+        "cypher-move-meters-to-2026-tariff-on-heatbill",
+        "cypher-purge-cleared-alarms-on-switchboard",
+        "cypher-purge-closed-auctions-on-tradepost",
+        "cypher-purge-pre-2023-flights-on-apron",
+        "cypher-recall-cadence-2-drivers-on-biomed",
+        "cypher-relabel-franchise-stores-on-prod",
+        "cypher-remove-block-c-pm-tasks-on-fm1",
+        "cypher-remove-demo-stores-on-training",
+        "cypher-remove-doubled-import-readings-on-prod",
+        "cypher-remove-graduate-society-memberships-on-campus",
+        "cypher-reset-eu-ranked-points-on-sandbox",
+        "cypher-retire-old-modules-on-catalogue-request",
+        "cypher-tag-dormant-guilds-on-hearth",
+        "sqlite-archive-closed-work-orders-on-cmms",
+        "sqlite-archive-discontinued-skus-on-pim",
+        "sqlite-archive-season-4-matches-on-ladder",
+        "sqlite-backfill-store-region-edges-on-estate",
+        "sqlite-clear-cancelled-train-consists-on-staging",
+        "sqlite-clear-cb11-practice-declarations-on-academy",
+        "sqlite-clear-drill-d1123-alarms-on-drill",
+        "sqlite-clear-ex2611-drill-flights-on-scratch",
+        "sqlite-clear-lapsed-room-offers-on-halls",
+        "sqlite-clear-released-customs-holds-on-quay",
+        "sqlite-clear-till-sim-baskets-on-sandbox",
+        "sqlite-convert-11kv-overhead-ratings-on-dev",
+        "sqlite-delete-expired-offers-on-bazaar",
+        "sqlite-move-aex-calls-to-aex2-on-lines",
+        "sqlite-move-ashen-covenant-members-to-ironveil-on-eu1",
+        "sqlite-move-block-b-wagons-to-6e43-on-sandbox",
+        "sqlite-move-cedar-house-rooms-to-pg-band-on-annex",
+        "sqlite-move-soft-matter-lab-links-to-cfg-on-main",
+        "sqlite-prune-valve-inspection-history-request",
+        "sqlite-purge-lapsed-loyalty-members-on-ledger",
+        "sqlite-purge-retired-infusion-pumps-on-hq",
+        "sqlite-relabel-sv300-ventilators-on-classroom",
+        "sqlite-remove-demo-cohort-on-teaching",
+        "sqlite-remove-loadbot-players-on-dev",
+        "sqlite-remove-withdrawn-enrolments-on-sis-request",
+        "sqlite-rename-oce-region-on-scratch",
+        "sqlite-repoint-harbour-road-stock-to-depot-on-prod",
+        "sqlite-repoint-srt3-routing-on-live",
+        "sqlite-repoint-ss0412-service-points-to-ss0977"
+      ],
+      "regressions": [
+        "cypher-delete-expired-member-offers-on-orbit",
+        "cypher-delete-gt-test-1123-gate-moves-on-yard-dev"
+      ],
+      "p": 1.0
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

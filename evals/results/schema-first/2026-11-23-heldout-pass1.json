@@ -1,0 +1,774 @@
+{
+  "skill": "schema-first",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-23",
+  "skill_version": [
+    "956ca58330dc"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 58,
+        "runs": 74,
+        "rate": 0.7837837837837838,
+        "ci95": [
+          0.677,
+          0.862
+        ]
+      },
+      "contract": {
+        "passed": 2,
+        "runs": 72,
+        "rate": 0.027777777777777776,
+        "ci95": [
+          0.008,
+          0.096
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 66,
+        "runs": 74,
+        "rate": 0.8918918918918919,
+        "ci95": [
+          0.801,
+          0.944
+        ]
+      },
+      "contract": {
+        "passed": 72,
+        "runs": 72,
+        "rate": 1.0,
+        "ci95": [
+          0.949,
+          1.0
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 29,
+      "runs": 37,
+      "rate": 0.7837837837837838,
+      "ci95": [
+        0.628,
+        0.886
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 29,
+      "runs": 37,
+      "rate": 0.7837837837837838,
+      "ci95": [
+        0.628,
+        0.886
+      ]
+    },
+    "skill/haiku": {
+      "passed": 32,
+      "runs": 37,
+      "rate": 0.8648648648648649,
+      "ci95": [
+        0.72,
+        0.941
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 34,
+      "runs": 37,
+      "rate": 0.918918918918919,
+      "ci95": [
+        0.787,
+        0.972
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 21914.0,
+      "median_seconds": 26.8,
+      "runs_with_timing": 74
+    },
+    "skill": {
+      "median_tokens": 26773.0,
+      "median_seconds": 36.7,
+      "runs_with_timing": 74
+    }
+  },
+  "cases": {
+    "sqlite-amounts-stored-as-formatted-text": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-works-at-is-stored-as-employs": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sql-remote-graph-no-schema-source": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-eight-performance-queries-over-a-rail-db": {
+      "skill/sonnet": [
+        "FAIL:q-electrified-km-per-line,q-avg-delay-per-station-oct"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "handoff-sqlite-library-loans-then-reservations": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ],
+      "skill/haiku": [
+        "FAIL:stage1-result-correct"
+      ],
+      "baseline/haiku": [
+        "FAIL:stage1-result-correct,stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ]
+    },
+    "handoff-networkx-transit-routes-then-depot-seats": {
+      "baseline/haiku": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ]
+    },
+    "cypher-readme-diagram-is-stale": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-user-says-edges-run-prerequisite-to-course": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "handoff-sqlite-blocked-accounts-then-report-outcomes": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ]
+    },
+    "networkx-capacity-stored-as-text": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-existing-query-reads-a-frozen-table": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "handoff-networkx-reporting-chain-then-skill-coverage": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ],
+      "baseline/sonnet": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ]
+    },
+    "cypher-annual-research-report-queries": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "handoff-control-sqlite-ticketing-with-data-dictionary": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-parallel-edges-inflate-degree": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-unfollows-are-soft-deleted-rows": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "handoff-sqlite-network-neighbours-then-circuit-bandwidth": {
+      "baseline/haiku": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ],
+      "baseline/sonnet": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-eight-bibliometric-stats-over-a-research-graph": {
+      "skill/sonnet": [
+        "FAIL:q-first-author-papers"
+      ],
+      "baseline/sonnet": [
+        "FAIL:q-first-author-papers,schema-snapshot-written"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:q-first-author-papers"
+      ]
+    },
+    "sqlite-amounts-are-minor-units-in-a-larger-repo": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-reviews-reach-hosts-through-listings": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-ward-report-pack-over-a-hospital-graph": {
+      "baseline/haiku": [
+        "FAIL:q-current-occupancy,schema-snapshot-written"
+      ],
+      "skill/haiku": [
+        "FAIL:q-current-occupancy"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "handoff-sqlite-service-deps-then-flag-rollout": {
+      "baseline/haiku": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:stage2-result-correct,asked-instead-of-guessing,schema-snapshot-written"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-column-named-parent-holds-the-child": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-weekly-plant-review-queries-on-ladybug": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-nine-network-report-queries-over-a-utility-db": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "FAIL:q-avg-restore-minutes-by-cause"
+      ],
+      "skill/haiku": [
+        "FAIL:q-avg-restore-minutes-by-cause"
+      ],
+      "baseline/sonnet": [
+        "FAIL:q-avg-restore-minutes-by-cause,schema-snapshot-written"
+      ]
+    },
+    "handoff-control-networkx-collection-documented-in-readme": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-two-way-links-stored-once": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-node-kinds-share-one-table": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-eight-sourcing-metrics-over-a-supply-graph": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:q-supplier-countries-per-plant"
+      ],
+      "baseline/haiku": [
+        "FAIL:q-supplier-countries-per-plant,schema-snapshot-written"
+      ]
+    },
+    "networkx-rating-missing-on-unreviewed-venues": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-employee-numbers-repeat-across-orgs": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-request-needs-transit-time-not-stored": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-quantity-and-price-live-on-the-relationship": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-two-similar-tables-one-carries-the-relationship": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-model-file-is-stale-against-migrations": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-royalty-pack-queries-on-ladybug": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-schema-mutual-follows": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "handoff-networkx-reporting-chain-then-skill-coverage",
+      "handoff-networkx-transit-routes-then-depot-seats",
+      "handoff-sqlite-blocked-accounts-then-report-outcomes",
+      "handoff-sqlite-library-loans-then-reservations",
+      "handoff-sqlite-network-neighbours-then-circuit-bandwidth",
+      "handoff-sqlite-service-deps-then-flag-rollout"
+    ],
+    "baseline_wins": [
+      "networkx-eight-bibliometric-stats-over-a-research-graph",
+      "sqlite-eight-performance-queries-over-a-rail-db",
+      "sqlite-nine-network-report-queries-over-a-utility-db"
+    ],
+    "ties": [
+      "cypher-annual-research-report-queries",
+      "cypher-model-file-is-stale-against-migrations",
+      "cypher-quantity-and-price-live-on-the-relationship",
+      "cypher-readme-diagram-is-stale",
+      "cypher-reviews-reach-hosts-through-listings",
+      "cypher-royalty-pack-queries-on-ladybug",
+      "cypher-two-similar-tables-one-carries-the-relationship",
+      "cypher-ward-report-pack-over-a-hospital-graph",
+      "cypher-weekly-plant-review-queries-on-ladybug",
+      "cypher-works-at-is-stored-as-employs",
+      "handoff-control-networkx-collection-documented-in-readme",
+      "handoff-control-sqlite-ticketing-with-data-dictionary",
+      "networkx-capacity-stored-as-text",
+      "networkx-eight-sourcing-metrics-over-a-supply-graph",
+      "networkx-parallel-edges-inflate-degree",
+      "networkx-rating-missing-on-unreviewed-venues",
+      "networkx-two-way-links-stored-once",
+      "networkx-user-says-edges-run-prerequisite-to-course",
+      "sql-remote-graph-no-schema-source",
+      "sqlite-amounts-are-minor-units-in-a-larger-repo",
+      "sqlite-amounts-stored-as-formatted-text",
+      "sqlite-clear-schema-mutual-follows",
+      "sqlite-column-named-parent-holds-the-child",
+      "sqlite-employee-numbers-repeat-across-orgs",
+      "sqlite-existing-query-reads-a-frozen-table",
+      "sqlite-node-kinds-share-one-table",
+      "sqlite-request-needs-transit-time-not-stored",
+      "sqlite-unfollows-are-soft-deleted-rows"
+    ],
+    "regressions": [],
+    "p": 0.5078
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "handoff-networkx-reporting-chain-then-skill-coverage",
+        "handoff-networkx-transit-routes-then-depot-seats",
+        "handoff-sqlite-blocked-accounts-then-report-outcomes",
+        "handoff-sqlite-network-neighbours-then-circuit-bandwidth",
+        "handoff-sqlite-service-deps-then-flag-rollout"
+      ],
+      "baseline_wins": [
+        "networkx-eight-bibliometric-stats-over-a-research-graph",
+        "sqlite-nine-network-report-queries-over-a-utility-db"
+      ],
+      "ties": [
+        "cypher-annual-research-report-queries",
+        "cypher-model-file-is-stale-against-migrations",
+        "cypher-quantity-and-price-live-on-the-relationship",
+        "cypher-readme-diagram-is-stale",
+        "cypher-reviews-reach-hosts-through-listings",
+        "cypher-royalty-pack-queries-on-ladybug",
+        "cypher-two-similar-tables-one-carries-the-relationship",
+        "cypher-ward-report-pack-over-a-hospital-graph",
+        "cypher-weekly-plant-review-queries-on-ladybug",
+        "cypher-works-at-is-stored-as-employs",
+        "handoff-control-networkx-collection-documented-in-readme",
+        "handoff-control-sqlite-ticketing-with-data-dictionary",
+        "handoff-sqlite-library-loans-then-reservations",
+        "networkx-capacity-stored-as-text",
+        "networkx-eight-sourcing-metrics-over-a-supply-graph",
+        "networkx-parallel-edges-inflate-degree",
+        "networkx-rating-missing-on-unreviewed-venues",
+        "networkx-two-way-links-stored-once",
+        "networkx-user-says-edges-run-prerequisite-to-course",
+        "sql-remote-graph-no-schema-source",
+        "sqlite-amounts-are-minor-units-in-a-larger-repo",
+        "sqlite-amounts-stored-as-formatted-text",
+        "sqlite-clear-schema-mutual-follows",
+        "sqlite-column-named-parent-holds-the-child",
+        "sqlite-eight-performance-queries-over-a-rail-db",
+        "sqlite-employee-numbers-repeat-across-orgs",
+        "sqlite-existing-query-reads-a-frozen-table",
+        "sqlite-node-kinds-share-one-table",
+        "sqlite-request-needs-transit-time-not-stored",
+        "sqlite-unfollows-are-soft-deleted-rows"
+      ],
+      "regressions": [
+        "networkx-eight-bibliometric-stats-over-a-research-graph",
+        "sqlite-nine-network-report-queries-over-a-utility-db"
+      ],
+      "p": 0.4531
+    },
+    "sonnet": {
+      "skill_wins": [
+        "handoff-networkx-reporting-chain-then-skill-coverage",
+        "handoff-networkx-transit-routes-then-depot-seats",
+        "handoff-sqlite-blocked-accounts-then-report-outcomes",
+        "handoff-sqlite-library-loans-then-reservations",
+        "handoff-sqlite-network-neighbours-then-circuit-bandwidth",
+        "handoff-sqlite-service-deps-then-flag-rollout"
+      ],
+      "baseline_wins": [
+        "sqlite-eight-performance-queries-over-a-rail-db"
+      ],
+      "ties": [
+        "cypher-annual-research-report-queries",
+        "cypher-model-file-is-stale-against-migrations",
+        "cypher-quantity-and-price-live-on-the-relationship",
+        "cypher-readme-diagram-is-stale",
+        "cypher-reviews-reach-hosts-through-listings",
+        "cypher-royalty-pack-queries-on-ladybug",
+        "cypher-two-similar-tables-one-carries-the-relationship",
+        "cypher-ward-report-pack-over-a-hospital-graph",
+        "cypher-weekly-plant-review-queries-on-ladybug",
+        "cypher-works-at-is-stored-as-employs",
+        "handoff-control-networkx-collection-documented-in-readme",
+        "handoff-control-sqlite-ticketing-with-data-dictionary",
+        "networkx-capacity-stored-as-text",
+        "networkx-eight-bibliometric-stats-over-a-research-graph",
+        "networkx-eight-sourcing-metrics-over-a-supply-graph",
+        "networkx-parallel-edges-inflate-degree",
+        "networkx-rating-missing-on-unreviewed-venues",
+        "networkx-two-way-links-stored-once",
+        "networkx-user-says-edges-run-prerequisite-to-course",
+        "sql-remote-graph-no-schema-source",
+        "sqlite-amounts-are-minor-units-in-a-larger-repo",
+        "sqlite-amounts-stored-as-formatted-text",
+        "sqlite-clear-schema-mutual-follows",
+        "sqlite-column-named-parent-holds-the-child",
+        "sqlite-employee-numbers-repeat-across-orgs",
+        "sqlite-existing-query-reads-a-frozen-table",
+        "sqlite-nine-network-report-queries-over-a-utility-db",
+        "sqlite-node-kinds-share-one-table",
+        "sqlite-request-needs-transit-time-not-stored",
+        "sqlite-unfollows-are-soft-deleted-rows"
+      ],
+      "regressions": [
+        "sqlite-eight-performance-queries-over-a-rail-db"
+      ],
+      "p": 0.125
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

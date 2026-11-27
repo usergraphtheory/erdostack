@@ -1,0 +1,1505 @@
+{
+  "skill": "setup-graph",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-24",
+  "skill_version": [
+    "fbcd8fc16fef"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 139,
+        "runs": 160,
+        "rate": 0.86875,
+        "ci95": [
+          0.808,
+          0.913
+        ]
+      },
+      "contract": {
+        "passed": 0,
+        "runs": 160,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.023
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 156,
+        "runs": 160,
+        "rate": 0.975,
+        "ci95": [
+          0.937,
+          0.99
+        ]
+      },
+      "contract": {
+        "passed": 158,
+        "runs": 160,
+        "rate": 0.9875,
+        "ci95": [
+          0.956,
+          0.997
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 65,
+      "runs": 80,
+      "rate": 0.8125,
+      "ci95": [
+        0.713,
+        0.883
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 74,
+      "runs": 80,
+      "rate": 0.925,
+      "ci95": [
+        0.846,
+        0.965
+      ]
+    },
+    "skill/haiku": {
+      "passed": 78,
+      "runs": 80,
+      "rate": 0.975,
+      "ci95": [
+        0.913,
+        0.993
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 78,
+      "runs": 80,
+      "rate": 0.975,
+      "ci95": [
+        0.913,
+        0.993
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 19788.5,
+      "median_seconds": 20.0,
+      "runs_with_timing": 160
+    },
+    "skill": {
+      "median_tokens": 24591.5,
+      "median_seconds": 30.1,
+      "runs_with_timing": 160
+    }
+  },
+  "cases": {
+    "jvm-sbt-sqlite-jdbc-pin-and-label-coverage-report": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "dotnet-neo4j-makefile-compose-and-override-file": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "go-wind-farm-cables-compose-include-with-env-file": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "py-services-repo-part-supersession-sqlite-and-design-doc": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "rust-ringwalk-petgraph-with-cargo-patch-section": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-package-mirror-dependency-graph-sqlite-yank-check": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-pilgrim-ways-jenkinsfile-postgres-and-cycle-queries": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "py-citation-graph-compose-override-for-benchmark-host": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-gallery-loans-compose-env-sets-cypher-25": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "dotnet-illgraph-devcontainer-container-env-and-makefile-default": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-uv-workspace-lineage-service-beside-postgres-and-redis": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "ts-npm-pantry-services-bake-file-and-neo4j-dockerfile": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-seed-bank-lineage-kuzu-pip-compile": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-apiary-hive-splits-sqlite-and-records-guide": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "node-docker-bake-file-and-neo4j-dockerfile-arg": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "ts-route-planner-bake-file-sets-neo4j-base": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-catalog-neo4j-harness-dev-graph": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "node-interloan-routes-yarn-workspaces-kuzu": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "go-seed-bank-pedigree-workspace-on-embedded-kuzu": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "jvm-kotlin-sqlite-config-object-and-data-guide": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:version-conflict-surfaced,version-conflict-surfaced-under-open-questions"
+      ]
+    },
+    "py-volunteer-shift-graph-nox-session-env": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "helm-chart-config-values-and-query-style-doc": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:query-language-fits-engine,language-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,language-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "node-duckdb-feeder-routes-package-lock-and-readme": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "go-dock-flows-nightly-calls-reusable-workflow": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-maven-jgrapht-planner-module-and-kotlin-notebook": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-pantry-substitutions-ladybug-uv-docker": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-poetry-wildlife-corridor-compose-two-neo4j-services": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-bus-depot-graph-invoke-support-compose-and-cypher-25-files": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:query-language-fits-engine,query-language-version-stated,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,query-language-version-stated,version-conflict-surfaced-under-open-questions,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "node-seedline-bun-lock-and-ladybug-core-range": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,driver-from-lockfile,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "node-compose-override-file-beside-explicit-f-scripts": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "rust-batmap-xtask-graph-up-and-cargo-config-env": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "go-heat-network-sqlite-driver-replaced-by-local-fork": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "rust-trailmap-workspace-rusqlite-and-devcontainer-libsqlite": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "node-campus-footpaths-sqlite-wasm-pnpm": {
+      "skill/sonnet": [
+        "FAIL:engine-version-pinned"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-maven-sqlite-jdbc-corridor-queries-and-docs": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-orchard-pollination-compose-env-file-and-cypher-docs": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,language-conflict-surfaced-under-open-questions,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-seed-bank-lineage-compose-neo4j-and-postgres": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "dotnet-aspire-apphost-heat-network-memgraph-postgres-redis": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "jvm-gradle-docker-compose-plugin-lists-two-compose-files": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-lesmis-walks-igraph-conda-lock-pip-section": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "py-memgraph-compose-yaml-beside-docker-compose-yml": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "node-mesh-relays-sqlite-cli-image-and-join-report": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "rust-repeater-links-devcontainer-dotenv-and-cypher-25-queries": {
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,query-language-version-stated,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:query-language-fits-engine,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "jvm-maven-testcontainers-classpath-properties-image-substitutor": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "node-env-file-flag-and-memgraph-container-helper": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "node-gitlab-ci-nightly-report-memgraph-service": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "py-interlibrary-loans-igraph-uv-project-and-notebook": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "py-arangodb-makefile-adds-notebooks-compose-file": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "node-food-bank-routes-neo4j-compose-file-flag-and-override-file": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-maven-failsafe-image-property-and-next-line-profile": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "py-airline-hubs-pdm-lock-and-notebook-networkx": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "go-etl-lineage-sqlite-vendored-pure-go-driver": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "go-trail-junctions-mattn-sqlite-cascade-note": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "ts-neo4j-compose-anchor-default-and-service-image": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "rust-toolshare-devcontainer-run-services-two-memgraph-services": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "rust-garden-irrigation-rusqlite-import-and-image-sqlite": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "rust-manuscript-stemma-workspace-kuzu-crate": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-seed-library-sqlite-pandas-loader-and-data-model-doc": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "go-cave-survey-passages-sqlite-schema-file-and-loaders": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "node-pnpm-workspace-fitment-package-and-shop-api": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "go-baggage-transfers-neo4j-kustomize-overlay-and-components": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "py-ski-lift-graph-memgraph-kustomize-laptop-overlay-on-shared": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "go-mesh-radio-links-in-postgres-recursive-query-files": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "go-board-interlocks-neo4j-compose-environment-and-query-docs": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-test-fixtures-neo4j-container-and-query-style-guide": {
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "FAIL:engine-version-pinned"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "helm-skaffold-release-values-pantry-substitutes": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "py-davis-rustworkx-pixi-lock-notebook-output": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-is-package-version,version-conflict-surfaced,version-conflict-surfaced-under-open-questions,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "FAIL:run-queries-real,version-conflict-surfaced,version-conflict-surfaced-under-open-questions"
+      ]
+    },
+    "dotnet-ferry-transfers-testcontainers-and-runsettings": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "dotnet-lighthouse-sightlines-workflow-service-and-migrations": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,language-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "go-neo4j-service-env-file-and-cypher-5-style-guide": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "jvm-gradle-spring-boot-docker-compose-local-profile": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "py-dojo-split-igraph-over-exported-graphml": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "py-choir-repertoire-devcontainer-and-rehearsal-compose-file": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "dotnet-graft-lineage-gitlab-ci-service-templates": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "jvm-gradle-kuzu-java-binding-in-graph-subproject": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "node-talk-copresenters-typescript-ladybug-npm": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-starter-sharing-pipfile-lock-embedded-ladybug": {
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,version-conflict-surfaced-under-open-questions,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "rust-workspace-trail-network-api-snapshot-and-reach-crates": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "rust-orienteering-memgraph-compose-and-override-file": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "py-tide-gauge-graph-testcontainers-compose-pair": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "dotnet-aspire-apphost-heat-network-memgraph-postgres-redis",
+      "dotnet-lighthouse-sightlines-workflow-service-and-migrations",
+      "go-dock-flows-nightly-calls-reusable-workflow",
+      "go-neo4j-service-env-file-and-cypher-5-style-guide",
+      "go-seed-bank-pedigree-workspace-on-embedded-kuzu",
+      "helm-chart-config-values-and-query-style-doc",
+      "jvm-gradle-orchard-pollination-compose-env-file-and-cypher-docs",
+      "jvm-gradle-seed-bank-lineage-compose-neo4j-and-postgres",
+      "node-docker-bake-file-and-neo4j-dockerfile-arg",
+      "node-duckdb-feeder-routes-package-lock-and-readme",
+      "node-gitlab-ci-nightly-report-memgraph-service",
+      "node-seedline-bun-lock-and-ladybug-core-range",
+      "node-talk-copresenters-typescript-ladybug-npm",
+      "py-bus-depot-graph-invoke-support-compose-and-cypher-25-files",
+      "py-starter-sharing-pipfile-lock-embedded-ladybug",
+      "rust-repeater-links-devcontainer-dotenv-and-cypher-25-queries"
+    ],
+    "baseline_wins": [
+      "jvm-kotlin-sqlite-config-object-and-data-guide",
+      "node-campus-footpaths-sqlite-wasm-pnpm"
+    ],
+    "ties": [
+      "dotnet-ferry-transfers-testcontainers-and-runsettings",
+      "dotnet-graft-lineage-gitlab-ci-service-templates",
+      "dotnet-illgraph-devcontainer-container-env-and-makefile-default",
+      "dotnet-neo4j-makefile-compose-and-override-file",
+      "go-baggage-transfers-neo4j-kustomize-overlay-and-components",
+      "go-board-interlocks-neo4j-compose-environment-and-query-docs",
+      "go-cave-survey-passages-sqlite-schema-file-and-loaders",
+      "go-etl-lineage-sqlite-vendored-pure-go-driver",
+      "go-heat-network-sqlite-driver-replaced-by-local-fork",
+      "go-mesh-radio-links-in-postgres-recursive-query-files",
+      "go-trail-junctions-mattn-sqlite-cascade-note",
+      "go-wind-farm-cables-compose-include-with-env-file",
+      "helm-skaffold-release-values-pantry-substitutes",
+      "jvm-gradle-catalog-neo4j-harness-dev-graph",
+      "jvm-gradle-docker-compose-plugin-lists-two-compose-files",
+      "jvm-gradle-kuzu-java-binding-in-graph-subproject",
+      "jvm-gradle-pilgrim-ways-jenkinsfile-postgres-and-cycle-queries",
+      "jvm-gradle-spring-boot-docker-compose-local-profile",
+      "jvm-gradle-test-fixtures-neo4j-container-and-query-style-guide",
+      "jvm-maven-failsafe-image-property-and-next-line-profile",
+      "jvm-maven-jgrapht-planner-module-and-kotlin-notebook",
+      "jvm-maven-sqlite-jdbc-corridor-queries-and-docs",
+      "jvm-maven-testcontainers-classpath-properties-image-substitutor",
+      "jvm-sbt-sqlite-jdbc-pin-and-label-coverage-report",
+      "node-compose-override-file-beside-explicit-f-scripts",
+      "node-env-file-flag-and-memgraph-container-helper",
+      "node-food-bank-routes-neo4j-compose-file-flag-and-override-file",
+      "node-interloan-routes-yarn-workspaces-kuzu",
+      "node-mesh-relays-sqlite-cli-image-and-join-report",
+      "node-pnpm-workspace-fitment-package-and-shop-api",
+      "py-airline-hubs-pdm-lock-and-notebook-networkx",
+      "py-apiary-hive-splits-sqlite-and-records-guide",
+      "py-arangodb-makefile-adds-notebooks-compose-file",
+      "py-choir-repertoire-devcontainer-and-rehearsal-compose-file",
+      "py-citation-graph-compose-override-for-benchmark-host",
+      "py-davis-rustworkx-pixi-lock-notebook-output",
+      "py-dojo-split-igraph-over-exported-graphml",
+      "py-gallery-loans-compose-env-sets-cypher-25",
+      "py-interlibrary-loans-igraph-uv-project-and-notebook",
+      "py-lesmis-walks-igraph-conda-lock-pip-section",
+      "py-memgraph-compose-yaml-beside-docker-compose-yml",
+      "py-package-mirror-dependency-graph-sqlite-yank-check",
+      "py-pantry-substitutions-ladybug-uv-docker",
+      "py-poetry-wildlife-corridor-compose-two-neo4j-services",
+      "py-seed-bank-lineage-kuzu-pip-compile",
+      "py-seed-library-sqlite-pandas-loader-and-data-model-doc",
+      "py-services-repo-part-supersession-sqlite-and-design-doc",
+      "py-ski-lift-graph-memgraph-kustomize-laptop-overlay-on-shared",
+      "py-tide-gauge-graph-testcontainers-compose-pair",
+      "py-uv-workspace-lineage-service-beside-postgres-and-redis",
+      "py-volunteer-shift-graph-nox-session-env",
+      "rust-batmap-xtask-graph-up-and-cargo-config-env",
+      "rust-garden-irrigation-rusqlite-import-and-image-sqlite",
+      "rust-manuscript-stemma-workspace-kuzu-crate",
+      "rust-orienteering-memgraph-compose-and-override-file",
+      "rust-ringwalk-petgraph-with-cargo-patch-section",
+      "rust-toolshare-devcontainer-run-services-two-memgraph-services",
+      "rust-trailmap-workspace-rusqlite-and-devcontainer-libsqlite",
+      "rust-workspace-trail-network-api-snapshot-and-reach-crates",
+      "ts-neo4j-compose-anchor-default-and-service-image",
+      "ts-npm-pantry-services-bake-file-and-neo4j-dockerfile",
+      "ts-route-planner-bake-file-sets-neo4j-base"
+    ],
+    "regressions": [],
+    "p": 0.0013
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "dotnet-aspire-apphost-heat-network-memgraph-postgres-redis",
+        "dotnet-lighthouse-sightlines-workflow-service-and-migrations",
+        "go-neo4j-service-env-file-and-cypher-5-style-guide",
+        "go-seed-bank-pedigree-workspace-on-embedded-kuzu",
+        "helm-chart-config-values-and-query-style-doc",
+        "jvm-gradle-orchard-pollination-compose-env-file-and-cypher-docs",
+        "jvm-gradle-seed-bank-lineage-compose-neo4j-and-postgres",
+        "node-docker-bake-file-and-neo4j-dockerfile-arg",
+        "node-gitlab-ci-nightly-report-memgraph-service",
+        "node-seedline-bun-lock-and-ladybug-core-range",
+        "py-bus-depot-graph-invoke-support-compose-and-cypher-25-files",
+        "py-davis-rustworkx-pixi-lock-notebook-output",
+        "py-starter-sharing-pipfile-lock-embedded-ladybug",
+        "rust-repeater-links-devcontainer-dotenv-and-cypher-25-queries"
+      ],
+      "baseline_wins": [
+        "jvm-kotlin-sqlite-config-object-and-data-guide"
+      ],
+      "ties": [
+        "dotnet-ferry-transfers-testcontainers-and-runsettings",
+        "dotnet-graft-lineage-gitlab-ci-service-templates",
+        "dotnet-illgraph-devcontainer-container-env-and-makefile-default",
+        "dotnet-neo4j-makefile-compose-and-override-file",
+        "go-baggage-transfers-neo4j-kustomize-overlay-and-components",
+        "go-board-interlocks-neo4j-compose-environment-and-query-docs",
+        "go-cave-survey-passages-sqlite-schema-file-and-loaders",
+        "go-dock-flows-nightly-calls-reusable-workflow",
+        "go-etl-lineage-sqlite-vendored-pure-go-driver",
+        "go-heat-network-sqlite-driver-replaced-by-local-fork",
+        "go-mesh-radio-links-in-postgres-recursive-query-files",
+        "go-trail-junctions-mattn-sqlite-cascade-note",
+        "go-wind-farm-cables-compose-include-with-env-file",
+        "helm-skaffold-release-values-pantry-substitutes",
+        "jvm-gradle-catalog-neo4j-harness-dev-graph",
+        "jvm-gradle-docker-compose-plugin-lists-two-compose-files",
+        "jvm-gradle-kuzu-java-binding-in-graph-subproject",
+        "jvm-gradle-pilgrim-ways-jenkinsfile-postgres-and-cycle-queries",
+        "jvm-gradle-spring-boot-docker-compose-local-profile",
+        "jvm-gradle-test-fixtures-neo4j-container-and-query-style-guide",
+        "jvm-maven-failsafe-image-property-and-next-line-profile",
+        "jvm-maven-jgrapht-planner-module-and-kotlin-notebook",
+        "jvm-maven-sqlite-jdbc-corridor-queries-and-docs",
+        "jvm-maven-testcontainers-classpath-properties-image-substitutor",
+        "jvm-sbt-sqlite-jdbc-pin-and-label-coverage-report",
+        "node-campus-footpaths-sqlite-wasm-pnpm",
+        "node-compose-override-file-beside-explicit-f-scripts",
+        "node-duckdb-feeder-routes-package-lock-and-readme",
+        "node-env-file-flag-and-memgraph-container-helper",
+        "node-food-bank-routes-neo4j-compose-file-flag-and-override-file",
+        "node-interloan-routes-yarn-workspaces-kuzu",
+        "node-mesh-relays-sqlite-cli-image-and-join-report",
+        "node-pnpm-workspace-fitment-package-and-shop-api",
+        "node-talk-copresenters-typescript-ladybug-npm",
+        "py-airline-hubs-pdm-lock-and-notebook-networkx",
+        "py-apiary-hive-splits-sqlite-and-records-guide",
+        "py-arangodb-makefile-adds-notebooks-compose-file",
+        "py-choir-repertoire-devcontainer-and-rehearsal-compose-file",
+        "py-citation-graph-compose-override-for-benchmark-host",
+        "py-dojo-split-igraph-over-exported-graphml",
+        "py-gallery-loans-compose-env-sets-cypher-25",
+        "py-interlibrary-loans-igraph-uv-project-and-notebook",
+        "py-lesmis-walks-igraph-conda-lock-pip-section",
+        "py-memgraph-compose-yaml-beside-docker-compose-yml",
+        "py-package-mirror-dependency-graph-sqlite-yank-check",
+        "py-pantry-substitutions-ladybug-uv-docker",
+        "py-poetry-wildlife-corridor-compose-two-neo4j-services",
+        "py-seed-bank-lineage-kuzu-pip-compile",
+        "py-seed-library-sqlite-pandas-loader-and-data-model-doc",
+        "py-services-repo-part-supersession-sqlite-and-design-doc",
+        "py-ski-lift-graph-memgraph-kustomize-laptop-overlay-on-shared",
+        "py-tide-gauge-graph-testcontainers-compose-pair",
+        "py-uv-workspace-lineage-service-beside-postgres-and-redis",
+        "py-volunteer-shift-graph-nox-session-env",
+        "rust-batmap-xtask-graph-up-and-cargo-config-env",
+        "rust-garden-irrigation-rusqlite-import-and-image-sqlite",
+        "rust-manuscript-stemma-workspace-kuzu-crate",
+        "rust-orienteering-memgraph-compose-and-override-file",
+        "rust-ringwalk-petgraph-with-cargo-patch-section",
+        "rust-toolshare-devcontainer-run-services-two-memgraph-services",
+        "rust-trailmap-workspace-rusqlite-and-devcontainer-libsqlite",
+        "rust-workspace-trail-network-api-snapshot-and-reach-crates",
+        "ts-neo4j-compose-anchor-default-and-service-image",
+        "ts-npm-pantry-services-bake-file-and-neo4j-dockerfile",
+        "ts-route-planner-bake-file-sets-neo4j-base"
+      ],
+      "regressions": [
+        "jvm-kotlin-sqlite-config-object-and-data-guide"
+      ],
+      "p": 0.001
+    },
+    "sonnet": {
+      "skill_wins": [
+        "go-dock-flows-nightly-calls-reusable-workflow",
+        "helm-chart-config-values-and-query-style-doc",
+        "node-duckdb-feeder-routes-package-lock-and-readme",
+        "node-talk-copresenters-typescript-ladybug-npm",
+        "py-bus-depot-graph-invoke-support-compose-and-cypher-25-files",
+        "rust-repeater-links-devcontainer-dotenv-and-cypher-25-queries"
+      ],
+      "baseline_wins": [
+        "node-campus-footpaths-sqlite-wasm-pnpm",
+        "py-davis-rustworkx-pixi-lock-notebook-output"
+      ],
+      "ties": [
+        "dotnet-aspire-apphost-heat-network-memgraph-postgres-redis",
+        "dotnet-ferry-transfers-testcontainers-and-runsettings",
+        "dotnet-graft-lineage-gitlab-ci-service-templates",
+        "dotnet-illgraph-devcontainer-container-env-and-makefile-default",
+        "dotnet-lighthouse-sightlines-workflow-service-and-migrations",
+        "dotnet-neo4j-makefile-compose-and-override-file",
+        "go-baggage-transfers-neo4j-kustomize-overlay-and-components",
+        "go-board-interlocks-neo4j-compose-environment-and-query-docs",
+        "go-cave-survey-passages-sqlite-schema-file-and-loaders",
+        "go-etl-lineage-sqlite-vendored-pure-go-driver",
+        "go-heat-network-sqlite-driver-replaced-by-local-fork",
+        "go-mesh-radio-links-in-postgres-recursive-query-files",
+        "go-neo4j-service-env-file-and-cypher-5-style-guide",
+        "go-seed-bank-pedigree-workspace-on-embedded-kuzu",
+        "go-trail-junctions-mattn-sqlite-cascade-note",
+        "go-wind-farm-cables-compose-include-with-env-file",
+        "helm-skaffold-release-values-pantry-substitutes",
+        "jvm-gradle-catalog-neo4j-harness-dev-graph",
+        "jvm-gradle-docker-compose-plugin-lists-two-compose-files",
+        "jvm-gradle-kuzu-java-binding-in-graph-subproject",
+        "jvm-gradle-orchard-pollination-compose-env-file-and-cypher-docs",
+        "jvm-gradle-pilgrim-ways-jenkinsfile-postgres-and-cycle-queries",
+        "jvm-gradle-seed-bank-lineage-compose-neo4j-and-postgres",
+        "jvm-gradle-spring-boot-docker-compose-local-profile",
+        "jvm-gradle-test-fixtures-neo4j-container-and-query-style-guide",
+        "jvm-kotlin-sqlite-config-object-and-data-guide",
+        "jvm-maven-failsafe-image-property-and-next-line-profile",
+        "jvm-maven-jgrapht-planner-module-and-kotlin-notebook",
+        "jvm-maven-sqlite-jdbc-corridor-queries-and-docs",
+        "jvm-maven-testcontainers-classpath-properties-image-substitutor",
+        "jvm-sbt-sqlite-jdbc-pin-and-label-coverage-report",
+        "node-compose-override-file-beside-explicit-f-scripts",
+        "node-docker-bake-file-and-neo4j-dockerfile-arg",
+        "node-env-file-flag-and-memgraph-container-helper",
+        "node-food-bank-routes-neo4j-compose-file-flag-and-override-file",
+        "node-gitlab-ci-nightly-report-memgraph-service",
+        "node-interloan-routes-yarn-workspaces-kuzu",
+        "node-mesh-relays-sqlite-cli-image-and-join-report",
+        "node-pnpm-workspace-fitment-package-and-shop-api",
+        "node-seedline-bun-lock-and-ladybug-core-range",
+        "py-airline-hubs-pdm-lock-and-notebook-networkx",
+        "py-apiary-hive-splits-sqlite-and-records-guide",
+        "py-arangodb-makefile-adds-notebooks-compose-file",
+        "py-choir-repertoire-devcontainer-and-rehearsal-compose-file",
+        "py-citation-graph-compose-override-for-benchmark-host",
+        "py-dojo-split-igraph-over-exported-graphml",
+        "py-gallery-loans-compose-env-sets-cypher-25",
+        "py-interlibrary-loans-igraph-uv-project-and-notebook",
+        "py-lesmis-walks-igraph-conda-lock-pip-section",
+        "py-memgraph-compose-yaml-beside-docker-compose-yml",
+        "py-package-mirror-dependency-graph-sqlite-yank-check",
+        "py-pantry-substitutions-ladybug-uv-docker",
+        "py-poetry-wildlife-corridor-compose-two-neo4j-services",
+        "py-seed-bank-lineage-kuzu-pip-compile",
+        "py-seed-library-sqlite-pandas-loader-and-data-model-doc",
+        "py-services-repo-part-supersession-sqlite-and-design-doc",
+        "py-ski-lift-graph-memgraph-kustomize-laptop-overlay-on-shared",
+        "py-starter-sharing-pipfile-lock-embedded-ladybug",
+        "py-tide-gauge-graph-testcontainers-compose-pair",
+        "py-uv-workspace-lineage-service-beside-postgres-and-redis",
+        "py-volunteer-shift-graph-nox-session-env",
+        "rust-batmap-xtask-graph-up-and-cargo-config-env",
+        "rust-garden-irrigation-rusqlite-import-and-image-sqlite",
+        "rust-manuscript-stemma-workspace-kuzu-crate",
+        "rust-orienteering-memgraph-compose-and-override-file",
+        "rust-ringwalk-petgraph-with-cargo-patch-section",
+        "rust-toolshare-devcontainer-run-services-two-memgraph-services",
+        "rust-trailmap-workspace-rusqlite-and-devcontainer-libsqlite",
+        "rust-workspace-trail-network-api-snapshot-and-reach-crates",
+        "ts-neo4j-compose-anchor-default-and-service-image",
+        "ts-npm-pantry-services-bake-file-and-neo4j-dockerfile",
+        "ts-route-planner-bake-file-sets-neo4j-base"
+      ],
+      "regressions": [
+        "node-campus-footpaths-sqlite-wasm-pnpm",
+        "py-davis-rustworkx-pixi-lock-notebook-output"
+      ],
+      "p": 0.2891
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

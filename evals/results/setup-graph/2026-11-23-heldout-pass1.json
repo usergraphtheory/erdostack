@@ -1,0 +1,579 @@
+{
+  "skill": "setup-graph",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-23",
+  "skill_version": [
+    "dbfebb3c3cf9"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 41,
+        "runs": 52,
+        "rate": 0.7884615384615384,
+        "ci95": [
+          0.66,
+          0.878
+        ]
+      },
+      "contract": {
+        "passed": 13,
+        "runs": 52,
+        "rate": 0.25,
+        "ci95": [
+          0.152,
+          0.382
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 51,
+        "runs": 52,
+        "rate": 0.9807692307692307,
+        "ci95": [
+          0.899,
+          0.997
+        ]
+      },
+      "contract": {
+        "passed": 52,
+        "runs": 52,
+        "rate": 1.0,
+        "ci95": [
+          0.931,
+          1.0
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 18,
+      "runs": 26,
+      "rate": 0.6923076923076923,
+      "ci95": [
+        0.5,
+        0.835
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 23,
+      "runs": 26,
+      "rate": 0.8846153846153846,
+      "ci95": [
+        0.71,
+        0.96
+      ]
+    },
+    "skill/haiku": {
+      "passed": 25,
+      "runs": 26,
+      "rate": 0.9615384615384616,
+      "ci95": [
+        0.811,
+        0.993
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 26,
+      "runs": 26,
+      "rate": 1.0,
+      "ci95": [
+        0.871,
+        1.0
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 19430.0,
+      "median_seconds": 21.0,
+      "runs_with_timing": 52
+    },
+    "skill": {
+      "median_tokens": 25591.0,
+      "median_seconds": 27.1,
+      "runs_with_timing": 52
+    }
+  },
+  "cases": {
+    "early-npm-name-lbug-in-pnpm-lock": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,evidence-names-repo-files,open-questions-section"
+      ],
+      "baseline/sonnet": [
+        "FAIL:engine-version-pinned"
+      ]
+    },
+    "compose-build-arg-overrides-dockerfile-default": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "hosted-instance-nothing-pins-the-server": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "no-graph-only-a-roadmap-idea": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:empty-case-convention,says-no-graph-store"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "agents-file-allows-writes-to-dev-graph": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "context-file-already-matches-repo": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "driver-version-from-bom-in-parent-pom": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "context-file-names-a-renamed-make-target": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "stale-context-file-after-upgrades": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "compose-override-file-swaps-the-image": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "setup-script-sets-default-language-cypher-5": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "monorepo-two-graph-stores": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:run-queries-real,evidence-names-repo-files,open-questions-section"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "lbug-crate-version-only-in-cargo-lock": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "old-driver-line-against-new-server": {
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,evidence-names-repo-files,open-questions-section,driver-server-gap-flagged"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "testcontainers-image-string-in-test-code": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "five-services-user-names-the-neo4j-one": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "character-graph-in-graphml-and-pickle": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "passwords-in-env-files-stay-out-of-docs": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,evidence-names-repo-files,open-questions-section"
+      ]
+    },
+    "named-service-uses-a-different-engine": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:context-written,engine-correct,engine-version-pinned,query-language-fits-engine,driver-from-lockfile,run-queries-real,access-correct,schema-snapshot-exists-or-none,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section,nothing-else-modified"
+      ],
+      "baseline/haiku": [
+        "FAIL:context-written,engine-correct,engine-version-pinned,query-language-fits-engine,driver-from-lockfile,run-queries-real,access-correct,schema-snapshot-exists-or-none,facts-seven-plain-keys,evidence-names-repo-files,open-questions-section,nothing-else-modified"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "stale-requirements-file-names-the-old-engine": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "dockerfile-pin-newer-than-architecture-doc": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "kuzu-npm-pin-in-package-lock": {
+      "baseline/haiku": [
+        "FAIL:evidence-names-repo-files,open-questions-section,unmaintained-dependency-flagged"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-version-not-settled-by-repo": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-version-only-in-uv-lock": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:engine-version-pinned,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "large-repo-stale-copies-of-every-fact": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "memgraph-image-behind-neo4j-driver": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:query-language-fits-engine,evidence-names-repo-files,open-questions-section"
+      ],
+      "skill/haiku": [
+        "FAIL:query-language-fits-engine"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "early-npm-name-lbug-in-pnpm-lock",
+      "kuzu-npm-pin-in-package-lock",
+      "ladybug-version-only-in-uv-lock",
+      "monorepo-two-graph-stores",
+      "named-service-uses-a-different-engine",
+      "no-graph-only-a-roadmap-idea",
+      "old-driver-line-against-new-server",
+      "passwords-in-env-files-stay-out-of-docs"
+    ],
+    "baseline_wins": [],
+    "ties": [
+      "agents-file-allows-writes-to-dev-graph",
+      "character-graph-in-graphml-and-pickle",
+      "compose-build-arg-overrides-dockerfile-default",
+      "compose-override-file-swaps-the-image",
+      "context-file-already-matches-repo",
+      "context-file-names-a-renamed-make-target",
+      "cypher-version-not-settled-by-repo",
+      "dockerfile-pin-newer-than-architecture-doc",
+      "driver-version-from-bom-in-parent-pom",
+      "five-services-user-names-the-neo4j-one",
+      "hosted-instance-nothing-pins-the-server",
+      "large-repo-stale-copies-of-every-fact",
+      "lbug-crate-version-only-in-cargo-lock",
+      "memgraph-image-behind-neo4j-driver",
+      "setup-script-sets-default-language-cypher-5",
+      "stale-context-file-after-upgrades",
+      "stale-requirements-file-names-the-old-engine",
+      "testcontainers-image-string-in-test-code"
+    ],
+    "regressions": [],
+    "p": 0.0078
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "early-npm-name-lbug-in-pnpm-lock",
+        "kuzu-npm-pin-in-package-lock",
+        "ladybug-version-only-in-uv-lock",
+        "named-service-uses-a-different-engine",
+        "no-graph-only-a-roadmap-idea",
+        "old-driver-line-against-new-server",
+        "passwords-in-env-files-stay-out-of-docs"
+      ],
+      "baseline_wins": [],
+      "ties": [
+        "agents-file-allows-writes-to-dev-graph",
+        "character-graph-in-graphml-and-pickle",
+        "compose-build-arg-overrides-dockerfile-default",
+        "compose-override-file-swaps-the-image",
+        "context-file-already-matches-repo",
+        "context-file-names-a-renamed-make-target",
+        "cypher-version-not-settled-by-repo",
+        "dockerfile-pin-newer-than-architecture-doc",
+        "driver-version-from-bom-in-parent-pom",
+        "five-services-user-names-the-neo4j-one",
+        "hosted-instance-nothing-pins-the-server",
+        "large-repo-stale-copies-of-every-fact",
+        "lbug-crate-version-only-in-cargo-lock",
+        "memgraph-image-behind-neo4j-driver",
+        "monorepo-two-graph-stores",
+        "setup-script-sets-default-language-cypher-5",
+        "stale-context-file-after-upgrades",
+        "stale-requirements-file-names-the-old-engine",
+        "testcontainers-image-string-in-test-code"
+      ],
+      "regressions": [],
+      "p": 0.0156
+    },
+    "sonnet": {
+      "skill_wins": [
+        "early-npm-name-lbug-in-pnpm-lock",
+        "monorepo-two-graph-stores",
+        "named-service-uses-a-different-engine"
+      ],
+      "baseline_wins": [],
+      "ties": [
+        "agents-file-allows-writes-to-dev-graph",
+        "character-graph-in-graphml-and-pickle",
+        "compose-build-arg-overrides-dockerfile-default",
+        "compose-override-file-swaps-the-image",
+        "context-file-already-matches-repo",
+        "context-file-names-a-renamed-make-target",
+        "cypher-version-not-settled-by-repo",
+        "dockerfile-pin-newer-than-architecture-doc",
+        "driver-version-from-bom-in-parent-pom",
+        "five-services-user-names-the-neo4j-one",
+        "hosted-instance-nothing-pins-the-server",
+        "kuzu-npm-pin-in-package-lock",
+        "ladybug-version-only-in-uv-lock",
+        "large-repo-stale-copies-of-every-fact",
+        "lbug-crate-version-only-in-cargo-lock",
+        "memgraph-image-behind-neo4j-driver",
+        "no-graph-only-a-roadmap-idea",
+        "old-driver-line-against-new-server",
+        "passwords-in-env-files-stay-out-of-docs",
+        "setup-script-sets-default-language-cypher-5",
+        "stale-context-file-after-upgrades",
+        "stale-requirements-file-names-the-old-engine",
+        "testcontainers-image-string-in-test-code"
+      ],
+      "regressions": [],
+      "p": 0.25
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

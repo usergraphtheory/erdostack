@@ -1,0 +1,827 @@
+{
+  "skill": "roast-my-graph",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-23",
+  "skill_version": [
+    "861797c1f1d1"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 65,
+        "runs": 80,
+        "rate": 0.8125,
+        "ci95": [
+          0.713,
+          0.883
+        ]
+      },
+      "contract": {
+        "passed": 0,
+        "runs": 80,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.046
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 73,
+        "runs": 80,
+        "rate": 0.9125,
+        "ci95": [
+          0.83,
+          0.957
+        ]
+      },
+      "contract": {
+        "passed": 80,
+        "runs": 80,
+        "rate": 1.0,
+        "ci95": [
+          0.954,
+          1.0
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 26,
+      "runs": 40,
+      "rate": 0.65,
+      "ci95": [
+        0.495,
+        0.779
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 39,
+      "runs": 40,
+      "rate": 0.975,
+      "ci95": [
+        0.871,
+        0.996
+      ]
+    },
+    "skill/haiku": {
+      "passed": 34,
+      "runs": 40,
+      "rate": 0.85,
+      "ci95": [
+        0.709,
+        0.929
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 39,
+      "runs": 40,
+      "rate": 0.975,
+      "ci95": [
+        0.871,
+        0.996
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 23190.5,
+      "median_seconds": 54.5,
+      "runs_with_timing": 80
+    },
+    "skill": {
+      "median_tokens": 30095.5,
+      "median_seconds": 78.2,
+      "runs_with_timing": 80
+    }
+  },
+  "cases": {
+    "cypher-parcel-depot-copy-goes-stale-when-a-parcel-moves": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "ladybug-checkout-price-takes-any-row-of-a-price-history-it-never-closes-off": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "FAIL:finds-old-price-at-checkout"
+      ],
+      "skill/haiku": [
+        "FAIL:finds-old-price-at-checkout"
+      ]
+    },
+    "sqlite-topic-count-adds-an-article-once-per-route-through-a-shared-subtopic": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-incompatible-pairs-stored-once-and-the-shelf-check-reads-one-side": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-seat-hold-checks-in-one-transaction-and-creates-in-another": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:finds-check-then-create-race"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-duplicate-finder-reaches-other-workspaces-through-shared-content-nodes": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-archive-schema-with-one-tag-table-for-two-kinds-of-item-is-sound": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:says-sound-archive-schema,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "FAIL:says-sound-archive-schema"
+      ]
+    },
+    "cypher-linter-flags-three-comma-patterns-and-only-the-ridership-report-is-wrong": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-sound-all-pairs-table-is-small-and-saves-a-dijkstra-per-lookup": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-language-hub-with-millions-of-learners-is-only-ever-reached-from-the-learner-side": {
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-credit-transfer-walk-remembers-visited-colleges-as-digits-in-a-string": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-closure-rows-are-not-rewritten-when-a-storage-location-moves": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-dag-check-lists-every-cycle-to-report-the-first-one": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-pipe-edges-load-manhole-ids-as-text-beside-integer-manhole-nodes": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "neo4j-usage-export-pages-with-skip-over-sessions-it-has-just-marked-exported": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-award-search-has-a-leg-limit-and-still-walks-every-itinerary": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-sound-kiosk-threads-share-a-frozen-graph-that-is-swapped-whole": {
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-sync-writes-reports-to-from-the-manager-beside-a-misspelt-property": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-lease-dates-loaded-as-day-first-text-and-compared-as-text": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-cheapest-lane-keeps-whichever-carrier-quote-was-loaded-last": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-invoice-keeps-the-billing-address-as-issued-and-a-reviewer-calls-it-duplication": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "ladybug-api-formats-table-names-from-a-fixed-map-and-a-scanner-calls-it-injection": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-sound-asset-paths-are-delimited-indexed-and-moved-in-one-statement": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-id-paths-sound,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-client-records-each-redelivered-stock-message-as-a-new-movement": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-sound-relay-route-counts-legs-because-the-price-is-per-leg": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-nightly-rebuild-creates-into-an-empty-graph-and-a-reviewer-wants-merge": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:no-critical-or-high"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "sqlite-flock-book-withdrawal-cascades-through-sire-and-dam-to-the-descendants": {
+      "skill/haiku": [
+        "FAIL:not-overrated-show-result-cascade"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:not-overrated-show-result-cascade,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "ladybug-region-revenue-adds-each-order-total-once-per-line": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-report-thresholds-in-euros-against-amounts-loaded-in-cents": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-sound-thread-page-joins-once-because-a-trigger-keeps-replies-one-level-deep": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "ladybug-monthly-ride-bill-passes-the-last-day-to-a-query-that-excludes-it": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:explains-last-day-unbilled,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "networkx-porter-routes-weigh-every-lift-ride-as-one-second": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-queries-pinned-to-cypher-5-on-purpose-while-two-servers-disagree-on-the-default": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "sqlite-door-access-walk-follows-crew-links-that-were-removed": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-sound-ferry-walk-has-no-cycle-guard-because-every-step-is-later": {
+      "skill/haiku": [
+        "FAIL:no-critical-or-high"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:says-sound-time-ordered-walk-ends,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-room-number-declared-unique-across-hotels-that-number-their-own": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-retired-products-stay-because-ten-years-of-orders-point-at-them": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-fitment-lookup-by-bike-lost-its-index-when-a-migration-rebuilt-the-table": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-alert-fanout-pages-followers-by-a-whole-second-timestamp-and-drops-ties": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-sound-fibre-plant-is-undirected-because-a-cable-has-no-direction": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "cypher-language-hub-with-millions-of-learners-is-only-ever-reached-from-the-learner-side",
+      "cypher-retired-products-stay-because-ten-years-of-orders-point-at-them",
+      "ladybug-api-formats-table-names-from-a-fixed-map-and-a-scanner-calls-it-injection",
+      "ladybug-invoice-keeps-the-billing-address-as-issued-and-a-reviewer-calls-it-duplication",
+      "ladybug-monthly-ride-bill-passes-the-last-day-to-a-query-that-excludes-it",
+      "neo4j-queries-pinned-to-cypher-5-on-purpose-while-two-servers-disagree-on-the-default",
+      "networkx-sound-all-pairs-table-is-small-and-saves-a-dijkstra-per-lookup",
+      "networkx-sound-fibre-plant-is-undirected-because-a-cable-has-no-direction",
+      "networkx-sound-kiosk-threads-share-a-frozen-graph-that-is-swapped-whole",
+      "sqlite-sound-asset-paths-are-delimited-indexed-and-moved-in-one-statement"
+    ],
+    "baseline_wins": [
+      "ladybug-checkout-price-takes-any-row-of-a-price-history-it-never-closes-off",
+      "neo4j-seat-hold-checks-in-one-transaction-and-creates-in-another"
+    ],
+    "ties": [
+      "cypher-duplicate-finder-reaches-other-workspaces-through-shared-content-nodes",
+      "cypher-lease-dates-loaded-as-day-first-text-and-compared-as-text",
+      "cypher-linter-flags-three-comma-patterns-and-only-the-ridership-report-is-wrong",
+      "cypher-parcel-depot-copy-goes-stale-when-a-parcel-moves",
+      "cypher-room-number-declared-unique-across-hotels-that-number-their-own",
+      "cypher-sync-writes-reports-to-from-the-manager-beside-a-misspelt-property",
+      "ladybug-archive-schema-with-one-tag-table-for-two-kinds-of-item-is-sound",
+      "ladybug-region-revenue-adds-each-order-total-once-per-line",
+      "neo4j-client-records-each-redelivered-stock-message-as-a-new-movement",
+      "neo4j-nightly-rebuild-creates-into-an-empty-graph-and-a-reviewer-wants-merge",
+      "neo4j-report-thresholds-in-euros-against-amounts-loaded-in-cents",
+      "neo4j-usage-export-pages-with-skip-over-sessions-it-has-just-marked-exported",
+      "networkx-cheapest-lane-keeps-whichever-carrier-quote-was-loaded-last",
+      "networkx-dag-check-lists-every-cycle-to-report-the-first-one",
+      "networkx-pipe-edges-load-manhole-ids-as-text-beside-integer-manhole-nodes",
+      "networkx-porter-routes-weigh-every-lift-ride-as-one-second",
+      "networkx-sound-relay-route-counts-legs-because-the-price-is-per-leg",
+      "sqlite-alert-fanout-pages-followers-by-a-whole-second-timestamp-and-drops-ties",
+      "sqlite-award-search-has-a-leg-limit-and-still-walks-every-itinerary",
+      "sqlite-closure-rows-are-not-rewritten-when-a-storage-location-moves",
+      "sqlite-credit-transfer-walk-remembers-visited-colleges-as-digits-in-a-string",
+      "sqlite-door-access-walk-follows-crew-links-that-were-removed",
+      "sqlite-fitment-lookup-by-bike-lost-its-index-when-a-migration-rebuilt-the-table",
+      "sqlite-flock-book-withdrawal-cascades-through-sire-and-dam-to-the-descendants",
+      "sqlite-incompatible-pairs-stored-once-and-the-shelf-check-reads-one-side",
+      "sqlite-sound-ferry-walk-has-no-cycle-guard-because-every-step-is-later",
+      "sqlite-sound-thread-page-joins-once-because-a-trigger-keeps-replies-one-level-deep",
+      "sqlite-topic-count-adds-an-article-once-per-route-through-a-shared-subtopic"
+    ],
+    "regressions": [
+      "ladybug-checkout-price-takes-any-row-of-a-price-history-it-never-closes-off"
+    ],
+    "p": 0.0386
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "cypher-language-hub-with-millions-of-learners-is-only-ever-reached-from-the-learner-side",
+        "cypher-retired-products-stay-because-ten-years-of-orders-point-at-them",
+        "ladybug-api-formats-table-names-from-a-fixed-map-and-a-scanner-calls-it-injection",
+        "ladybug-invoice-keeps-the-billing-address-as-issued-and-a-reviewer-calls-it-duplication",
+        "ladybug-monthly-ride-bill-passes-the-last-day-to-a-query-that-excludes-it",
+        "neo4j-queries-pinned-to-cypher-5-on-purpose-while-two-servers-disagree-on-the-default",
+        "networkx-sound-all-pairs-table-is-small-and-saves-a-dijkstra-per-lookup",
+        "networkx-sound-fibre-plant-is-undirected-because-a-cable-has-no-direction",
+        "networkx-sound-kiosk-threads-share-a-frozen-graph-that-is-swapped-whole",
+        "sqlite-sound-asset-paths-are-delimited-indexed-and-moved-in-one-statement"
+      ],
+      "baseline_wins": [
+        "ladybug-checkout-price-takes-any-row-of-a-price-history-it-never-closes-off",
+        "neo4j-seat-hold-checks-in-one-transaction-and-creates-in-another"
+      ],
+      "ties": [
+        "cypher-duplicate-finder-reaches-other-workspaces-through-shared-content-nodes",
+        "cypher-lease-dates-loaded-as-day-first-text-and-compared-as-text",
+        "cypher-linter-flags-three-comma-patterns-and-only-the-ridership-report-is-wrong",
+        "cypher-parcel-depot-copy-goes-stale-when-a-parcel-moves",
+        "cypher-room-number-declared-unique-across-hotels-that-number-their-own",
+        "cypher-sync-writes-reports-to-from-the-manager-beside-a-misspelt-property",
+        "ladybug-archive-schema-with-one-tag-table-for-two-kinds-of-item-is-sound",
+        "ladybug-region-revenue-adds-each-order-total-once-per-line",
+        "neo4j-client-records-each-redelivered-stock-message-as-a-new-movement",
+        "neo4j-nightly-rebuild-creates-into-an-empty-graph-and-a-reviewer-wants-merge",
+        "neo4j-report-thresholds-in-euros-against-amounts-loaded-in-cents",
+        "neo4j-usage-export-pages-with-skip-over-sessions-it-has-just-marked-exported",
+        "networkx-cheapest-lane-keeps-whichever-carrier-quote-was-loaded-last",
+        "networkx-dag-check-lists-every-cycle-to-report-the-first-one",
+        "networkx-pipe-edges-load-manhole-ids-as-text-beside-integer-manhole-nodes",
+        "networkx-porter-routes-weigh-every-lift-ride-as-one-second",
+        "networkx-sound-relay-route-counts-legs-because-the-price-is-per-leg",
+        "sqlite-alert-fanout-pages-followers-by-a-whole-second-timestamp-and-drops-ties",
+        "sqlite-award-search-has-a-leg-limit-and-still-walks-every-itinerary",
+        "sqlite-closure-rows-are-not-rewritten-when-a-storage-location-moves",
+        "sqlite-credit-transfer-walk-remembers-visited-colleges-as-digits-in-a-string",
+        "sqlite-door-access-walk-follows-crew-links-that-were-removed",
+        "sqlite-fitment-lookup-by-bike-lost-its-index-when-a-migration-rebuilt-the-table",
+        "sqlite-flock-book-withdrawal-cascades-through-sire-and-dam-to-the-descendants",
+        "sqlite-incompatible-pairs-stored-once-and-the-shelf-check-reads-one-side",
+        "sqlite-sound-ferry-walk-has-no-cycle-guard-because-every-step-is-later",
+        "sqlite-sound-thread-page-joins-once-because-a-trigger-keeps-replies-one-level-deep",
+        "sqlite-topic-count-adds-an-article-once-per-route-through-a-shared-subtopic"
+      ],
+      "regressions": [
+        "ladybug-checkout-price-takes-any-row-of-a-price-history-it-never-closes-off",
+        "neo4j-seat-hold-checks-in-one-transaction-and-creates-in-another"
+      ],
+      "p": 0.0386
+    },
+    "sonnet": {
+      "skill_wins": [
+        "ladybug-invoice-keeps-the-billing-address-as-issued-and-a-reviewer-calls-it-duplication"
+      ],
+      "baseline_wins": [
+        "ladybug-checkout-price-takes-any-row-of-a-price-history-it-never-closes-off"
+      ],
+      "ties": [
+        "cypher-duplicate-finder-reaches-other-workspaces-through-shared-content-nodes",
+        "cypher-language-hub-with-millions-of-learners-is-only-ever-reached-from-the-learner-side",
+        "cypher-lease-dates-loaded-as-day-first-text-and-compared-as-text",
+        "cypher-linter-flags-three-comma-patterns-and-only-the-ridership-report-is-wrong",
+        "cypher-parcel-depot-copy-goes-stale-when-a-parcel-moves",
+        "cypher-retired-products-stay-because-ten-years-of-orders-point-at-them",
+        "cypher-room-number-declared-unique-across-hotels-that-number-their-own",
+        "cypher-sync-writes-reports-to-from-the-manager-beside-a-misspelt-property",
+        "ladybug-api-formats-table-names-from-a-fixed-map-and-a-scanner-calls-it-injection",
+        "ladybug-archive-schema-with-one-tag-table-for-two-kinds-of-item-is-sound",
+        "ladybug-monthly-ride-bill-passes-the-last-day-to-a-query-that-excludes-it",
+        "ladybug-region-revenue-adds-each-order-total-once-per-line",
+        "neo4j-client-records-each-redelivered-stock-message-as-a-new-movement",
+        "neo4j-nightly-rebuild-creates-into-an-empty-graph-and-a-reviewer-wants-merge",
+        "neo4j-queries-pinned-to-cypher-5-on-purpose-while-two-servers-disagree-on-the-default",
+        "neo4j-report-thresholds-in-euros-against-amounts-loaded-in-cents",
+        "neo4j-seat-hold-checks-in-one-transaction-and-creates-in-another",
+        "neo4j-usage-export-pages-with-skip-over-sessions-it-has-just-marked-exported",
+        "networkx-cheapest-lane-keeps-whichever-carrier-quote-was-loaded-last",
+        "networkx-dag-check-lists-every-cycle-to-report-the-first-one",
+        "networkx-pipe-edges-load-manhole-ids-as-text-beside-integer-manhole-nodes",
+        "networkx-porter-routes-weigh-every-lift-ride-as-one-second",
+        "networkx-sound-all-pairs-table-is-small-and-saves-a-dijkstra-per-lookup",
+        "networkx-sound-fibre-plant-is-undirected-because-a-cable-has-no-direction",
+        "networkx-sound-kiosk-threads-share-a-frozen-graph-that-is-swapped-whole",
+        "networkx-sound-relay-route-counts-legs-because-the-price-is-per-leg",
+        "sqlite-alert-fanout-pages-followers-by-a-whole-second-timestamp-and-drops-ties",
+        "sqlite-award-search-has-a-leg-limit-and-still-walks-every-itinerary",
+        "sqlite-closure-rows-are-not-rewritten-when-a-storage-location-moves",
+        "sqlite-credit-transfer-walk-remembers-visited-colleges-as-digits-in-a-string",
+        "sqlite-door-access-walk-follows-crew-links-that-were-removed",
+        "sqlite-fitment-lookup-by-bike-lost-its-index-when-a-migration-rebuilt-the-table",
+        "sqlite-flock-book-withdrawal-cascades-through-sire-and-dam-to-the-descendants",
+        "sqlite-incompatible-pairs-stored-once-and-the-shelf-check-reads-one-side",
+        "sqlite-sound-asset-paths-are-delimited-indexed-and-moved-in-one-statement",
+        "sqlite-sound-ferry-walk-has-no-cycle-guard-because-every-step-is-later",
+        "sqlite-sound-thread-page-joins-once-because-a-trigger-keeps-replies-one-level-deep",
+        "sqlite-topic-count-adds-an-article-once-per-route-through-a-shared-subtopic"
+      ],
+      "regressions": [
+        "ladybug-checkout-price-takes-any-row-of-a-price-history-it-never-closes-off"
+      ],
+      "p": 1.0
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

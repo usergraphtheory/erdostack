@@ -29,6 +29,8 @@ jobs:
           python-version: "3.13"
       - name: Validate
         run: node scripts/validate.mjs
+      - name: Test the eval harness
+        run: python -m unittest discover -s evals/harness -p 'test_*.py'
       - name: Check the npm package contents
         run: npm pack --dry-run
       - name: Build the Python package

@@ -27,3 +27,6 @@ Thumbs.db
 
 # Local agent state
 .claude/settings.local.json
+
+# Eval run directories (prepared workspaces and agent outputs)
+runs/

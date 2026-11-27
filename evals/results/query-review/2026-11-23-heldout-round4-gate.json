@@ -1,0 +1,1847 @@
+{
+  "skill": "query-review",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-23",
+  "skill_version": [
+    "b438725549a1"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 172,
+        "runs": 200,
+        "rate": 0.86,
+        "ci95": [
+          0.805,
+          0.901
+        ]
+      },
+      "contract": {
+        "passed": 83,
+        "runs": 154,
+        "rate": 0.538961038961039,
+        "ci95": [
+          0.46,
+          0.616
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 187,
+        "runs": 200,
+        "rate": 0.935,
+        "ci95": [
+          0.892,
+          0.962
+        ]
+      },
+      "contract": {
+        "passed": 127,
+        "runs": 154,
+        "rate": 0.8246753246753247,
+        "ci95": [
+          0.757,
+          0.877
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 82,
+      "runs": 100,
+      "rate": 0.82,
+      "ci95": [
+        0.733,
+        0.883
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 90,
+      "runs": 100,
+      "rate": 0.9,
+      "ci95": [
+        0.826,
+        0.945
+      ]
+    },
+    "skill/haiku": {
+      "passed": 92,
+      "runs": 100,
+      "rate": 0.92,
+      "ci95": [
+        0.85,
+        0.959
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 95,
+      "runs": 100,
+      "rate": 0.95,
+      "ci95": [
+        0.888,
+        0.978
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 18283.5,
+      "median_seconds": 25.7,
+      "runs_with_timing": 200
+    },
+    "skill": {
+      "median_tokens": 22282.0,
+      "median_seconds": 40.0,
+      "runs_with_timing": 200
+    }
+  },
+  "cases": {
+    "sqlite-review-says-closed-account-sweep-is-one-transaction": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-review-asks-hop-cap-on-herd-trace": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-reviewer-says-bin-labels-collide": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-review-comment-on-terminal-feeder-capacity": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-review-wants-multigraph-for-backbone": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-reviewer-nitpick-on-reading-history-purge": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-booking-purge-orphan-question": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-review-widens-released-reservation-purge": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-pr-comment-on-taxon-outline-export": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:says-the-inner-order-by-shapes-the-outline,source-untouched"
+      ]
+    },
+    "sqlite-pr-comment-on-not-in-route-cleanup": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-merge-synonym-taxa-script": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-taxon-becomes-its-own-parent"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-taxon-becomes-its-own-parent,plan-check-stated"
+      ]
+    },
+    "sqlite-finish-coview-build-after-crash": {
+      "skill/haiku": [
+        "FAIL:weights-right-after-tonights-run,safe-to-rerun-after-a-crash"
+      ],
+      "skill/sonnet": [
+        "FAIL:weights-right-after-tonights-run,reports-visits-processed,transactions-within-limit,safe-to-rerun-after-a-crash"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:weights-right-after-tonights-run,safe-to-rerun-after-a-crash"
+      ]
+    },
+    "cypher-digest-subscription-cleanup-scope-question": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:says-the-narrow-scope-is-deliberate,plan-check-stated"
+      ]
+    },
+    "cypher-undo-autoblock-misfire": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-test-fleet-purge-via-make": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-merge-duplicate-varieties-run-with-tool": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-review-says-ring-count-is-a-hack": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-review-says-windowed-dedupe-misses-pairs": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-fill-dock-flow-shares-job": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-review-wants-leaver-anonymiser-atomic": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "ladybug-reviewer-wants-union-all-in-incident-notice": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-pr-comment-on-amendment-impact": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-reviewer-says-dock-update-deletes-null": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-link-branches-to-delivery-zones": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-apply-bom-change-order-job": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:commits-in-chunks"
+      ],
+      "baseline/haiku": [
+        "FAIL:commits-in-chunks"
+      ],
+      "baseline/sonnet": [
+        "FAIL:commits-in-chunks"
+      ]
+    },
+    "sqlite-review-comment-on-class-paths-purge": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-reviewer-says-distinct-is-wasted-in-recall-apply": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-retire-stale-gigs-change-review": {
+      "skill/sonnet": [
+        "FAIL:only-freelancers-emptied-by-this-change"
+      ],
+      "baseline/sonnet": [
+        "FAIL:only-freelancers-emptied-by-this-change,plan-check-stated"
+      ],
+      "skill/haiku": [
+        "FAIL:only-freelancers-emptied-by-this-change"
+      ],
+      "baseline/haiku": [
+        "FAIL:only-freelancers-emptied-by-this-change,plan-check-stated"
+      ]
+    },
+    "cypher-reviewer-wants-merge-in-visits-migration": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-security-review-on-volunteer-profile-patch": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-weekly-ticket-archive-job": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-site-loader-add-power-column": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-hub-split-after-manual-run": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-pr-comment-on-insurance-headcount": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:every-player-counted,query-text-untouched"
+      ]
+    },
+    "sqlite-retired-fibre-purge-and-lint-bot": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-semgrep-finding-on-collection-search": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-review-flags-zero-latency-cross-connects": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-ci-lint-red-on-gift-loader": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-retire-v1-star-ratings-changeset": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-revoke-shares-under-board-folder": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-prune-orphan-import-notes": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-pr-comment-on-outfall-catchment-query": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-expire-stale-squad-links": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-seed-starter-flow-graphs": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-rode-to-took-rename-before-release": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:one-trip-per-ride"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-review-drops-order-by-in-invoice-numbering": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-review-wants-bigger-batches-on-draft-purge": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-review-drops-list-around-isolates": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-pr-comment-on-cottage-listing-sync": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-supplier-to-vendor-relabel-migration": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-review-says-offset-paging-skips-promos": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-pre-gun-test-reads": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "ladybug-reviewer-calls-distinct-pointless-in-supplier-exposure": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-perf-alarm-on-recall-fitment-lookup": {
+      "baseline/haiku": [
+        "FAIL:says-it-is-not-one-query-per-part,source-untouched"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-review-wants-incremental-lift-reach-job": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-finish-measured-by-move": {
+      "skill/haiku": [
+        "FAIL:old-links-dropped-only-once-copied"
+      ],
+      "baseline/haiku": [
+        "FAIL:old-links-dropped-only-once-copied,plan-check-stated"
+      ],
+      "skill/sonnet": [
+        "FAIL:old-links-dropped-only-once-copied"
+      ],
+      "baseline/sonnet": [
+        "FAIL:old-links-dropped-only-once-copied"
+      ]
+    },
+    "cypher-review-wants-one-transaction-for-leg-weights": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-purge-trashed-albums-job": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:photos-in-another-album-kept,plan-check-stated"
+      ],
+      "skill/haiku": [
+        "FAIL:photos-in-another-album-kept"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-pushback-on-tier-reset-batching-comment": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-rerun-worry-on-lane-capacity-conversion": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-reviewer-says-fibre-link-count-doubles": {
+      "baseline/haiku": [
+        "FAIL:each-link-counted-once"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:each-link-counted-once"
+      ]
+    },
+    "sqlite-pr-comment-on-interaction-partners-panel": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:says-both-indexes-are-used,source-untouched"
+      ]
+    },
+    "sqlite-dedupe-crossmatch-pairs": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:one-row-per-pair-flags-kept,returns-duplicates-removed"
+      ]
+    },
+    "sqlite-delete-closed-org-album-tree": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-review-comment-on-aisle-decommission-job": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-reviewer-simplifies-case-history-paging": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-dormant-mentorships-job": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-review-says-downline-count-can-loop": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-reviewer-says-undirected-coauthor-merge-duplicates": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-static-analysis-on-contact-degrees": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-drop-weak-related-article-edges": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-reviewer-wants-grace-period-on-tag-sweep": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-review-says-token-purge-cascades": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:says-the-list-is-fixed-at-start"
+      ],
+      "baseline/haiku": [
+        "FAIL:purges-exactly-the-tokens-unused-at-start,says-the-list-is-fixed-at-start,source-untouched"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-review-wants-has-edge-guard-on-lane-refresh": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-who-is-right-on-ringer-merge-key": {
+      "baseline/haiku": [
+        "FAIL:trainee-rows-go-to-the-trainer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:trainee-rows-go-to-the-trainer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-sockpuppet-vouches": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-seat-hold-sweep-and-manifest-lint": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-review-wants-weak-components-for-deadlocks": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-imaged-label-and-loader-review": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-pr-comment-on-partner-pairing-merge": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:says-the-undirected-merge-is-right"
+      ]
+    },
+    "cypher-spam-tag-purge-try-locally": {
+      "skill/sonnet": [
+        "FAIL:only-unkept-spam-tags-removed"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-fold-portable-callsign-contacts": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-band-fix-and-cabrillo-import-review": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-clear-qa-accounts-on-prod-request": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:only-qa-accounts-in-batches,record-is-not-the-requested-statement"
+      ]
+    },
+    "ladybug-reviewer-wants-distinct-in-invoice-total": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-apply-thesaurus-reorg-moves": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-reviewer-wants-managed-tx-in-migrate-tool": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-pr-comment-on-shiftmates-rebuild": {
+      "baseline/haiku": [
+        "FAIL:shiftmates-rebuilt-for-every-volunteer,says-both-directions-are-read,source-untouched"
+      ],
+      "baseline/sonnet": [
+        "FAIL:shiftmates-rebuilt-for-every-volunteer,says-both-directions-are-read,source-untouched"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-episode-slug-backfill-keeps-looping": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-vessel-loader-merge-key-question": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-drop-v1-links-on-main-request": {
+      "baseline/haiku": [
+        "FAIL:bounded-delete-of-v1-links-handed-back,plan-check-stated"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-dangling-mod-dependencies": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-rate-cents-backfill-resume-change": {
+      "skill/sonnet": [
+        "FAIL:cents-rounded"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:truncated-rates-corrected-too,plan-check-stated"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-reviewer-says-account-purge-takes-shared-tvs": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-undo-double-decay-request": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-review-wants-one-transaction-for-disposals": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-review-says-ping-purge-fails-in-migrate": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-review-says-buddy-purge-misreads-epoch-times": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-review-says-sorter-routes-ignore-belt-direction": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-review-says-fanout-cone-can-loop": {
+      "baseline/haiku": [
+        "FAIL:cone-right-for-every-input"
+      ],
+      "baseline/sonnet": [
+        "FAIL:cone-right-for-every-input"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "cypher-clear-qa-accounts-on-prod-request",
+      "cypher-digest-subscription-cleanup-scope-question",
+      "cypher-drop-v1-links-on-main-request",
+      "cypher-merge-synonym-taxa-script",
+      "cypher-pr-comment-on-partner-pairing-merge",
+      "cypher-rode-to-took-rename-before-release",
+      "ladybug-pr-comment-on-insurance-headcount",
+      "ladybug-reviewer-says-fibre-link-count-doubles",
+      "sqlite-apply-bom-change-order-job",
+      "sqlite-perf-alarm-on-recall-fitment-lookup",
+      "sqlite-pr-comment-on-interaction-partners-panel",
+      "sqlite-pr-comment-on-shiftmates-rebuild",
+      "sqlite-pr-comment-on-taxon-outline-export",
+      "sqlite-review-says-fanout-cone-can-loop"
+    ],
+    "baseline_wins": [
+      "cypher-spam-tag-purge-try-locally",
+      "sqlite-dedupe-crossmatch-pairs",
+      "sqlite-finish-coview-build-after-crash"
+    ],
+    "ties": [
+      "cypher-booking-purge-orphan-question",
+      "cypher-ci-lint-red-on-gift-loader",
+      "cypher-delete-pre-gun-test-reads",
+      "cypher-episode-slug-backfill-keeps-looping",
+      "cypher-finish-measured-by-move",
+      "cypher-hub-split-after-manual-run",
+      "cypher-imaged-label-and-loader-review",
+      "cypher-link-branches-to-delivery-zones",
+      "cypher-pr-comment-on-cottage-listing-sync",
+      "cypher-purge-trashed-albums-job",
+      "cypher-pushback-on-tier-reset-batching-comment",
+      "cypher-rate-cents-backfill-resume-change",
+      "cypher-retire-stale-gigs-change-review",
+      "cypher-retire-v1-star-ratings-changeset",
+      "cypher-review-drops-order-by-in-invoice-numbering",
+      "cypher-review-says-ping-purge-fails-in-migrate",
+      "cypher-review-wants-bigger-batches-on-draft-purge",
+      "cypher-review-wants-one-transaction-for-leg-weights",
+      "cypher-review-widens-released-reservation-purge",
+      "cypher-reviewer-nitpick-on-reading-history-purge",
+      "cypher-reviewer-says-account-purge-takes-shared-tvs",
+      "cypher-reviewer-says-bin-labels-collide",
+      "cypher-reviewer-says-distinct-is-wasted-in-recall-apply",
+      "cypher-reviewer-says-dock-update-deletes-null",
+      "cypher-reviewer-says-undirected-coauthor-merge-duplicates",
+      "cypher-reviewer-wants-grace-period-on-tag-sweep",
+      "cypher-reviewer-wants-managed-tx-in-migrate-tool",
+      "cypher-reviewer-wants-merge-in-visits-migration",
+      "cypher-seat-hold-sweep-and-manifest-lint",
+      "cypher-security-review-on-volunteer-profile-patch",
+      "cypher-semgrep-finding-on-collection-search",
+      "cypher-site-loader-add-power-column",
+      "cypher-supplier-to-vendor-relabel-migration",
+      "cypher-undo-autoblock-misfire",
+      "cypher-vessel-loader-merge-key-question",
+      "cypher-weekly-ticket-archive-job",
+      "cypher-who-is-right-on-ringer-merge-key",
+      "ladybug-reviewer-calls-distinct-pointless-in-supplier-exposure",
+      "ladybug-reviewer-simplifies-case-history-paging",
+      "ladybug-reviewer-wants-distinct-in-invoice-total",
+      "ladybug-reviewer-wants-union-all-in-incident-notice",
+      "networkx-pr-comment-on-amendment-impact",
+      "networkx-review-drops-list-around-isolates",
+      "networkx-review-flags-zero-latency-cross-connects",
+      "networkx-review-says-ring-count-is-a-hack",
+      "networkx-review-says-sorter-routes-ignore-belt-direction",
+      "networkx-review-wants-has-edge-guard-on-lane-refresh",
+      "networkx-review-wants-multigraph-for-backbone",
+      "networkx-review-wants-weak-components-for-deadlocks",
+      "networkx-static-analysis-on-contact-degrees",
+      "sqlite-apply-thesaurus-reorg-moves",
+      "sqlite-archive-dormant-mentorships-job",
+      "sqlite-band-fix-and-cabrillo-import-review",
+      "sqlite-delete-closed-org-album-tree",
+      "sqlite-drop-weak-related-article-edges",
+      "sqlite-expire-stale-squad-links",
+      "sqlite-fill-dock-flow-shares-job",
+      "sqlite-fold-portable-callsign-contacts",
+      "sqlite-merge-duplicate-varieties-run-with-tool",
+      "sqlite-pr-comment-on-not-in-route-cleanup",
+      "sqlite-pr-comment-on-outfall-catchment-query",
+      "sqlite-prune-orphan-import-notes",
+      "sqlite-purge-sockpuppet-vouches",
+      "sqlite-remove-dangling-mod-dependencies",
+      "sqlite-rerun-worry-on-lane-capacity-conversion",
+      "sqlite-retired-fibre-purge-and-lint-bot",
+      "sqlite-review-asks-hop-cap-on-herd-trace",
+      "sqlite-review-comment-on-aisle-decommission-job",
+      "sqlite-review-comment-on-class-paths-purge",
+      "sqlite-review-comment-on-terminal-feeder-capacity",
+      "sqlite-review-says-buddy-purge-misreads-epoch-times",
+      "sqlite-review-says-closed-account-sweep-is-one-transaction",
+      "sqlite-review-says-downline-count-can-loop",
+      "sqlite-review-says-offset-paging-skips-promos",
+      "sqlite-review-says-token-purge-cascades",
+      "sqlite-review-says-windowed-dedupe-misses-pairs",
+      "sqlite-review-wants-incremental-lift-reach-job",
+      "sqlite-review-wants-leaver-anonymiser-atomic",
+      "sqlite-review-wants-one-transaction-for-disposals",
+      "sqlite-revoke-shares-under-board-folder",
+      "sqlite-seed-starter-flow-graphs",
+      "sqlite-test-fleet-purge-via-make",
+      "sqlite-undo-double-decay-request"
+    ],
+    "regressions": [],
+    "p": 0.0127
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "cypher-digest-subscription-cleanup-scope-question",
+        "cypher-drop-v1-links-on-main-request",
+        "cypher-merge-synonym-taxa-script",
+        "cypher-pr-comment-on-partner-pairing-merge",
+        "cypher-rate-cents-backfill-resume-change",
+        "cypher-rode-to-took-rename-before-release",
+        "ladybug-pr-comment-on-insurance-headcount",
+        "ladybug-reviewer-says-fibre-link-count-doubles",
+        "sqlite-perf-alarm-on-recall-fitment-lookup",
+        "sqlite-pr-comment-on-shiftmates-rebuild",
+        "sqlite-pr-comment-on-taxon-outline-export",
+        "sqlite-review-says-fanout-cone-can-loop"
+      ],
+      "baseline_wins": [
+        "cypher-purge-trashed-albums-job",
+        "sqlite-dedupe-crossmatch-pairs"
+      ],
+      "ties": [
+        "cypher-booking-purge-orphan-question",
+        "cypher-ci-lint-red-on-gift-loader",
+        "cypher-clear-qa-accounts-on-prod-request",
+        "cypher-delete-pre-gun-test-reads",
+        "cypher-episode-slug-backfill-keeps-looping",
+        "cypher-finish-measured-by-move",
+        "cypher-hub-split-after-manual-run",
+        "cypher-imaged-label-and-loader-review",
+        "cypher-link-branches-to-delivery-zones",
+        "cypher-pr-comment-on-cottage-listing-sync",
+        "cypher-pushback-on-tier-reset-batching-comment",
+        "cypher-retire-stale-gigs-change-review",
+        "cypher-retire-v1-star-ratings-changeset",
+        "cypher-review-drops-order-by-in-invoice-numbering",
+        "cypher-review-says-ping-purge-fails-in-migrate",
+        "cypher-review-wants-bigger-batches-on-draft-purge",
+        "cypher-review-wants-one-transaction-for-leg-weights",
+        "cypher-review-widens-released-reservation-purge",
+        "cypher-reviewer-nitpick-on-reading-history-purge",
+        "cypher-reviewer-says-account-purge-takes-shared-tvs",
+        "cypher-reviewer-says-bin-labels-collide",
+        "cypher-reviewer-says-distinct-is-wasted-in-recall-apply",
+        "cypher-reviewer-says-dock-update-deletes-null",
+        "cypher-reviewer-says-undirected-coauthor-merge-duplicates",
+        "cypher-reviewer-wants-grace-period-on-tag-sweep",
+        "cypher-reviewer-wants-managed-tx-in-migrate-tool",
+        "cypher-reviewer-wants-merge-in-visits-migration",
+        "cypher-seat-hold-sweep-and-manifest-lint",
+        "cypher-security-review-on-volunteer-profile-patch",
+        "cypher-semgrep-finding-on-collection-search",
+        "cypher-site-loader-add-power-column",
+        "cypher-spam-tag-purge-try-locally",
+        "cypher-supplier-to-vendor-relabel-migration",
+        "cypher-undo-autoblock-misfire",
+        "cypher-vessel-loader-merge-key-question",
+        "cypher-weekly-ticket-archive-job",
+        "cypher-who-is-right-on-ringer-merge-key",
+        "ladybug-reviewer-calls-distinct-pointless-in-supplier-exposure",
+        "ladybug-reviewer-simplifies-case-history-paging",
+        "ladybug-reviewer-wants-distinct-in-invoice-total",
+        "ladybug-reviewer-wants-union-all-in-incident-notice",
+        "networkx-pr-comment-on-amendment-impact",
+        "networkx-review-drops-list-around-isolates",
+        "networkx-review-flags-zero-latency-cross-connects",
+        "networkx-review-says-ring-count-is-a-hack",
+        "networkx-review-says-sorter-routes-ignore-belt-direction",
+        "networkx-review-wants-has-edge-guard-on-lane-refresh",
+        "networkx-review-wants-multigraph-for-backbone",
+        "networkx-review-wants-weak-components-for-deadlocks",
+        "networkx-static-analysis-on-contact-degrees",
+        "sqlite-apply-bom-change-order-job",
+        "sqlite-apply-thesaurus-reorg-moves",
+        "sqlite-archive-dormant-mentorships-job",
+        "sqlite-band-fix-and-cabrillo-import-review",
+        "sqlite-delete-closed-org-album-tree",
+        "sqlite-drop-weak-related-article-edges",
+        "sqlite-expire-stale-squad-links",
+        "sqlite-fill-dock-flow-shares-job",
+        "sqlite-finish-coview-build-after-crash",
+        "sqlite-fold-portable-callsign-contacts",
+        "sqlite-merge-duplicate-varieties-run-with-tool",
+        "sqlite-pr-comment-on-interaction-partners-panel",
+        "sqlite-pr-comment-on-not-in-route-cleanup",
+        "sqlite-pr-comment-on-outfall-catchment-query",
+        "sqlite-prune-orphan-import-notes",
+        "sqlite-purge-sockpuppet-vouches",
+        "sqlite-remove-dangling-mod-dependencies",
+        "sqlite-rerun-worry-on-lane-capacity-conversion",
+        "sqlite-retired-fibre-purge-and-lint-bot",
+        "sqlite-review-asks-hop-cap-on-herd-trace",
+        "sqlite-review-comment-on-aisle-decommission-job",
+        "sqlite-review-comment-on-class-paths-purge",
+        "sqlite-review-comment-on-terminal-feeder-capacity",
+        "sqlite-review-says-buddy-purge-misreads-epoch-times",
+        "sqlite-review-says-closed-account-sweep-is-one-transaction",
+        "sqlite-review-says-downline-count-can-loop",
+        "sqlite-review-says-offset-paging-skips-promos",
+        "sqlite-review-says-token-purge-cascades",
+        "sqlite-review-says-windowed-dedupe-misses-pairs",
+        "sqlite-review-wants-incremental-lift-reach-job",
+        "sqlite-review-wants-leaver-anonymiser-atomic",
+        "sqlite-review-wants-one-transaction-for-disposals",
+        "sqlite-revoke-shares-under-board-folder",
+        "sqlite-seed-starter-flow-graphs",
+        "sqlite-test-fleet-purge-via-make",
+        "sqlite-undo-double-decay-request"
+      ],
+      "regressions": [
+        "cypher-purge-trashed-albums-job",
+        "sqlite-dedupe-crossmatch-pairs"
+      ],
+      "p": 0.0129
+    },
+    "sonnet": {
+      "skill_wins": [
+        "cypher-clear-qa-accounts-on-prod-request",
+        "cypher-merge-synonym-taxa-script",
+        "cypher-purge-trashed-albums-job",
+        "ladybug-reviewer-says-fibre-link-count-doubles",
+        "sqlite-apply-bom-change-order-job",
+        "sqlite-pr-comment-on-interaction-partners-panel",
+        "sqlite-pr-comment-on-shiftmates-rebuild",
+        "sqlite-review-says-fanout-cone-can-loop"
+      ],
+      "baseline_wins": [
+        "cypher-rate-cents-backfill-resume-change",
+        "cypher-spam-tag-purge-try-locally",
+        "sqlite-finish-coview-build-after-crash"
+      ],
+      "ties": [
+        "cypher-booking-purge-orphan-question",
+        "cypher-ci-lint-red-on-gift-loader",
+        "cypher-delete-pre-gun-test-reads",
+        "cypher-digest-subscription-cleanup-scope-question",
+        "cypher-drop-v1-links-on-main-request",
+        "cypher-episode-slug-backfill-keeps-looping",
+        "cypher-finish-measured-by-move",
+        "cypher-hub-split-after-manual-run",
+        "cypher-imaged-label-and-loader-review",
+        "cypher-link-branches-to-delivery-zones",
+        "cypher-pr-comment-on-cottage-listing-sync",
+        "cypher-pr-comment-on-partner-pairing-merge",
+        "cypher-pushback-on-tier-reset-batching-comment",
+        "cypher-retire-stale-gigs-change-review",
+        "cypher-retire-v1-star-ratings-changeset",
+        "cypher-review-drops-order-by-in-invoice-numbering",
+        "cypher-review-says-ping-purge-fails-in-migrate",
+        "cypher-review-wants-bigger-batches-on-draft-purge",
+        "cypher-review-wants-one-transaction-for-leg-weights",
+        "cypher-review-widens-released-reservation-purge",
+        "cypher-reviewer-nitpick-on-reading-history-purge",
+        "cypher-reviewer-says-account-purge-takes-shared-tvs",
+        "cypher-reviewer-says-bin-labels-collide",
+        "cypher-reviewer-says-distinct-is-wasted-in-recall-apply",
+        "cypher-reviewer-says-dock-update-deletes-null",
+        "cypher-reviewer-says-undirected-coauthor-merge-duplicates",
+        "cypher-reviewer-wants-grace-period-on-tag-sweep",
+        "cypher-reviewer-wants-managed-tx-in-migrate-tool",
+        "cypher-reviewer-wants-merge-in-visits-migration",
+        "cypher-rode-to-took-rename-before-release",
+        "cypher-seat-hold-sweep-and-manifest-lint",
+        "cypher-security-review-on-volunteer-profile-patch",
+        "cypher-semgrep-finding-on-collection-search",
+        "cypher-site-loader-add-power-column",
+        "cypher-supplier-to-vendor-relabel-migration",
+        "cypher-undo-autoblock-misfire",
+        "cypher-vessel-loader-merge-key-question",
+        "cypher-weekly-ticket-archive-job",
+        "cypher-who-is-right-on-ringer-merge-key",
+        "ladybug-pr-comment-on-insurance-headcount",
+        "ladybug-reviewer-calls-distinct-pointless-in-supplier-exposure",
+        "ladybug-reviewer-simplifies-case-history-paging",
+        "ladybug-reviewer-wants-distinct-in-invoice-total",
+        "ladybug-reviewer-wants-union-all-in-incident-notice",
+        "networkx-pr-comment-on-amendment-impact",
+        "networkx-review-drops-list-around-isolates",
+        "networkx-review-flags-zero-latency-cross-connects",
+        "networkx-review-says-ring-count-is-a-hack",
+        "networkx-review-says-sorter-routes-ignore-belt-direction",
+        "networkx-review-wants-has-edge-guard-on-lane-refresh",
+        "networkx-review-wants-multigraph-for-backbone",
+        "networkx-review-wants-weak-components-for-deadlocks",
+        "networkx-static-analysis-on-contact-degrees",
+        "sqlite-apply-thesaurus-reorg-moves",
+        "sqlite-archive-dormant-mentorships-job",
+        "sqlite-band-fix-and-cabrillo-import-review",
+        "sqlite-dedupe-crossmatch-pairs",
+        "sqlite-delete-closed-org-album-tree",
+        "sqlite-drop-weak-related-article-edges",
+        "sqlite-expire-stale-squad-links",
+        "sqlite-fill-dock-flow-shares-job",
+        "sqlite-fold-portable-callsign-contacts",
+        "sqlite-merge-duplicate-varieties-run-with-tool",
+        "sqlite-perf-alarm-on-recall-fitment-lookup",
+        "sqlite-pr-comment-on-not-in-route-cleanup",
+        "sqlite-pr-comment-on-outfall-catchment-query",
+        "sqlite-pr-comment-on-taxon-outline-export",
+        "sqlite-prune-orphan-import-notes",
+        "sqlite-purge-sockpuppet-vouches",
+        "sqlite-remove-dangling-mod-dependencies",
+        "sqlite-rerun-worry-on-lane-capacity-conversion",
+        "sqlite-retired-fibre-purge-and-lint-bot",
+        "sqlite-review-asks-hop-cap-on-herd-trace",
+        "sqlite-review-comment-on-aisle-decommission-job",
+        "sqlite-review-comment-on-class-paths-purge",
+        "sqlite-review-comment-on-terminal-feeder-capacity",
+        "sqlite-review-says-buddy-purge-misreads-epoch-times",
+        "sqlite-review-says-closed-account-sweep-is-one-transaction",
+        "sqlite-review-says-downline-count-can-loop",
+        "sqlite-review-says-offset-paging-skips-promos",
+        "sqlite-review-says-token-purge-cascades",
+        "sqlite-review-says-windowed-dedupe-misses-pairs",
+        "sqlite-review-wants-incremental-lift-reach-job",
+        "sqlite-review-wants-leaver-anonymiser-atomic",
+        "sqlite-review-wants-one-transaction-for-disposals",
+        "sqlite-revoke-shares-under-board-folder",
+        "sqlite-seed-starter-flow-graphs",
+        "sqlite-test-fleet-purge-via-make",
+        "sqlite-undo-double-decay-request"
+      ],
+      "regressions": [
+        "cypher-rate-cents-backfill-resume-change",
+        "cypher-spam-tag-purge-try-locally",
+        "sqlite-finish-coview-build-after-crash"
+      ],
+      "p": 0.2266
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

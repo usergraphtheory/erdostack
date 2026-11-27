@@ -1,0 +1,2191 @@
+{
+  "skill": "query-review",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-27",
+  "skill_version": [
+    "7aef902e8811"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 209,
+        "runs": 240,
+        "rate": 0.8708333333333333,
+        "ci95": [
+          0.822,
+          0.907
+        ]
+      },
+      "contract": {
+        "passed": 120,
+        "runs": 176,
+        "rate": 0.6818181818181818,
+        "ci95": [
+          0.61,
+          0.746
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 231,
+        "runs": 240,
+        "rate": 0.9625,
+        "ci95": [
+          0.93,
+          0.98
+        ]
+      },
+      "contract": {
+        "passed": 149,
+        "runs": 176,
+        "rate": 0.8465909090909091,
+        "ci95": [
+          0.786,
+          0.892
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 92,
+      "runs": 120,
+      "rate": 0.7666666666666667,
+      "ci95": [
+        0.683,
+        0.833
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 117,
+      "runs": 120,
+      "rate": 0.975,
+      "ci95": [
+        0.929,
+        0.991
+      ]
+    },
+    "skill/haiku": {
+      "passed": 113,
+      "runs": 120,
+      "rate": 0.9416666666666667,
+      "ci95": [
+        0.884,
+        0.971
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 118,
+      "runs": 120,
+      "rate": 0.9833333333333333,
+      "ci95": [
+        0.941,
+        0.995
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 18961.0,
+      "median_seconds": 22.6,
+      "runs_with_timing": 240
+    },
+    "skill": {
+      "median_tokens": 23758.0,
+      "median_seconds": 33.3,
+      "runs_with_timing": 240
+    }
+  },
+  "cases": {
+    "sqlite-backfill-medtech-contract-cover-edges-on-assets": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-make-msc-admissions-offers-on-sandbox": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:offers-made-on-sandbox"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-move-c4-north-parking-bays-to-c4n": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-flag-sb2209-humidity-sensors-on-registry": {
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-medtech-condemned-devices-on-cmdb": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-purge-handed-back,change-file-named-the-repo-way,plan-check-stated"
+      ]
+    },
+    "cypher-purge-old-bin-lift-events-on-depot": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-2025-seed-pledges-on-swap": {
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,tried-on-a-copy"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-old-borrowing-history-on-circ": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-pager-test-callouts-rescue-on-live": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-purge-handed-back,change-file-named-the-repo-way"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-freight-import-test-trains-on-dev": {
+      "skill/sonnet": [
+        "FAIL:test-trains-deleted-on-dev"
+      ],
+      "skill/haiku": [
+        "FAIL:test-trains-deleted-on-dev"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-expire-unclaimed-pantry-referrals-on-hub": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-tag-north-pantries-winter-hours-on-training": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-northfield-pantry-drops-to-eastgate-on-live": {
+      "baseline/sonnet": [
+        "FAIL:change-file-handed-back"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-clear-past-conference-bookings-on-prod": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-clear-simulated-fibre-faults-on-dev": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-withdraw-missed-condition-admissions-offers-on-prod": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-kb1-fibre-premises-to-kb2-on-netinv": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-resolved-missed-bin-reports-on-kerbside": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-move-freight-consignments-off-6m42-on-freightline": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-remove-loadgen-vet-appointments-on-dev": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:loadgen-appointments-deleted-on-dev"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-move-hall-c-conference-sessions-to-hall-f-on-live": {
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,tried-on-staging"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-trn1124-room-inspections-on-hk-sandbox": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-closed-fibre-faults-on-netgraph": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-purge-handed-back,change-file-named-the-repo-way,plan-check-stated"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-2024-chess-online-arenas-on-ratings": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-expired-library-holds-on-prod": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-move-hut-seed-packets-to-main-on-greenfinch": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-harbour-linen-rooms-to-h4-on-hkops": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-test-coop-joiners-on-dev": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-relabel-ex-callouts-as-exercises-rescue-on-callouts": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-rehome-st-12-bikes-to-st-40-on-prod": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-clear-stale-vet-due-reminders-on-prod": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-clear-handed-back,change-file-named-the-repo-way,plan-check-stated"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-demo-theatre-performances-on-sandbox": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-close-ashby-canal-locks-on-sandbox": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-move-crescent-ward-bins-to-round-r14-on-prod": {
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,tried-on-copy,change-file-named-the-repo-way"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-test-gedcom-import-people-on-scratch": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:gedtest-people-deleted-on-scratch"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-stood-down-kit-links-rescue-on-main": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-expired-canal-stoppages-on-towpath": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-move-garden-bins-to-thursday-round-on-sandbox": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-archive-pre-2020-coop-leavers-on-prod": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-relabel-handed-back,change-file-named-the-repo-way"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-expire-unanswered-admissions-offers-on-admit": {
+      "skill/haiku": [
+        "FAIL:change-file-handed-back"
+      ],
+      "baseline/sonnet": [
+        "FAIL:change-file-handed-back"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back"
+      ],
+      "skill/sonnet": [
+        "FAIL:change-file-handed-back"
+      ]
+    },
+    "cypher-delete-removed-backflow-test-reports-on-xconn": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-trial-freight-bookings-on-sandbox": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-move-millbrook-vet-registrations-on-live": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:migration-handed-back,migration-named-the-repo-way"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-closed-vet-client-reminders-on-vetbook": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-delete-lapsed-coop-pledges-on-meadowbank": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-2023-24-grain-contracts-coop-on-prod": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-2024-pantry-volunteer-shifts-on-west": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-loadtest-theatre-patrons-on-scratch": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-ashby-freight-consignments-on-planner": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-purge-rejected-ancestry-hints-on-prod": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-mark-lapsed-farms-left-coop-on-scratch": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-pantry-drill-orders-on-scratch": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-deaccession-d26-museum-objects-on-prod": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-merge-duplicate-pantry-donors-on-larder": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-practice-parish-transcriptions-on-training": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-move-fx-test-farms-to-ellerby-coop-on-scratch": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-tag-inactive-chess-players-on-register": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-old-dock-sightings-on-dockmap": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-delete-test-chess-swiss-event-on-sandbox": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-purge-expired-boat-licences-on-moorings": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:bounded-purge-handed-back,record-is-not-the-requested-statement,change-file-named-the-repo-way,plan-check-stated"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-move-gallery-4-museum-objects-to-store-b": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-close-moorside-bus-stops-on-dev": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-2025-conference-sessions-on-prod": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-archive-2025-seed-lots-coop-on-catalogue": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-doubled-housekeeping-tasks-on-hk": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-delete-withdrawn-bus-stops-on-planner": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-backfill-offsite-museum-store-edges-on-prod": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,tried-on-scratch,change-file-named-the-repo-way"
+      ]
+    },
+    "cypher-withdraw-failed-seed-lots-on-library": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-clear-practice-coop-ballot-votes-on-scratch": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-pre-2020-weather-stations-on-scratch": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-remove-cancelled-chess-congress-pairings-on-prod": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-delete-handed-back,change-file-named-the-repo-way,tried-on-replay"
+      ]
+    },
+    "sqlite-merge-duplicate-admissions-school-on-training": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-pre-2024-bike-rides-on-hub": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,plan-check-stated"
+      ]
+    },
+    "cypher-mark-phase3-fibre-premises-ready-on-spine": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-superseded-census-transcriptions-on-register": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-backfill-winter-theatre-season-links-on-foh": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-tag-reference-library-items-on-sandbox": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-delete-expired-casualty-contacts-rescue-on-incidentlog": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-expired-parking-permits-on-prod": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-move-medtech-ward-7b-devices-on-scratch": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-move-pz07-water-assets-to-pz11-on-hydra": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-t9-bus-route-on-trial": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-clear-practice-parking-pcns-on-training": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-delete-simulated-casualties-rescue-on-dev": {
+      "skill/haiku": [
+        "FAIL:simulated-casualties-deleted-on-dev"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-remove-test-museum-accessions-on-sandbox": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-purge-pre-2020-parking-pcns-on-civic": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-purge-pre-june-housekeeping-tasks-on-live": {
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-void-hilltop-coop-export-readings-on-live": {
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,tried-on-replay"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-hand-over-velo-north-bikes-to-citycycle-on-prod": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-drop-pre-term-bus-pings-on-depot": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-purge-handed-back,change-file-named-the-repo-way,plan-check-stated"
+      ]
+    },
+    "cypher-label-lapsed-vet-clients-on-prod": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:lapsed-label-change-handed-back,change-file-named-the-repo-way"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-drop-lapsed-freight-path-holds-on-railnet": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-flag-medtech-overdue-safety-tests-on-devices": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-merge-duplicate-library-works-on-lcn": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-move-t-310-conference-bookings-to-t-318-on-sandbox": {
+      "skill/haiku": [
+        "FAIL:bookings-moved-on-sandbox"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-clear-trainee-seed-offers-on-practice": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-set-surveyed-service-line-materials-on-lsli": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-label-e2-e3-bikes-as-ebike-on-dev": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-mark-westbrook-library-weeding-candidates-on-scratch": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-release-lapsed-theatre-basket-holds-on-boxoffice": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,tried-on-practice,change-file-named-the-repo-way"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-archive-decommissioned-weather-stations-on-ingest": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-delete-old-parking-sensor-events-on-kerbsense": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:bounded-delete-handed-back,change-file-named-the-repo-way,plan-check-stated"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-archive-2024-chess-games-on-arbiter": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,tried-on-spare"
+      ]
+    },
+    "cypher-move-theatre-bookings-to-rescheduled-matinee-on-tickets": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-delete-pre-october-forecast-runs-on-wxcore": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,plan-check-stated"
+      ]
+    },
+    "cypher-archive-2024-hydrant-flushing-orders-on-gis": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-trn1124-minibar-practice-rows-on-sandbox": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-ashby-canal-maintenance-on-prod": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-backfill-farm-haulage-zones-coop-on-depot": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-move-r12-water-meters-to-r07-on-dev": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-remove-import-test-conference-sessions-on-scratch": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-spurious-rainfall-readings-on-obs": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-drop-unrenewed-plot-waitlist-entries-on-plots": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-purge-pre-2020-admissions-applicants-on-prod": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,tried-on-copy"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-merge-duplicate-parish-places-on-live": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-retier-sen-bus-students-on-routes2026": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,tried-on-scratch"
+      ]
+    },
+    "cypher-backfill-bin-collection-days-on-crewlink": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-clear-ceased-fibre-drops-on-strath": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:change-file-handed-back,change-file-named-the-repo-way,tried-on-nightly"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-merge-duplicate-medtech-vendor-on-prod": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-repoint-canal-backpumps-on-drill": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "cypher-archive-pre-2020-coop-leavers-on-prod",
+      "cypher-clear-past-conference-bookings-on-prod",
+      "cypher-clear-stale-vet-due-reminders-on-prod",
+      "cypher-delete-old-parking-sensor-events-on-kerbsense",
+      "cypher-delete-pre-october-forecast-runs-on-wxcore",
+      "cypher-drop-pre-term-bus-pings-on-depot",
+      "cypher-flag-sb2209-humidity-sensors-on-registry",
+      "cypher-label-lapsed-vet-clients-on-prod",
+      "cypher-purge-closed-fibre-faults-on-netgraph",
+      "cypher-purge-expired-boat-licences-on-moorings",
+      "cypher-purge-medtech-condemned-devices-on-cmdb",
+      "cypher-purge-pager-test-callouts-rescue-on-live",
+      "cypher-purge-pre-2024-bike-rides-on-hub",
+      "cypher-purge-pre-june-housekeeping-tasks-on-live",
+      "cypher-remove-cancelled-chess-congress-pairings-on-prod",
+      "sqlite-archive-2024-chess-games-on-arbiter",
+      "sqlite-backfill-offsite-museum-store-edges-on-prod",
+      "sqlite-clear-2025-seed-pledges-on-swap",
+      "sqlite-clear-ceased-fibre-drops-on-strath",
+      "sqlite-move-c4-north-parking-bays-to-c4n",
+      "sqlite-move-crescent-ward-bins-to-round-r14-on-prod",
+      "sqlite-move-hall-c-conference-sessions-to-hall-f-on-live",
+      "sqlite-move-millbrook-vet-registrations-on-live",
+      "sqlite-purge-pre-2020-admissions-applicants-on-prod",
+      "sqlite-release-lapsed-theatre-basket-holds-on-boxoffice",
+      "sqlite-repoint-kb1-fibre-premises-to-kb2-on-netinv",
+      "sqlite-repoint-northfield-pantry-drops-to-eastgate-on-live",
+      "sqlite-retier-sen-bus-students-on-routes2026",
+      "sqlite-void-hilltop-coop-export-readings-on-live"
+    ],
+    "baseline_wins": [
+      "cypher-delete-freight-import-test-trains-on-dev",
+      "cypher-delete-simulated-casualties-rescue-on-dev",
+      "cypher-delete-test-gedcom-import-people-on-scratch",
+      "cypher-make-msc-admissions-offers-on-sandbox",
+      "cypher-move-t-310-conference-bookings-to-t-318-on-sandbox",
+      "cypher-remove-loadgen-vet-appointments-on-dev"
+    ],
+    "ties": [
+      "cypher-archive-2024-hydrant-flushing-orders-on-gis",
+      "cypher-archive-2025-seed-lots-coop-on-catalogue",
+      "cypher-archive-decommissioned-weather-stations-on-ingest",
+      "cypher-backfill-bin-collection-days-on-crewlink",
+      "cypher-clear-practice-coop-ballot-votes-on-scratch",
+      "cypher-clear-practice-parking-pcns-on-training",
+      "cypher-clear-simulated-fibre-faults-on-dev",
+      "cypher-clear-trainee-seed-offers-on-practice",
+      "cypher-close-ashby-canal-locks-on-sandbox",
+      "cypher-close-moorside-bus-stops-on-dev",
+      "cypher-delete-2024-chess-online-arenas-on-ratings",
+      "cypher-delete-2024-pantry-volunteer-shifts-on-west",
+      "cypher-delete-demo-theatre-performances-on-sandbox",
+      "cypher-delete-expired-casualty-contacts-rescue-on-incidentlog",
+      "cypher-delete-removed-backflow-test-reports-on-xconn",
+      "cypher-delete-trn1124-room-inspections-on-hk-sandbox",
+      "cypher-drop-unrenewed-plot-waitlist-entries-on-plots",
+      "cypher-expire-unclaimed-pantry-referrals-on-hub",
+      "cypher-flag-medtech-overdue-safety-tests-on-devices",
+      "cypher-label-e2-e3-bikes-as-ebike-on-dev",
+      "cypher-mark-phase3-fibre-premises-ready-on-spine",
+      "cypher-merge-duplicate-library-works-on-lcn",
+      "cypher-move-freight-consignments-off-6m42-on-freightline",
+      "cypher-move-fx-test-farms-to-ellerby-coop-on-scratch",
+      "cypher-move-gallery-4-museum-objects-to-store-b",
+      "cypher-move-garden-bins-to-thursday-round-on-sandbox",
+      "cypher-move-medtech-ward-7b-devices-on-scratch",
+      "cypher-move-theatre-bookings-to-rescheduled-matinee-on-tickets",
+      "cypher-purge-old-bin-lift-events-on-depot",
+      "cypher-purge-old-borrowing-history-on-circ",
+      "cypher-purge-pre-2020-parking-pcns-on-civic",
+      "cypher-purge-rejected-ancestry-hints-on-prod",
+      "cypher-rehome-st-12-bikes-to-st-40-on-prod",
+      "cypher-remove-test-museum-accessions-on-sandbox",
+      "cypher-tag-inactive-chess-players-on-register",
+      "cypher-tag-north-pantries-winter-hours-on-training",
+      "cypher-tag-reference-library-items-on-sandbox",
+      "cypher-withdraw-failed-seed-lots-on-library",
+      "cypher-withdraw-missed-condition-admissions-offers-on-prod",
+      "sqlite-archive-2023-24-grain-contracts-coop-on-prod",
+      "sqlite-archive-2025-conference-sessions-on-prod",
+      "sqlite-archive-pre-2020-weather-stations-on-scratch",
+      "sqlite-archive-superseded-census-transcriptions-on-register",
+      "sqlite-backfill-farm-haulage-zones-coop-on-depot",
+      "sqlite-backfill-medtech-contract-cover-edges-on-assets",
+      "sqlite-backfill-winter-theatre-season-links-on-foh",
+      "sqlite-clear-expired-parking-permits-on-prod",
+      "sqlite-clear-old-dock-sightings-on-dockmap",
+      "sqlite-clear-pantry-drill-orders-on-scratch",
+      "sqlite-clear-practice-parish-transcriptions-on-training",
+      "sqlite-clear-trial-freight-bookings-on-sandbox",
+      "sqlite-clear-trn1124-minibar-practice-rows-on-sandbox",
+      "sqlite-deaccession-d26-museum-objects-on-prod",
+      "sqlite-delete-lapsed-coop-pledges-on-meadowbank",
+      "sqlite-delete-test-chess-swiss-event-on-sandbox",
+      "sqlite-delete-withdrawn-bus-stops-on-planner",
+      "sqlite-drop-lapsed-freight-path-holds-on-railnet",
+      "sqlite-expire-unanswered-admissions-offers-on-admit",
+      "sqlite-hand-over-velo-north-bikes-to-citycycle-on-prod",
+      "sqlite-mark-lapsed-farms-left-coop-on-scratch",
+      "sqlite-mark-westbrook-library-weeding-candidates-on-scratch",
+      "sqlite-merge-duplicate-admissions-school-on-training",
+      "sqlite-merge-duplicate-medtech-vendor-on-prod",
+      "sqlite-merge-duplicate-pantry-donors-on-larder",
+      "sqlite-merge-duplicate-parish-places-on-live",
+      "sqlite-move-hut-seed-packets-to-main-on-greenfinch",
+      "sqlite-move-pz07-water-assets-to-pz11-on-hydra",
+      "sqlite-move-r12-water-meters-to-r07-on-dev",
+      "sqlite-purge-closed-vet-client-reminders-on-vetbook",
+      "sqlite-purge-expired-canal-stoppages-on-towpath",
+      "sqlite-purge-expired-library-holds-on-prod",
+      "sqlite-purge-resolved-missed-bin-reports-on-kerbside",
+      "sqlite-purge-spurious-rainfall-readings-on-obs",
+      "sqlite-relabel-ex-callouts-as-exercises-rescue-on-callouts",
+      "sqlite-remove-doubled-housekeeping-tasks-on-hk",
+      "sqlite-remove-import-test-conference-sessions-on-scratch",
+      "sqlite-remove-loadtest-theatre-patrons-on-scratch",
+      "sqlite-remove-stood-down-kit-links-rescue-on-main",
+      "sqlite-remove-t9-bus-route-on-trial",
+      "sqlite-remove-test-coop-joiners-on-dev",
+      "sqlite-repoint-ashby-canal-maintenance-on-prod",
+      "sqlite-repoint-ashby-freight-consignments-on-planner",
+      "sqlite-repoint-canal-backpumps-on-drill",
+      "sqlite-repoint-harbour-linen-rooms-to-h4-on-hkops",
+      "sqlite-set-surveyed-service-line-materials-on-lsli"
+    ],
+    "regressions": [
+      "cypher-delete-freight-import-test-trains-on-dev"
+    ],
+    "p": 0.0001
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "cypher-archive-pre-2020-coop-leavers-on-prod",
+        "cypher-clear-past-conference-bookings-on-prod",
+        "cypher-clear-stale-vet-due-reminders-on-prod",
+        "cypher-delete-old-parking-sensor-events-on-kerbsense",
+        "cypher-delete-pre-october-forecast-runs-on-wxcore",
+        "cypher-drop-pre-term-bus-pings-on-depot",
+        "cypher-flag-sb2209-humidity-sensors-on-registry",
+        "cypher-label-lapsed-vet-clients-on-prod",
+        "cypher-purge-closed-fibre-faults-on-netgraph",
+        "cypher-purge-medtech-condemned-devices-on-cmdb",
+        "cypher-purge-pager-test-callouts-rescue-on-live",
+        "cypher-purge-pre-2024-bike-rides-on-hub",
+        "cypher-purge-pre-june-housekeeping-tasks-on-live",
+        "cypher-remove-cancelled-chess-congress-pairings-on-prod",
+        "sqlite-archive-2024-chess-games-on-arbiter",
+        "sqlite-backfill-offsite-museum-store-edges-on-prod",
+        "sqlite-clear-2025-seed-pledges-on-swap",
+        "sqlite-clear-ceased-fibre-drops-on-strath",
+        "sqlite-move-c4-north-parking-bays-to-c4n",
+        "sqlite-move-crescent-ward-bins-to-round-r14-on-prod",
+        "sqlite-move-hall-c-conference-sessions-to-hall-f-on-live",
+        "sqlite-move-millbrook-vet-registrations-on-live",
+        "sqlite-purge-pre-2020-admissions-applicants-on-prod",
+        "sqlite-release-lapsed-theatre-basket-holds-on-boxoffice",
+        "sqlite-repoint-kb1-fibre-premises-to-kb2-on-netinv",
+        "sqlite-retier-sen-bus-students-on-routes2026",
+        "sqlite-void-hilltop-coop-export-readings-on-live"
+      ],
+      "baseline_wins": [
+        "cypher-delete-freight-import-test-trains-on-dev",
+        "cypher-delete-simulated-casualties-rescue-on-dev",
+        "cypher-delete-test-gedcom-import-people-on-scratch",
+        "cypher-make-msc-admissions-offers-on-sandbox",
+        "cypher-move-t-310-conference-bookings-to-t-318-on-sandbox",
+        "cypher-remove-loadgen-vet-appointments-on-dev"
+      ],
+      "ties": [
+        "cypher-archive-2024-hydrant-flushing-orders-on-gis",
+        "cypher-archive-2025-seed-lots-coop-on-catalogue",
+        "cypher-archive-decommissioned-weather-stations-on-ingest",
+        "cypher-backfill-bin-collection-days-on-crewlink",
+        "cypher-clear-practice-coop-ballot-votes-on-scratch",
+        "cypher-clear-practice-parking-pcns-on-training",
+        "cypher-clear-simulated-fibre-faults-on-dev",
+        "cypher-clear-trainee-seed-offers-on-practice",
+        "cypher-close-ashby-canal-locks-on-sandbox",
+        "cypher-close-moorside-bus-stops-on-dev",
+        "cypher-delete-2024-chess-online-arenas-on-ratings",
+        "cypher-delete-2024-pantry-volunteer-shifts-on-west",
+        "cypher-delete-demo-theatre-performances-on-sandbox",
+        "cypher-delete-expired-casualty-contacts-rescue-on-incidentlog",
+        "cypher-delete-removed-backflow-test-reports-on-xconn",
+        "cypher-delete-trn1124-room-inspections-on-hk-sandbox",
+        "cypher-drop-unrenewed-plot-waitlist-entries-on-plots",
+        "cypher-expire-unclaimed-pantry-referrals-on-hub",
+        "cypher-flag-medtech-overdue-safety-tests-on-devices",
+        "cypher-label-e2-e3-bikes-as-ebike-on-dev",
+        "cypher-mark-phase3-fibre-premises-ready-on-spine",
+        "cypher-merge-duplicate-library-works-on-lcn",
+        "cypher-move-freight-consignments-off-6m42-on-freightline",
+        "cypher-move-fx-test-farms-to-ellerby-coop-on-scratch",
+        "cypher-move-gallery-4-museum-objects-to-store-b",
+        "cypher-move-garden-bins-to-thursday-round-on-sandbox",
+        "cypher-move-medtech-ward-7b-devices-on-scratch",
+        "cypher-move-theatre-bookings-to-rescheduled-matinee-on-tickets",
+        "cypher-purge-expired-boat-licences-on-moorings",
+        "cypher-purge-old-bin-lift-events-on-depot",
+        "cypher-purge-old-borrowing-history-on-circ",
+        "cypher-purge-pre-2020-parking-pcns-on-civic",
+        "cypher-purge-rejected-ancestry-hints-on-prod",
+        "cypher-rehome-st-12-bikes-to-st-40-on-prod",
+        "cypher-remove-test-museum-accessions-on-sandbox",
+        "cypher-tag-inactive-chess-players-on-register",
+        "cypher-tag-north-pantries-winter-hours-on-training",
+        "cypher-tag-reference-library-items-on-sandbox",
+        "cypher-withdraw-failed-seed-lots-on-library",
+        "cypher-withdraw-missed-condition-admissions-offers-on-prod",
+        "sqlite-archive-2023-24-grain-contracts-coop-on-prod",
+        "sqlite-archive-2025-conference-sessions-on-prod",
+        "sqlite-archive-pre-2020-weather-stations-on-scratch",
+        "sqlite-archive-superseded-census-transcriptions-on-register",
+        "sqlite-backfill-farm-haulage-zones-coop-on-depot",
+        "sqlite-backfill-medtech-contract-cover-edges-on-assets",
+        "sqlite-backfill-winter-theatre-season-links-on-foh",
+        "sqlite-clear-expired-parking-permits-on-prod",
+        "sqlite-clear-old-dock-sightings-on-dockmap",
+        "sqlite-clear-pantry-drill-orders-on-scratch",
+        "sqlite-clear-practice-parish-transcriptions-on-training",
+        "sqlite-clear-trial-freight-bookings-on-sandbox",
+        "sqlite-clear-trn1124-minibar-practice-rows-on-sandbox",
+        "sqlite-deaccession-d26-museum-objects-on-prod",
+        "sqlite-delete-lapsed-coop-pledges-on-meadowbank",
+        "sqlite-delete-test-chess-swiss-event-on-sandbox",
+        "sqlite-delete-withdrawn-bus-stops-on-planner",
+        "sqlite-drop-lapsed-freight-path-holds-on-railnet",
+        "sqlite-expire-unanswered-admissions-offers-on-admit",
+        "sqlite-hand-over-velo-north-bikes-to-citycycle-on-prod",
+        "sqlite-mark-lapsed-farms-left-coop-on-scratch",
+        "sqlite-mark-westbrook-library-weeding-candidates-on-scratch",
+        "sqlite-merge-duplicate-admissions-school-on-training",
+        "sqlite-merge-duplicate-medtech-vendor-on-prod",
+        "sqlite-merge-duplicate-pantry-donors-on-larder",
+        "sqlite-merge-duplicate-parish-places-on-live",
+        "sqlite-move-hut-seed-packets-to-main-on-greenfinch",
+        "sqlite-move-pz07-water-assets-to-pz11-on-hydra",
+        "sqlite-move-r12-water-meters-to-r07-on-dev",
+        "sqlite-purge-closed-vet-client-reminders-on-vetbook",
+        "sqlite-purge-expired-canal-stoppages-on-towpath",
+        "sqlite-purge-expired-library-holds-on-prod",
+        "sqlite-purge-resolved-missed-bin-reports-on-kerbside",
+        "sqlite-purge-spurious-rainfall-readings-on-obs",
+        "sqlite-relabel-ex-callouts-as-exercises-rescue-on-callouts",
+        "sqlite-remove-doubled-housekeeping-tasks-on-hk",
+        "sqlite-remove-import-test-conference-sessions-on-scratch",
+        "sqlite-remove-loadtest-theatre-patrons-on-scratch",
+        "sqlite-remove-stood-down-kit-links-rescue-on-main",
+        "sqlite-remove-t9-bus-route-on-trial",
+        "sqlite-remove-test-coop-joiners-on-dev",
+        "sqlite-repoint-ashby-canal-maintenance-on-prod",
+        "sqlite-repoint-ashby-freight-consignments-on-planner",
+        "sqlite-repoint-canal-backpumps-on-drill",
+        "sqlite-repoint-harbour-linen-rooms-to-h4-on-hkops",
+        "sqlite-repoint-northfield-pantry-drops-to-eastgate-on-live",
+        "sqlite-set-surveyed-service-line-materials-on-lsli"
+      ],
+      "regressions": [
+        "cypher-delete-freight-import-test-trains-on-dev",
+        "cypher-delete-simulated-casualties-rescue-on-dev",
+        "cypher-delete-test-gedcom-import-people-on-scratch",
+        "cypher-make-msc-admissions-offers-on-sandbox",
+        "cypher-move-t-310-conference-bookings-to-t-318-on-sandbox",
+        "cypher-remove-loadgen-vet-appointments-on-dev"
+      ],
+      "p": 0.0003
+    },
+    "sonnet": {
+      "skill_wins": [
+        "cypher-purge-expired-boat-licences-on-moorings",
+        "sqlite-repoint-northfield-pantry-drops-to-eastgate-on-live"
+      ],
+      "baseline_wins": [
+        "cypher-delete-freight-import-test-trains-on-dev"
+      ],
+      "ties": [
+        "cypher-archive-2024-hydrant-flushing-orders-on-gis",
+        "cypher-archive-2025-seed-lots-coop-on-catalogue",
+        "cypher-archive-decommissioned-weather-stations-on-ingest",
+        "cypher-archive-pre-2020-coop-leavers-on-prod",
+        "cypher-backfill-bin-collection-days-on-crewlink",
+        "cypher-clear-past-conference-bookings-on-prod",
+        "cypher-clear-practice-coop-ballot-votes-on-scratch",
+        "cypher-clear-practice-parking-pcns-on-training",
+        "cypher-clear-simulated-fibre-faults-on-dev",
+        "cypher-clear-stale-vet-due-reminders-on-prod",
+        "cypher-clear-trainee-seed-offers-on-practice",
+        "cypher-close-ashby-canal-locks-on-sandbox",
+        "cypher-close-moorside-bus-stops-on-dev",
+        "cypher-delete-2024-chess-online-arenas-on-ratings",
+        "cypher-delete-2024-pantry-volunteer-shifts-on-west",
+        "cypher-delete-demo-theatre-performances-on-sandbox",
+        "cypher-delete-expired-casualty-contacts-rescue-on-incidentlog",
+        "cypher-delete-old-parking-sensor-events-on-kerbsense",
+        "cypher-delete-pre-october-forecast-runs-on-wxcore",
+        "cypher-delete-removed-backflow-test-reports-on-xconn",
+        "cypher-delete-simulated-casualties-rescue-on-dev",
+        "cypher-delete-test-gedcom-import-people-on-scratch",
+        "cypher-delete-trn1124-room-inspections-on-hk-sandbox",
+        "cypher-drop-pre-term-bus-pings-on-depot",
+        "cypher-drop-unrenewed-plot-waitlist-entries-on-plots",
+        "cypher-expire-unclaimed-pantry-referrals-on-hub",
+        "cypher-flag-medtech-overdue-safety-tests-on-devices",
+        "cypher-flag-sb2209-humidity-sensors-on-registry",
+        "cypher-label-e2-e3-bikes-as-ebike-on-dev",
+        "cypher-label-lapsed-vet-clients-on-prod",
+        "cypher-make-msc-admissions-offers-on-sandbox",
+        "cypher-mark-phase3-fibre-premises-ready-on-spine",
+        "cypher-merge-duplicate-library-works-on-lcn",
+        "cypher-move-freight-consignments-off-6m42-on-freightline",
+        "cypher-move-fx-test-farms-to-ellerby-coop-on-scratch",
+        "cypher-move-gallery-4-museum-objects-to-store-b",
+        "cypher-move-garden-bins-to-thursday-round-on-sandbox",
+        "cypher-move-medtech-ward-7b-devices-on-scratch",
+        "cypher-move-t-310-conference-bookings-to-t-318-on-sandbox",
+        "cypher-move-theatre-bookings-to-rescheduled-matinee-on-tickets",
+        "cypher-purge-closed-fibre-faults-on-netgraph",
+        "cypher-purge-medtech-condemned-devices-on-cmdb",
+        "cypher-purge-old-bin-lift-events-on-depot",
+        "cypher-purge-old-borrowing-history-on-circ",
+        "cypher-purge-pager-test-callouts-rescue-on-live",
+        "cypher-purge-pre-2020-parking-pcns-on-civic",
+        "cypher-purge-pre-2024-bike-rides-on-hub",
+        "cypher-purge-pre-june-housekeeping-tasks-on-live",
+        "cypher-purge-rejected-ancestry-hints-on-prod",
+        "cypher-rehome-st-12-bikes-to-st-40-on-prod",
+        "cypher-remove-cancelled-chess-congress-pairings-on-prod",
+        "cypher-remove-loadgen-vet-appointments-on-dev",
+        "cypher-remove-test-museum-accessions-on-sandbox",
+        "cypher-tag-inactive-chess-players-on-register",
+        "cypher-tag-north-pantries-winter-hours-on-training",
+        "cypher-tag-reference-library-items-on-sandbox",
+        "cypher-withdraw-failed-seed-lots-on-library",
+        "cypher-withdraw-missed-condition-admissions-offers-on-prod",
+        "sqlite-archive-2023-24-grain-contracts-coop-on-prod",
+        "sqlite-archive-2024-chess-games-on-arbiter",
+        "sqlite-archive-2025-conference-sessions-on-prod",
+        "sqlite-archive-pre-2020-weather-stations-on-scratch",
+        "sqlite-archive-superseded-census-transcriptions-on-register",
+        "sqlite-backfill-farm-haulage-zones-coop-on-depot",
+        "sqlite-backfill-medtech-contract-cover-edges-on-assets",
+        "sqlite-backfill-offsite-museum-store-edges-on-prod",
+        "sqlite-backfill-winter-theatre-season-links-on-foh",
+        "sqlite-clear-2025-seed-pledges-on-swap",
+        "sqlite-clear-ceased-fibre-drops-on-strath",
+        "sqlite-clear-expired-parking-permits-on-prod",
+        "sqlite-clear-old-dock-sightings-on-dockmap",
+        "sqlite-clear-pantry-drill-orders-on-scratch",
+        "sqlite-clear-practice-parish-transcriptions-on-training",
+        "sqlite-clear-trial-freight-bookings-on-sandbox",
+        "sqlite-clear-trn1124-minibar-practice-rows-on-sandbox",
+        "sqlite-deaccession-d26-museum-objects-on-prod",
+        "sqlite-delete-lapsed-coop-pledges-on-meadowbank",
+        "sqlite-delete-test-chess-swiss-event-on-sandbox",
+        "sqlite-delete-withdrawn-bus-stops-on-planner",
+        "sqlite-drop-lapsed-freight-path-holds-on-railnet",
+        "sqlite-expire-unanswered-admissions-offers-on-admit",
+        "sqlite-hand-over-velo-north-bikes-to-citycycle-on-prod",
+        "sqlite-mark-lapsed-farms-left-coop-on-scratch",
+        "sqlite-mark-westbrook-library-weeding-candidates-on-scratch",
+        "sqlite-merge-duplicate-admissions-school-on-training",
+        "sqlite-merge-duplicate-medtech-vendor-on-prod",
+        "sqlite-merge-duplicate-pantry-donors-on-larder",
+        "sqlite-merge-duplicate-parish-places-on-live",
+        "sqlite-move-c4-north-parking-bays-to-c4n",
+        "sqlite-move-crescent-ward-bins-to-round-r14-on-prod",
+        "sqlite-move-hall-c-conference-sessions-to-hall-f-on-live",
+        "sqlite-move-hut-seed-packets-to-main-on-greenfinch",
+        "sqlite-move-millbrook-vet-registrations-on-live",
+        "sqlite-move-pz07-water-assets-to-pz11-on-hydra",
+        "sqlite-move-r12-water-meters-to-r07-on-dev",
+        "sqlite-purge-closed-vet-client-reminders-on-vetbook",
+        "sqlite-purge-expired-canal-stoppages-on-towpath",
+        "sqlite-purge-expired-library-holds-on-prod",
+        "sqlite-purge-pre-2020-admissions-applicants-on-prod",
+        "sqlite-purge-resolved-missed-bin-reports-on-kerbside",
+        "sqlite-purge-spurious-rainfall-readings-on-obs",
+        "sqlite-relabel-ex-callouts-as-exercises-rescue-on-callouts",
+        "sqlite-release-lapsed-theatre-basket-holds-on-boxoffice",
+        "sqlite-remove-doubled-housekeeping-tasks-on-hk",
+        "sqlite-remove-import-test-conference-sessions-on-scratch",
+        "sqlite-remove-loadtest-theatre-patrons-on-scratch",
+        "sqlite-remove-stood-down-kit-links-rescue-on-main",
+        "sqlite-remove-t9-bus-route-on-trial",
+        "sqlite-remove-test-coop-joiners-on-dev",
+        "sqlite-repoint-ashby-canal-maintenance-on-prod",
+        "sqlite-repoint-ashby-freight-consignments-on-planner",
+        "sqlite-repoint-canal-backpumps-on-drill",
+        "sqlite-repoint-harbour-linen-rooms-to-h4-on-hkops",
+        "sqlite-repoint-kb1-fibre-premises-to-kb2-on-netinv",
+        "sqlite-retier-sen-bus-students-on-routes2026",
+        "sqlite-set-surveyed-service-line-materials-on-lsli",
+        "sqlite-void-hilltop-coop-export-readings-on-live"
+      ],
+      "regressions": [
+        "cypher-delete-freight-import-test-trains-on-dev"
+      ],
+      "p": 1.0
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

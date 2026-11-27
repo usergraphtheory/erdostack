@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-23",
+  "method": "Simulated triggering: a subagent is shown the five erdostack skill descriptions among eight unrelated decoy skills and, for each of 100 shuffled messages from the skills' trigger.json files, lists the skills it would load. One pass per model. This approximates description-based triggering; it is not a run of a real agent host's skill loader.",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "results": {
+    "roast-my-graph/haiku": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "graph-or-not/haiku": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "setup-graph/haiku": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "schema-first/haiku": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "query-review/haiku": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "roast-my-graph/sonnet": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "graph-or-not/sonnet": {
+      "recall": "9/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "setup-graph/sonnet": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "schema-first/sonnet": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    },
+    "query-review/sonnet": {
+      "recall": "10/10",
+      "false_triggers": "0/10",
+      "precision": 1.0
+    }
+  }
+}

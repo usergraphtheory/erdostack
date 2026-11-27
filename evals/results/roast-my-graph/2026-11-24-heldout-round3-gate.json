@@ -1,0 +1,2188 @@
+{
+  "skill": "roast-my-graph",
+  "set": "heldout",
+  "models": [
+    "haiku",
+    "sonnet"
+  ],
+  "date": "2026-11-24",
+  "skill_version": [
+    "328dae67cdaa"
+  ],
+  "by_arm": {
+    "baseline": {
+      "substance": {
+        "passed": 189,
+        "runs": 240,
+        "rate": 0.7875,
+        "ci95": [
+          0.731,
+          0.835
+        ]
+      },
+      "contract": {
+        "passed": 0,
+        "runs": 240,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.016
+        ]
+      }
+    },
+    "skill": {
+      "substance": {
+        "passed": 223,
+        "runs": 240,
+        "rate": 0.9291666666666667,
+        "ci95": [
+          0.89,
+          0.955
+        ]
+      },
+      "contract": {
+        "passed": 237,
+        "runs": 240,
+        "rate": 0.9875,
+        "ci95": [
+          0.964,
+          0.996
+        ]
+      }
+    }
+  },
+  "by_arm_model": {
+    "baseline/haiku": {
+      "passed": 89,
+      "runs": 120,
+      "rate": 0.7416666666666667,
+      "ci95": [
+        0.657,
+        0.812
+      ]
+    },
+    "baseline/sonnet": {
+      "passed": 100,
+      "runs": 120,
+      "rate": 0.8333333333333334,
+      "ci95": [
+        0.757,
+        0.889
+      ]
+    },
+    "skill/haiku": {
+      "passed": 103,
+      "runs": 120,
+      "rate": 0.8583333333333333,
+      "ci95": [
+        0.785,
+        0.91
+      ]
+    },
+    "skill/sonnet": {
+      "passed": 120,
+      "runs": 120,
+      "rate": 1.0,
+      "ci95": [
+        0.969,
+        1.0
+      ]
+    }
+  },
+  "cost": {
+    "baseline": {
+      "median_tokens": 22828.5,
+      "median_seconds": 47.9,
+      "runs_with_timing": 240
+    },
+    "skill": {
+      "median_tokens": 30098.5,
+      "median_seconds": 73.6,
+      "runs_with_timing": 240
+    }
+  },
+  "cases": {
+    "sqlite-kiosk-fewest-stops-query-carries-a-visited-path-string": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-procurement-offers-load-and-the-spot-purchase-rows": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-community-follow-graph-handle-lookup-and-a-contractor-proposal": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "sql-professional-network-schema-with-recommendations-endorsements-and-account-deletion": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sql-referral-club-member-lookup-sponsor-chain-and-a-query-linter": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-streaming-home-screen-rails-and-title-page-queries": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-help-centre-topic-tree-article-listing-and-a-closure-table-proposal": {
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-workspace-offboarding-and-four-unbatched-delete-lint-errors": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "sqlite-association-mentoring-graph-member-lookup-and-mention-resolver": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-grocery-promise-zones-from-a-reachable-within-cutoff": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-citation-graph-reference-importer-and-ranking-export": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-package-registry-browse-site-queries": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-running-club-friend-suggestions-and-interest-nodes": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-lesmis-static-site-finds-chains-in-browser-javascript": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-karate-tie-distance-dijkstra-written-by-hand": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-org-chart-repo-with-a-nightly-hr-import-and-eight-reports": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-dock-availability-queries-beside-the-compose-file": {
+      "skill/haiku": [
+        "FAIL:finds-scope-clause-on-5-20,explains-scope-clause-on-5-20"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-lesmis-separation-widget-built-on-all-simple-paths": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-quarterly-purge-of-closed-merchants-and-expired-coupons": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-southern-women-attendance-package-and-a-projection-request": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-southern-women-attendance-module-for-a-seminar-handout": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-trail-reports-migration-runner-and-a-segment-backfill": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:explains-batched-backfill-in-explicit-transaction"
+      ]
+    },
+    "neo4j-allotment-queries-and-a-lint-report-about-importing-with": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "FAIL:no-critical-or-high"
+      ]
+    },
+    "ladybug-hotel-search-schema-with-amenity-and-booking-tables": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-reading-tracker-model-and-book-page-queries": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-depot-closure-script-and-a-review-comment-on-detach-delete": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-bom-compliance-queries-and-two-sql-lint-warnings": {
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-music-catalogue-loader-and-a-one-statement-rewrite-pr": {
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-separate-merges,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "FAIL:says-sound-separate-merges"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-router-peering-ingest-from-device-reports-and-noc-queries": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "neo4j-local-news-social-api-publish-and-timeline": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-florentine-worksheet-lists-every-marriage-route": {
+      "skill/haiku": [
+        "FAIL:no-critical-or-high"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-library-loans-and-a-pr-comment-about-join-tables": {
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "sql-postgres-crawl-entity-graph-nightly-purge-and-foreign-keys": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-maintenance-procedure-steps-walked-with-open-ended-next-patterns": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "networkx-bastion-reachability-tool-walks-jump-hosts-by-hand": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-timetable-queries-tested-on-compose-and-deployed-by-helm": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:explains-scope-clause-on-prod-5-21"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-storefront-category-graph-migrations-and-breadcrumb-queries": {
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-triggers-keep-it-acyclic,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-parts-catalogue-sku-migration-and-its-ledger": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-team-health-card-and-shift-handover-queries": {
+      "baseline/haiku": [
+        "FAIL:not-overrated-pinned-handover,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:not-overrated-pinned-handover,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-package-registry-db-layer-and-a-lint-report-on-its-foreign-keys": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:says-sound-foreign-keys-are-on"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-gazetteer-place-merge-and-a-rewrite-proposal": {
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-les-miserables-coappearance-stats-page": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-follow-graph-audience-query-and-a-ci-lint-failure": {
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "ladybug-shelf-tablet-promotion-and-transfer-queries": {
+      "baseline/sonnet": [
+        "FAIL:not-overrated-pinned-store-pair,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:not-overrated-pinned-store-pair,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sql-storefront-category-tree-placements-and-slug-renames": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-wiki-cleanup-bot-groups-pages-with-its-own-cluster-search": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-approval-delegation-walk-and-team-rollup-queries": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-session-statements-and-the-five-minute-sweeper": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-shop-customer-merge-statements": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-research-office-coauthor-graph-and-annual-report-queries": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-seed-bank-subqueries-and-a-contractor-note-on-cypher-25": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-scope-clause-on-5-26,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "FAIL:says-sound-scope-clause-on-5-26"
+      ]
+    },
+    "cypher-rental-lease-model-and-a-consultant-who-wants-it-flattened": {
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-fibre-plant-closures-spans-and-the-outage-notification-query": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-crm-intro-graph-person-lookup-and-mutual-connections": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-bus-network-snapshot-build-and-a-colleague-review-on-foreign-keys": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-departure-backfill-and-a-teammate-who-wants-one-transaction-per-file": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-auto-commit-batching,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "neo4j-sensor-heartbeat-consumers-and-fleet-dashboard": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:finds-concurrent-merge-unconstrained"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-trail-network-area-retirement-script": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-freelance-marketplace-contracts-and-skill-claims": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-diy-guides-sidebar-and-country-availability": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-plant-equipment-dependency-graph-web-app-and-erp-sync-job": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-family-tree-app-connection-helper-and-parent-links": {
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "cypher-expense-approval-graph-and-the-automated-leaver-process": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-taskboard-card-tree-with-subtasks-labels-and-comments": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-notes-tag-graph-autocomplete-and-review-comments": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-merchandising-admin-handlers-for-categories-and-brands": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-record-catalogue-releases-credits-and-liner-notes": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-liner-notes-list,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "sql-postgres-supplier-map-tier-query-for-the-risk-page": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "neo4j-bookshop-stock-loader-and-the-october-feed": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-festival-seat-capacity-max-flow-over-a-day-of-services": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "ladybug-month-end-billing-export-and-a-query-linter": {
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,says-sound-export-needs-every-row,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-export-needs-every-row,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "FAIL:no-critical-or-high"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-water-meter-ingest-with-sixteen-consumers-and-a-review-comment": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "sql-postgres-expense-approver-delegation-chain-and-a-blocked-pr": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-service-catalogue-connection-helper-and-decommission-command": {
+      "skill/haiku": [
+        "FAIL:explains-pragma-inside-transaction"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-electronic-parts-weekly-import-and-site-queries": {
+      "skill/haiku": [
+        "FAIL:finds-maker-per-part,explains-maker-per-part"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:not-overrated-offers-merge-correct,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/haiku": [
+        "FAIL:explains-maker-per-part,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "networkx-florentine-marriage-blocs-reach-table": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-trail-map-migrations-and-route-planner": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-air-sensor-inventory-import-with-two-merges": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-fraud-ring-linker-and-a-colleague-on-contracted-nodes": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-tram-planner-orders-matched-paths-by-length-and-keeps-one": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-wiki-link-store-and-the-popular-pages-sidebar": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-library-circulation-loader-and-branch-report-queries": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:explains-loan-merge-duplicates,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:finds-loan-merge-duplicates,explains-loan-merge-duplicates"
+      ]
+    },
+    "cypher-marketplace-payouts-and-the-currency-nodes": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:says-sound-currency-end-point,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:says-sound-currency-end-point"
+      ]
+    },
+    "networkx-karate-inner-circle-from-a-hand-counted-tightness-score": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-access-groups-schema-and-the-provisioning-code": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "cypher-contact-dedupe-statements-and-the-referral-credit-report": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-microblog-follow-graph-and-mention-resolver": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "ladybug-board-queries-and-a-lint-report-with-four-flags": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-ci-pipeline-validator-with-a-handwritten-loop-check": {
+      "baseline/sonnet": [
+        "FAIL:no-invented-elements,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-rain-gauge-ingest-asks-for-batch-status": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-member-erasure-job-after-the-big-account-memory-fix": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sql-knowledge-graph-entity-aliases-and-mention-resolution": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-karate-introduction-chains-on-the-weighted-club-graph": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-telemetry-retention-job-and-the-meter-dashboards": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-invented-elements,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "FAIL:finds-purge-in-one-transaction,explains-purge-in-one-transaction"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-climbing-gym-member-sync-and-a-teammate-worried-about-nulls": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "FAIL:no-critical-or-high,says-sound-nulls-only-in-set"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "ladybug-parcel-tracking-schema-and-a-carrier-bucketing-proposal": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-supplier-network-dedupe-and-the-single-source-report": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-lesmis-study-guide-bonds-counted-from-a-chapter-log": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-research-office-collaboration-report-and-profile-queries": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:not-overrated-keyed-link-pair,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "FAIL:explains-pairs-counted-twice,not-overrated-keyed-link-pair"
+      ]
+    },
+    "cypher-municipal-borders-graph-and-an-undirected-pattern-lint": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-florentine-marriage-network-seminar-package": {
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-team-drive-folder-tree-stored-by-path-and-the-folder-view": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-city-transit-routes-stops-and-journey-planner": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sql-build-provenance-schema-and-a-foreign-key-lint-report": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-distribution-grid-model-loader-and-outage-queries": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-karate-club-cohesion-report-with-its-own-clustering": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "cypher-room-booking-grid-and-booking-statements-fail-a-ci-linter": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-room-slot-grid,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-file-share-access-check-over-nested-groups": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-bookmark-tag-graph-related-tags-page": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-staff-directory-reporting-lines-imported-from-hr": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "sqlite-audience-estimate-queries-after-a-lint-cleanup": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-karate-referral-chains-listed-up-to-three-links": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ]
+    },
+    "sqlite-road-network-regional-loader-and-its-lint-suppressions": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-water-main-network-loader-edits-and-contamination-trace": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "networkx-lesmis-poster-ranks-characters-by-two-step-reach": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ]
+    },
+    "neo4j-bibliography-ingest-logs-cartesian-warnings-on-every-link-batch": {
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "sqlite-transit-hop-rebuild-and-a-code-scanner-high": {
+      "skill/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "baseline/haiku": [
+        "FAIL:no-critical-or-high,says-sound-rebuild-delete-is-right,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ]
+    },
+    "networkx-southern-women-events-and-a-request-to-drop-the-event-nodes": {
+      "baseline/sonnet": [
+        "FAIL:no-critical-or-high,roast-md-path,roast-md-covers-findings,roast-md-footer"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-bus-journey-planner-loads-segments-csv-with-blank-minute-cells": {
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    },
+    "networkx-davis-attendance-loaded-into-a-plain-graph-for-co-attendance": {
+      "skill/haiku": [
+        "pass"
+      ],
+      "skill/sonnet": [
+        "pass"
+      ],
+      "baseline/sonnet": [
+        "pass"
+      ],
+      "baseline/haiku": [
+        "pass"
+      ]
+    }
+  },
+  "paired_all_models": {
+    "skill_wins": [
+      "cypher-depot-closure-script-and-a-review-comment-on-detach-delete",
+      "cypher-electronic-parts-weekly-import-and-site-queries",
+      "cypher-library-loans-and-a-pr-comment-about-join-tables",
+      "cypher-maintenance-procedure-steps-walked-with-open-ended-next-patterns",
+      "cypher-music-catalogue-loader-and-a-one-statement-rewrite-pr",
+      "cypher-rental-lease-model-and-a-consultant-who-wants-it-flattened",
+      "cypher-room-booking-grid-and-booking-statements-fail-a-ci-linter",
+      "cypher-team-health-card-and-shift-handover-queries",
+      "cypher-workspace-offboarding-and-four-unbatched-delete-lint-errors",
+      "ladybug-month-end-billing-export-and-a-query-linter",
+      "ladybug-record-catalogue-releases-credits-and-liner-notes",
+      "ladybug-shelf-tablet-promotion-and-transfer-queries",
+      "neo4j-allotment-queries-and-a-lint-report-about-importing-with",
+      "neo4j-bibliography-ingest-logs-cartesian-warnings-on-every-link-batch",
+      "neo4j-departure-backfill-and-a-teammate-who-wants-one-transaction-per-file",
+      "neo4j-water-meter-ingest-with-sixteen-consumers-and-a-review-comment",
+      "networkx-ci-pipeline-validator-with-a-handwritten-loop-check",
+      "networkx-fraud-ring-linker-and-a-colleague-on-contracted-nodes",
+      "networkx-southern-women-events-and-a-request-to-drop-the-event-nodes",
+      "sql-build-provenance-schema-and-a-foreign-key-lint-report",
+      "sql-postgres-expense-approver-delegation-chain-and-a-blocked-pr",
+      "sqlite-bom-compliance-queries-and-two-sql-lint-warnings",
+      "sqlite-community-follow-graph-handle-lookup-and-a-contractor-proposal",
+      "sqlite-family-tree-app-connection-helper-and-parent-links",
+      "sqlite-follow-graph-audience-query-and-a-ci-lint-failure",
+      "sqlite-gazetteer-place-merge-and-a-rewrite-proposal",
+      "sqlite-help-centre-topic-tree-article-listing-and-a-closure-table-proposal",
+      "sqlite-notes-tag-graph-autocomplete-and-review-comments",
+      "sqlite-storefront-category-graph-migrations-and-breadcrumb-queries",
+      "sqlite-transit-hop-rebuild-and-a-code-scanner-high"
+    ],
+    "baseline_wins": [
+      "neo4j-dock-availability-queries-beside-the-compose-file",
+      "neo4j-sensor-heartbeat-consumers-and-fleet-dashboard",
+      "neo4j-timetable-queries-tested-on-compose-and-deployed-by-helm",
+      "neo4j-trail-reports-migration-runner-and-a-segment-backfill",
+      "networkx-florentine-worksheet-lists-every-marriage-route",
+      "sqlite-package-registry-db-layer-and-a-lint-report-on-its-foreign-keys",
+      "sqlite-service-catalogue-connection-helper-and-decommission-command"
+    ],
+    "ties": [
+      "cypher-air-sensor-inventory-import-with-two-merges",
+      "cypher-contact-dedupe-statements-and-the-referral-credit-report",
+      "cypher-distribution-grid-model-loader-and-outage-queries",
+      "cypher-expense-approval-graph-and-the-automated-leaver-process",
+      "cypher-freelance-marketplace-contracts-and-skill-claims",
+      "cypher-marketplace-payouts-and-the-currency-nodes",
+      "cypher-municipal-borders-graph-and-an-undirected-pattern-lint",
+      "cypher-package-registry-browse-site-queries",
+      "cypher-procurement-offers-load-and-the-spot-purchase-rows",
+      "cypher-quarterly-purge-of-closed-merchants-and-expired-coupons",
+      "cypher-reading-tracker-model-and-book-page-queries",
+      "cypher-research-office-coauthor-graph-and-annual-report-queries",
+      "cypher-research-office-collaboration-report-and-profile-queries",
+      "cypher-seed-bank-subqueries-and-a-contractor-note-on-cypher-25",
+      "cypher-shop-customer-merge-statements",
+      "cypher-streaming-home-screen-rails-and-title-page-queries",
+      "cypher-tram-planner-orders-matched-paths-by-length-and-keeps-one",
+      "ladybug-board-queries-and-a-lint-report-with-four-flags",
+      "ladybug-diy-guides-sidebar-and-country-availability",
+      "ladybug-hotel-search-schema-with-amenity-and-booking-tables",
+      "ladybug-parcel-tracking-schema-and-a-carrier-bucketing-proposal",
+      "neo4j-bookshop-stock-loader-and-the-october-feed",
+      "neo4j-climbing-gym-member-sync-and-a-teammate-worried-about-nulls",
+      "neo4j-library-circulation-loader-and-branch-report-queries",
+      "neo4j-local-news-social-api-publish-and-timeline",
+      "neo4j-member-erasure-job-after-the-big-account-memory-fix",
+      "neo4j-merchandising-admin-handlers-for-categories-and-brands",
+      "neo4j-parts-catalogue-sku-migration-and-its-ledger",
+      "neo4j-rain-gauge-ingest-asks-for-batch-status",
+      "neo4j-router-peering-ingest-from-device-reports-and-noc-queries",
+      "neo4j-session-statements-and-the-five-minute-sweeper",
+      "neo4j-telemetry-retention-job-and-the-meter-dashboards",
+      "networkx-bastion-reachability-tool-walks-jump-hosts-by-hand",
+      "networkx-bus-journey-planner-loads-segments-csv-with-blank-minute-cells",
+      "networkx-davis-attendance-loaded-into-a-plain-graph-for-co-attendance",
+      "networkx-festival-seat-capacity-max-flow-over-a-day-of-services",
+      "networkx-file-share-access-check-over-nested-groups",
+      "networkx-florentine-marriage-blocs-reach-table",
+      "networkx-florentine-marriage-network-seminar-package",
+      "networkx-grocery-promise-zones-from-a-reachable-within-cutoff",
+      "networkx-karate-club-cohesion-report-with-its-own-clustering",
+      "networkx-karate-inner-circle-from-a-hand-counted-tightness-score",
+      "networkx-karate-introduction-chains-on-the-weighted-club-graph",
+      "networkx-karate-referral-chains-listed-up-to-three-links",
+      "networkx-karate-tie-distance-dijkstra-written-by-hand",
+      "networkx-les-miserables-coappearance-stats-page",
+      "networkx-lesmis-poster-ranks-characters-by-two-step-reach",
+      "networkx-lesmis-separation-widget-built-on-all-simple-paths",
+      "networkx-lesmis-static-site-finds-chains-in-browser-javascript",
+      "networkx-lesmis-study-guide-bonds-counted-from-a-chapter-log",
+      "networkx-running-club-friend-suggestions-and-interest-nodes",
+      "networkx-southern-women-attendance-module-for-a-seminar-handout",
+      "networkx-southern-women-attendance-package-and-a-projection-request",
+      "networkx-supplier-network-dedupe-and-the-single-source-report",
+      "networkx-water-main-network-loader-edits-and-contamination-trace",
+      "networkx-wiki-cleanup-bot-groups-pages-with-its-own-cluster-search",
+      "sql-knowledge-graph-entity-aliases-and-mention-resolution",
+      "sql-postgres-crawl-entity-graph-nightly-purge-and-foreign-keys",
+      "sql-postgres-supplier-map-tier-query-for-the-risk-page",
+      "sql-professional-network-schema-with-recommendations-endorsements-and-account-deletion",
+      "sql-referral-club-member-lookup-sponsor-chain-and-a-query-linter",
+      "sql-storefront-category-tree-placements-and-slug-renames",
+      "sqlite-access-groups-schema-and-the-provisioning-code",
+      "sqlite-approval-delegation-walk-and-team-rollup-queries",
+      "sqlite-association-mentoring-graph-member-lookup-and-mention-resolver",
+      "sqlite-audience-estimate-queries-after-a-lint-cleanup",
+      "sqlite-bookmark-tag-graph-related-tags-page",
+      "sqlite-bus-network-snapshot-build-and-a-colleague-review-on-foreign-keys",
+      "sqlite-citation-graph-reference-importer-and-ranking-export",
+      "sqlite-city-transit-routes-stops-and-journey-planner",
+      "sqlite-crm-intro-graph-person-lookup-and-mutual-connections",
+      "sqlite-fibre-plant-closures-spans-and-the-outage-notification-query",
+      "sqlite-kiosk-fewest-stops-query-carries-a-visited-path-string",
+      "sqlite-microblog-follow-graph-and-mention-resolver",
+      "sqlite-org-chart-repo-with-a-nightly-hr-import-and-eight-reports",
+      "sqlite-plant-equipment-dependency-graph-web-app-and-erp-sync-job",
+      "sqlite-road-network-regional-loader-and-its-lint-suppressions",
+      "sqlite-staff-directory-reporting-lines-imported-from-hr",
+      "sqlite-taskboard-card-tree-with-subtasks-labels-and-comments",
+      "sqlite-team-drive-folder-tree-stored-by-path-and-the-folder-view",
+      "sqlite-trail-map-migrations-and-route-planner",
+      "sqlite-trail-network-area-retirement-script",
+      "sqlite-wiki-link-store-and-the-popular-pages-sidebar"
+    ],
+    "regressions": [],
+    "p": 0.0002
+  },
+  "paired_by_model": {
+    "haiku": {
+      "skill_wins": [
+        "cypher-depot-closure-script-and-a-review-comment-on-detach-delete",
+        "cypher-library-loans-and-a-pr-comment-about-join-tables",
+        "cypher-maintenance-procedure-steps-walked-with-open-ended-next-patterns",
+        "cypher-rental-lease-model-and-a-consultant-who-wants-it-flattened",
+        "cypher-room-booking-grid-and-booking-statements-fail-a-ci-linter",
+        "cypher-team-health-card-and-shift-handover-queries",
+        "cypher-workspace-offboarding-and-four-unbatched-delete-lint-errors",
+        "ladybug-record-catalogue-releases-credits-and-liner-notes",
+        "ladybug-shelf-tablet-promotion-and-transfer-queries",
+        "neo4j-bibliography-ingest-logs-cartesian-warnings-on-every-link-batch",
+        "neo4j-departure-backfill-and-a-teammate-who-wants-one-transaction-per-file",
+        "neo4j-water-meter-ingest-with-sixteen-consumers-and-a-review-comment",
+        "networkx-fraud-ring-linker-and-a-colleague-on-contracted-nodes",
+        "sql-build-provenance-schema-and-a-foreign-key-lint-report",
+        "sql-postgres-expense-approver-delegation-chain-and-a-blocked-pr",
+        "sqlite-community-follow-graph-handle-lookup-and-a-contractor-proposal",
+        "sqlite-family-tree-app-connection-helper-and-parent-links",
+        "sqlite-gazetteer-place-merge-and-a-rewrite-proposal",
+        "sqlite-help-centre-topic-tree-article-listing-and-a-closure-table-proposal",
+        "sqlite-notes-tag-graph-autocomplete-and-review-comments",
+        "sqlite-storefront-category-graph-migrations-and-breadcrumb-queries",
+        "sqlite-transit-hop-rebuild-and-a-code-scanner-high"
+      ],
+      "baseline_wins": [
+        "neo4j-dock-availability-queries-beside-the-compose-file",
+        "neo4j-sensor-heartbeat-consumers-and-fleet-dashboard",
+        "neo4j-telemetry-retention-job-and-the-meter-dashboards",
+        "neo4j-timetable-queries-tested-on-compose-and-deployed-by-helm",
+        "neo4j-trail-reports-migration-runner-and-a-segment-backfill",
+        "networkx-florentine-worksheet-lists-every-marriage-route",
+        "sqlite-package-registry-db-layer-and-a-lint-report-on-its-foreign-keys",
+        "sqlite-service-catalogue-connection-helper-and-decommission-command"
+      ],
+      "ties": [
+        "cypher-air-sensor-inventory-import-with-two-merges",
+        "cypher-contact-dedupe-statements-and-the-referral-credit-report",
+        "cypher-distribution-grid-model-loader-and-outage-queries",
+        "cypher-electronic-parts-weekly-import-and-site-queries",
+        "cypher-expense-approval-graph-and-the-automated-leaver-process",
+        "cypher-freelance-marketplace-contracts-and-skill-claims",
+        "cypher-marketplace-payouts-and-the-currency-nodes",
+        "cypher-municipal-borders-graph-and-an-undirected-pattern-lint",
+        "cypher-music-catalogue-loader-and-a-one-statement-rewrite-pr",
+        "cypher-package-registry-browse-site-queries",
+        "cypher-procurement-offers-load-and-the-spot-purchase-rows",
+        "cypher-quarterly-purge-of-closed-merchants-and-expired-coupons",
+        "cypher-reading-tracker-model-and-book-page-queries",
+        "cypher-research-office-coauthor-graph-and-annual-report-queries",
+        "cypher-research-office-collaboration-report-and-profile-queries",
+        "cypher-seed-bank-subqueries-and-a-contractor-note-on-cypher-25",
+        "cypher-shop-customer-merge-statements",
+        "cypher-streaming-home-screen-rails-and-title-page-queries",
+        "cypher-tram-planner-orders-matched-paths-by-length-and-keeps-one",
+        "ladybug-board-queries-and-a-lint-report-with-four-flags",
+        "ladybug-diy-guides-sidebar-and-country-availability",
+        "ladybug-hotel-search-schema-with-amenity-and-booking-tables",
+        "ladybug-month-end-billing-export-and-a-query-linter",
+        "ladybug-parcel-tracking-schema-and-a-carrier-bucketing-proposal",
+        "neo4j-allotment-queries-and-a-lint-report-about-importing-with",
+        "neo4j-bookshop-stock-loader-and-the-october-feed",
+        "neo4j-climbing-gym-member-sync-and-a-teammate-worried-about-nulls",
+        "neo4j-library-circulation-loader-and-branch-report-queries",
+        "neo4j-local-news-social-api-publish-and-timeline",
+        "neo4j-member-erasure-job-after-the-big-account-memory-fix",
+        "neo4j-merchandising-admin-handlers-for-categories-and-brands",
+        "neo4j-parts-catalogue-sku-migration-and-its-ledger",
+        "neo4j-rain-gauge-ingest-asks-for-batch-status",
+        "neo4j-router-peering-ingest-from-device-reports-and-noc-queries",
+        "neo4j-session-statements-and-the-five-minute-sweeper",
+        "networkx-bastion-reachability-tool-walks-jump-hosts-by-hand",
+        "networkx-bus-journey-planner-loads-segments-csv-with-blank-minute-cells",
+        "networkx-ci-pipeline-validator-with-a-handwritten-loop-check",
+        "networkx-davis-attendance-loaded-into-a-plain-graph-for-co-attendance",
+        "networkx-festival-seat-capacity-max-flow-over-a-day-of-services",
+        "networkx-file-share-access-check-over-nested-groups",
+        "networkx-florentine-marriage-blocs-reach-table",
+        "networkx-florentine-marriage-network-seminar-package",
+        "networkx-grocery-promise-zones-from-a-reachable-within-cutoff",
+        "networkx-karate-club-cohesion-report-with-its-own-clustering",
+        "networkx-karate-inner-circle-from-a-hand-counted-tightness-score",
+        "networkx-karate-introduction-chains-on-the-weighted-club-graph",
+        "networkx-karate-referral-chains-listed-up-to-three-links",
+        "networkx-karate-tie-distance-dijkstra-written-by-hand",
+        "networkx-les-miserables-coappearance-stats-page",
+        "networkx-lesmis-poster-ranks-characters-by-two-step-reach",
+        "networkx-lesmis-separation-widget-built-on-all-simple-paths",
+        "networkx-lesmis-static-site-finds-chains-in-browser-javascript",
+        "networkx-lesmis-study-guide-bonds-counted-from-a-chapter-log",
+        "networkx-running-club-friend-suggestions-and-interest-nodes",
+        "networkx-southern-women-attendance-module-for-a-seminar-handout",
+        "networkx-southern-women-attendance-package-and-a-projection-request",
+        "networkx-southern-women-events-and-a-request-to-drop-the-event-nodes",
+        "networkx-supplier-network-dedupe-and-the-single-source-report",
+        "networkx-water-main-network-loader-edits-and-contamination-trace",
+        "networkx-wiki-cleanup-bot-groups-pages-with-its-own-cluster-search",
+        "sql-knowledge-graph-entity-aliases-and-mention-resolution",
+        "sql-postgres-crawl-entity-graph-nightly-purge-and-foreign-keys",
+        "sql-postgres-supplier-map-tier-query-for-the-risk-page",
+        "sql-professional-network-schema-with-recommendations-endorsements-and-account-deletion",
+        "sql-referral-club-member-lookup-sponsor-chain-and-a-query-linter",
+        "sql-storefront-category-tree-placements-and-slug-renames",
+        "sqlite-access-groups-schema-and-the-provisioning-code",
+        "sqlite-approval-delegation-walk-and-team-rollup-queries",
+        "sqlite-association-mentoring-graph-member-lookup-and-mention-resolver",
+        "sqlite-audience-estimate-queries-after-a-lint-cleanup",
+        "sqlite-bom-compliance-queries-and-two-sql-lint-warnings",
+        "sqlite-bookmark-tag-graph-related-tags-page",
+        "sqlite-bus-network-snapshot-build-and-a-colleague-review-on-foreign-keys",
+        "sqlite-citation-graph-reference-importer-and-ranking-export",
+        "sqlite-city-transit-routes-stops-and-journey-planner",
+        "sqlite-crm-intro-graph-person-lookup-and-mutual-connections",
+        "sqlite-fibre-plant-closures-spans-and-the-outage-notification-query",
+        "sqlite-follow-graph-audience-query-and-a-ci-lint-failure",
+        "sqlite-kiosk-fewest-stops-query-carries-a-visited-path-string",
+        "sqlite-microblog-follow-graph-and-mention-resolver",
+        "sqlite-org-chart-repo-with-a-nightly-hr-import-and-eight-reports",
+        "sqlite-plant-equipment-dependency-graph-web-app-and-erp-sync-job",
+        "sqlite-road-network-regional-loader-and-its-lint-suppressions",
+        "sqlite-staff-directory-reporting-lines-imported-from-hr",
+        "sqlite-taskboard-card-tree-with-subtasks-labels-and-comments",
+        "sqlite-team-drive-folder-tree-stored-by-path-and-the-folder-view",
+        "sqlite-trail-map-migrations-and-route-planner",
+        "sqlite-trail-network-area-retirement-script",
+        "sqlite-wiki-link-store-and-the-popular-pages-sidebar"
+      ],
+      "regressions": [
+        "neo4j-dock-availability-queries-beside-the-compose-file",
+        "neo4j-sensor-heartbeat-consumers-and-fleet-dashboard",
+        "neo4j-telemetry-retention-job-and-the-meter-dashboards",
+        "neo4j-timetable-queries-tested-on-compose-and-deployed-by-helm",
+        "neo4j-trail-reports-migration-runner-and-a-segment-backfill",
+        "networkx-florentine-worksheet-lists-every-marriage-route",
+        "sqlite-package-registry-db-layer-and-a-lint-report-on-its-foreign-keys",
+        "sqlite-service-catalogue-connection-helper-and-decommission-command"
+      ],
+      "p": 0.0161
+    },
+    "sonnet": {
+      "skill_wins": [
+        "cypher-electronic-parts-weekly-import-and-site-queries",
+        "cypher-library-loans-and-a-pr-comment-about-join-tables",
+        "cypher-music-catalogue-loader-and-a-one-statement-rewrite-pr",
+        "cypher-team-health-card-and-shift-handover-queries",
+        "cypher-workspace-offboarding-and-four-unbatched-delete-lint-errors",
+        "ladybug-month-end-billing-export-and-a-query-linter",
+        "ladybug-shelf-tablet-promotion-and-transfer-queries",
+        "neo4j-allotment-queries-and-a-lint-report-about-importing-with",
+        "neo4j-bibliography-ingest-logs-cartesian-warnings-on-every-link-batch",
+        "neo4j-telemetry-retention-job-and-the-meter-dashboards",
+        "neo4j-water-meter-ingest-with-sixteen-consumers-and-a-review-comment",
+        "networkx-ci-pipeline-validator-with-a-handwritten-loop-check",
+        "networkx-southern-women-events-and-a-request-to-drop-the-event-nodes",
+        "sql-build-provenance-schema-and-a-foreign-key-lint-report",
+        "sqlite-bom-compliance-queries-and-two-sql-lint-warnings",
+        "sqlite-community-follow-graph-handle-lookup-and-a-contractor-proposal",
+        "sqlite-family-tree-app-connection-helper-and-parent-links",
+        "sqlite-follow-graph-audience-query-and-a-ci-lint-failure",
+        "sqlite-storefront-category-graph-migrations-and-breadcrumb-queries",
+        "sqlite-transit-hop-rebuild-and-a-code-scanner-high"
+      ],
+      "baseline_wins": [],
+      "ties": [
+        "cypher-air-sensor-inventory-import-with-two-merges",
+        "cypher-contact-dedupe-statements-and-the-referral-credit-report",
+        "cypher-depot-closure-script-and-a-review-comment-on-detach-delete",
+        "cypher-distribution-grid-model-loader-and-outage-queries",
+        "cypher-expense-approval-graph-and-the-automated-leaver-process",
+        "cypher-freelance-marketplace-contracts-and-skill-claims",
+        "cypher-maintenance-procedure-steps-walked-with-open-ended-next-patterns",
+        "cypher-marketplace-payouts-and-the-currency-nodes",
+        "cypher-municipal-borders-graph-and-an-undirected-pattern-lint",
+        "cypher-package-registry-browse-site-queries",
+        "cypher-procurement-offers-load-and-the-spot-purchase-rows",
+        "cypher-quarterly-purge-of-closed-merchants-and-expired-coupons",
+        "cypher-reading-tracker-model-and-book-page-queries",
+        "cypher-rental-lease-model-and-a-consultant-who-wants-it-flattened",
+        "cypher-research-office-coauthor-graph-and-annual-report-queries",
+        "cypher-research-office-collaboration-report-and-profile-queries",
+        "cypher-room-booking-grid-and-booking-statements-fail-a-ci-linter",
+        "cypher-seed-bank-subqueries-and-a-contractor-note-on-cypher-25",
+        "cypher-shop-customer-merge-statements",
+        "cypher-streaming-home-screen-rails-and-title-page-queries",
+        "cypher-tram-planner-orders-matched-paths-by-length-and-keeps-one",
+        "ladybug-board-queries-and-a-lint-report-with-four-flags",
+        "ladybug-diy-guides-sidebar-and-country-availability",
+        "ladybug-hotel-search-schema-with-amenity-and-booking-tables",
+        "ladybug-parcel-tracking-schema-and-a-carrier-bucketing-proposal",
+        "ladybug-record-catalogue-releases-credits-and-liner-notes",
+        "neo4j-bookshop-stock-loader-and-the-october-feed",
+        "neo4j-climbing-gym-member-sync-and-a-teammate-worried-about-nulls",
+        "neo4j-departure-backfill-and-a-teammate-who-wants-one-transaction-per-file",
+        "neo4j-dock-availability-queries-beside-the-compose-file",
+        "neo4j-library-circulation-loader-and-branch-report-queries",
+        "neo4j-local-news-social-api-publish-and-timeline",
+        "neo4j-member-erasure-job-after-the-big-account-memory-fix",
+        "neo4j-merchandising-admin-handlers-for-categories-and-brands",
+        "neo4j-parts-catalogue-sku-migration-and-its-ledger",
+        "neo4j-rain-gauge-ingest-asks-for-batch-status",
+        "neo4j-router-peering-ingest-from-device-reports-and-noc-queries",
+        "neo4j-sensor-heartbeat-consumers-and-fleet-dashboard",
+        "neo4j-session-statements-and-the-five-minute-sweeper",
+        "neo4j-timetable-queries-tested-on-compose-and-deployed-by-helm",
+        "neo4j-trail-reports-migration-runner-and-a-segment-backfill",
+        "networkx-bastion-reachability-tool-walks-jump-hosts-by-hand",
+        "networkx-bus-journey-planner-loads-segments-csv-with-blank-minute-cells",
+        "networkx-davis-attendance-loaded-into-a-plain-graph-for-co-attendance",
+        "networkx-festival-seat-capacity-max-flow-over-a-day-of-services",
+        "networkx-file-share-access-check-over-nested-groups",
+        "networkx-florentine-marriage-blocs-reach-table",
+        "networkx-florentine-marriage-network-seminar-package",
+        "networkx-florentine-worksheet-lists-every-marriage-route",
+        "networkx-fraud-ring-linker-and-a-colleague-on-contracted-nodes",
+        "networkx-grocery-promise-zones-from-a-reachable-within-cutoff",
+        "networkx-karate-club-cohesion-report-with-its-own-clustering",
+        "networkx-karate-inner-circle-from-a-hand-counted-tightness-score",
+        "networkx-karate-introduction-chains-on-the-weighted-club-graph",
+        "networkx-karate-referral-chains-listed-up-to-three-links",
+        "networkx-karate-tie-distance-dijkstra-written-by-hand",
+        "networkx-les-miserables-coappearance-stats-page",
+        "networkx-lesmis-poster-ranks-characters-by-two-step-reach",
+        "networkx-lesmis-separation-widget-built-on-all-simple-paths",
+        "networkx-lesmis-static-site-finds-chains-in-browser-javascript",
+        "networkx-lesmis-study-guide-bonds-counted-from-a-chapter-log",
+        "networkx-running-club-friend-suggestions-and-interest-nodes",
+        "networkx-southern-women-attendance-module-for-a-seminar-handout",
+        "networkx-southern-women-attendance-package-and-a-projection-request",
+        "networkx-supplier-network-dedupe-and-the-single-source-report",
+        "networkx-water-main-network-loader-edits-and-contamination-trace",
+        "networkx-wiki-cleanup-bot-groups-pages-with-its-own-cluster-search",
+        "sql-knowledge-graph-entity-aliases-and-mention-resolution",
+        "sql-postgres-crawl-entity-graph-nightly-purge-and-foreign-keys",
+        "sql-postgres-expense-approver-delegation-chain-and-a-blocked-pr",
+        "sql-postgres-supplier-map-tier-query-for-the-risk-page",
+        "sql-professional-network-schema-with-recommendations-endorsements-and-account-deletion",
+        "sql-referral-club-member-lookup-sponsor-chain-and-a-query-linter",
+        "sql-storefront-category-tree-placements-and-slug-renames",
+        "sqlite-access-groups-schema-and-the-provisioning-code",
+        "sqlite-approval-delegation-walk-and-team-rollup-queries",
+        "sqlite-association-mentoring-graph-member-lookup-and-mention-resolver",
+        "sqlite-audience-estimate-queries-after-a-lint-cleanup",
+        "sqlite-bookmark-tag-graph-related-tags-page",
+        "sqlite-bus-network-snapshot-build-and-a-colleague-review-on-foreign-keys",
+        "sqlite-citation-graph-reference-importer-and-ranking-export",
+        "sqlite-city-transit-routes-stops-and-journey-planner",
+        "sqlite-crm-intro-graph-person-lookup-and-mutual-connections",
+        "sqlite-fibre-plant-closures-spans-and-the-outage-notification-query",
+        "sqlite-gazetteer-place-merge-and-a-rewrite-proposal",
+        "sqlite-help-centre-topic-tree-article-listing-and-a-closure-table-proposal",
+        "sqlite-kiosk-fewest-stops-query-carries-a-visited-path-string",
+        "sqlite-microblog-follow-graph-and-mention-resolver",
+        "sqlite-notes-tag-graph-autocomplete-and-review-comments",
+        "sqlite-org-chart-repo-with-a-nightly-hr-import-and-eight-reports",
+        "sqlite-package-registry-db-layer-and-a-lint-report-on-its-foreign-keys",
+        "sqlite-plant-equipment-dependency-graph-web-app-and-erp-sync-job",
+        "sqlite-road-network-regional-loader-and-its-lint-suppressions",
+        "sqlite-service-catalogue-connection-helper-and-decommission-command",
+        "sqlite-staff-directory-reporting-lines-imported-from-hr",
+        "sqlite-taskboard-card-tree-with-subtasks-labels-and-comments",
+        "sqlite-team-drive-folder-tree-stored-by-path-and-the-folder-view",
+        "sqlite-trail-map-migrations-and-route-planner",
+        "sqlite-trail-network-area-retirement-script",
+        "sqlite-wiki-link-store-and-the-popular-pages-sidebar"
+      ],
+      "regressions": [],
+      "p": 0.0
+    }
+  },
+  "flaky": [],
+  "grader_errors": []
+}

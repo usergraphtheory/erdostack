@@ -1,0 +1,22 @@
+[
+  {"query": "write me a cypher query that returns every account connected to acct-4471 through transfers, we use neo4j", "should_trigger": true},
+  {"query": "this recursive CTE over our edges table takes forever on the prod snapshot, can you fix it? it's in sql/ancestors.sql", "should_trigger": true},
+  {"query": "delete all the Session nodes that expired before last month. cypher/cleanup.cypher is where those go", "should_trigger": true},
+  {"query": "add a /friends-of-friends endpoint to the flask app, the graph is in neo4j and there's a driver helper in db.py", "should_trigger": true},
+  {"query": "can you run queries/blast_radius.cypher against prod for the auth service and paste the count", "should_trigger": true},
+  {"query": "our org chart lives in postgres as employees(id, manager_id). add a query that lists everyone under a given manager", "should_trigger": true},
+  {"query": "the recommendations query OOMs the database every night, here's the file, make it not do that", "should_trigger": true},
+  {"query": "set weight = 1.0 on every RELATED_TO relationship that doesn't have one, there are about 40 million of them", "should_trigger": true},
+  {"query": "quick review before i merge: i added a search handler in handlers.py that builds the MATCH from the request filters", "should_trigger": true},
+  {"query": "need a ladybugdb query for everything reachable from a given dataset node in our lineage graph, save it under queries/", "should_trigger": true},
+  {"query": "we're storing a bill of materials, should that go in a graph database or just stay in postgres?", "should_trigger": false},
+  {"query": "what labels and relationship types does this neo4j database actually have? i inherited it and there are no docs", "should_trigger": false},
+  {"query": "set this repo up for graph work: figure out which engine and version we're on and how queries get run", "should_trigger": false},
+  {"query": "roast my schema, model.cypher is in the repo root", "should_trigger": false},
+  {"query": "does ladybugdb support quantified path patterns or is that neo4j only? just want to know before i write anything", "should_trigger": false},
+  {"query": "which algorithm should i use to find communities in a 2M node co-purchase graph, louvain or leiden?", "should_trigger": false},
+  {"query": "should 'employment' be a relationship between Person and Company or its own node with start and end dates?", "should_trigger": false},
+  {"query": "the monthly revenue report on the orders table is slow, it's a plain GROUP BY over invoices joined to customers, can you speed it up", "should_trigger": false},
+  {"query": "explain to me line by line what this cypher query does, i'm new to the syntax and don't want to change anything", "should_trigger": false},
+  {"query": "bump the neo4j python driver from 5.28 to 6 in requirements.txt and fix whatever imports break", "should_trigger": false}
+]

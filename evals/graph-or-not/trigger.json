@@ -1,0 +1,23 @@
+[
+  {"query": "do we actually need a graph database for our org chart or is postgres fine? write up a decision", "should_trigger": true},
+  {"query": "team wants to migrate the bill of materials to Neo4j next quarter. sanity check that before I approve it", "should_trigger": true},
+  {"query": "is networkx going to be enough for this dependency analysis or should I set up a graph db", "should_trigger": true},
+  {"query": "recursive CTE vs graph database for our permission hierarchy, which one and why", "should_trigger": true},
+  {"query": "/graph-or-not", "should_trigger": true},
+  {"query": "a vendor told our VP that relational databases can't handle hierarchies. are they right for our data? look at the repo", "should_trigger": true},
+  {"query": "our tags table is basically a graph, would the related-items feature be better on a graph store?", "should_trigger": true},
+  {"query": "the recursive query for fraud ring detection keeps timing out. I don't want another database, can we stay on Postgres?", "should_trigger": true},
+  {"query": "RFC proposes loading the whole network topology into memory instead of buying a graph database. which way should we go?", "should_trigger": true},
+  {"query": "should the knowledge base links live in a graph DB, SQLite, or just in memory? decide and document it in docs/graph", "should_trigger": true},
+
+  {"query": "write a Cypher query that returns the top 10 customers by number of orders", "should_trigger": false},
+  {"query": "this Cypher query is slow, can you review it and look at the plan before I run it on prod", "should_trigger": false},
+  {"query": "roast my graph schema, be brutal", "should_trigger": false},
+  {"query": "we've decided to move from Neo4j to Memgraph. plan the migration and how to verify the counts", "should_trigger": false},
+  {"query": "which algorithm should I use for community detection on a weighted graph, Louvain or Leiden?", "should_trigger": false},
+  {"query": "my recursive CTE loops forever on cyclic data, fix it", "should_trigger": false},
+  {"query": "Postgres or MongoDB for the new orders service?", "should_trigger": false},
+  {"query": "make a bar graph of monthly signups from signups.csv", "should_trigger": false},
+  {"query": "should we expose this as GraphQL or REST?", "should_trigger": false},
+  {"query": "set up this repo so the agent knows which graph engine and version we use", "should_trigger": false}
+]
